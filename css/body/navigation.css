@@ -416,6 +416,7 @@ ul.cus{
     padding: 0;
     margin: 0;
     background: transparent;
+    box-shadow: none;
   }
 
   .sub li.open > .sub-sub {

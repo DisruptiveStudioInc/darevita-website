@@ -24,7 +24,7 @@
     // Hero
     //-------------------------//
 
-    $Hero_01 = "La alegría ama<br>la compañía";
+    $Hero_01 = "La alegría ama la compañía";
     $Hero_02 = "Bienvenido al mundo de DareVita. No somos solo una empresa; somos un movimiento de cambio positivo.";
 
     //-------------------------//

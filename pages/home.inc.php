@@ -40,20 +40,30 @@
 </section>
 
 <section>
-	<div class="h-100 pin rel of-h">
-		<h2 class="word_01"><?php echo $Letters_title_01; ?><span><?php echo $Letters_text_01; ?></span></h2>
-		<h2 class="word_02"><?php echo $Letters_title_02; ?><span><?php echo $Letters_text_02; ?></span></h2>
-		<h2 class="word_03"><?php echo $Letters_title_03; ?><span><?php echo $Letters_text_03; ?></span></h2>
-		<h2 class="word_04"><?php echo $Letters_title_04; ?><span><?php echo $Letters_text_04; ?></span></h2>
-		<img class="img_01" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
-		<img class="img_02" src="./images/body/letters/2.webp" alt="<?php echo $Letters_title_02; ?>">
-		<img class="img_03" src="./images/body/letters/3.webp" alt="<?php echo $Letters_title_03; ?>">
-		<img class="img_04" src="./images/body/letters/4.webp" alt="<?php echo $Letters_title_04; ?>">
+	<div class="h-100 pin rel of-h small-h-0 letters">
+		<div>
+			<h2 class="word_01"><?php echo $Letters_title_01; ?><span><?php echo $Letters_text_01; ?></span></h2>
+			<img class="img_01" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
+		</div>
+
+		<div>
+			<h2 class="word_02"><?php echo $Letters_title_02; ?><span><?php echo $Letters_text_02; ?></span></h2>
+			<img class="img_02" src="./images/body/letters/2.webp" alt="<?php echo $Letters_title_02; ?>">
+		</div>
+		<div>
+			<h2 class="word_03"><?php echo $Letters_title_03; ?><span><?php echo $Letters_text_03; ?></span></h2>
+			<img class="img_03" src="./images/body/letters/3.webp" alt="<?php echo $Letters_title_03; ?>">
+		</div>
+		<div>
+			<h2 class="word_04"><?php echo $Letters_title_04; ?><span><?php echo $Letters_text_04; ?></span></h2>
+			<img class="img_04" src="./images/body/letters/4.webp" alt="<?php echo $Letters_title_04; ?>">
+		</div>
 	</div>
 </section>
 
 <section>
 	<div class="mw-1440 t-c h-100 small-h-0 small-fd-col g-20 jc-center ai-center rel parallax">
+		<h2 class="h1-special"><?php echo $Vision_text; ?></h2>
 		<div class="box box_1">
 			<h3 class="h3"><?php echo $Vision_title_01; ?></h3>
 			<p class="h5"><?php echo $Vision_text_01; ?></p>
@@ -66,7 +76,6 @@
 			<h3 class="h3"><?php echo $Vision_title_03; ?></h3>
 			<p class="h5"><?php echo $Vision_text_03; ?></p>
 		</div>
-		<h2 class="h1-special"><?php echo $Vision_text; ?></h2>
 	</div>
 </section>
 
@@ -178,7 +187,7 @@ foreach ($Modal as $item){
 
 <section class="c-sec">
 	<div class="anchor"></div>
-	<div class="mw-1440 t-c">
+	<div class="mw-1440 t-c pb-0">
 		<p class="h2"><?php echo $Truth_title; ?></p>
 	</div>
 	<div>
@@ -280,6 +289,8 @@ $(document).ready(function() {
 
     //*------------- GALLERY
 
+    if (window.matchMedia("(min-width: 1080px)").matches) {
+
     var textoTimeline = new TimelineMax();
     textoTimeline
         .fromTo('.word_01', animationSpeed, {opacity: 1, scale: 1}, {opacity: 0, scale: 4, ease: animationLinear,immediateRender: false})
@@ -312,6 +323,8 @@ $(document).ready(function() {
     .setTween(master)
     //.addIndicators()
     .addTo(controller);
+
+    }
 
     //*------------- HERO
 

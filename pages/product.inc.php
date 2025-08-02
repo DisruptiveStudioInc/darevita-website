@@ -86,14 +86,13 @@ $Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
 ?>
 
 <section>
-    <div class="block-box-bg overlay o-50">
-        <img class="full-img-abs" src="./images/body/treo/bg_<?php echo $Bg; ?>.webp" alt="<?php echo $Titulo; ?> background" />
-        <div class="mw-1440 jc-center ai-center dh-100 med-fd-col-rev g-30 p-30">
+    <div class="block-box-bg overlay o-40">
+        <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-30 p-30">
 
-            <div class="info w-50 med-w-100 all-tc-0 med-t-c">
+            <div class="info w-50 med-w-100 all-tc-0 small-t-c">
                 <h1 class="h1"><?php echo $Titulo; ?></h1>
                 <p class="h3"><?php echo $Subtitulo; ?></p>
-                <p><?php echo $Text; ?></p>
+                <p class="small-d-none"><?php echo $Text; ?></p>
 
                 <div class="btns g-10 small-jc-center">
                     <a href="<?php echo $Links_usa; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Btn_buy; ?></a>
@@ -101,13 +100,14 @@ $Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
                 </div>
             </div>
 
-            <img class="mw-400 small-w-40 small-mt-40" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
+            <img class="mw-400 med-w-30 small-w-60 small-mt-40" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
         </div>
+        <img class="full-img-abs" src="./images/body/treo/bg_<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> background" />
     </div>
 </section>
 
 <section class="c-sub <?php echo $id; ?>">
-    <div class="h-100 of-h rel">
+    <div class="h-100 of-h rel small-h-0">
 
         <div class="ingredients_wrap">
             <h2 class="abs-text h1 t-c"><?php echo $Ingredients; ?></h2>
@@ -121,12 +121,12 @@ $Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
             </ul>
         </div>
 
-        <img class="img-middle med-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
+        <img class="img-middle small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
     </div>
 </section>
 
 <section>
-    <div class="dh-100 rel all-tc-0">
+    <div class="h-100 rel all-tc-0">
         <div class="center">
             <h2 class="h1"><?php echo $Benefits; ?></h2>
             <p><?php echo $Benefits_Sub; ?></p>
@@ -225,61 +225,56 @@ $Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
 /* SECTIONS */
 /* ============================================== */
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section"); // Todas las secciones
+  const sections = document.querySelectorAll("section");
   let isScrolling = false;
 
-  // Función para saber si es mobile
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  // Solo activar scroll forzado en pantallas >= 768px
+  if (window.innerWidth >= 768) {
+    
+    window.addEventListener("wheel", (e) => {
+      if (isScrolling) return; // Evita múltiples triggers
 
-  window.addEventListener("wheel", (e) => {
-    if (isScrolling) return; // Evita múltiples triggers
+      const currentIndex = getCurrentSectionIndex();
 
-    const currentIndex = getCurrentSectionIndex();
+      // Detecta dirección
+      if (e.deltaY > 0) { 
+        goToNextSection();
+      } else {
+        goToPrevSection();
+      }
+    }, { passive: false });
 
-    // Si es mobile y estamos en las últimas 3 secciones, no aplicar scroll forzado
-    if (isMobile && currentIndex >= sections.length - 2) return;
-
-    // Detecta dirección
-    if (e.deltaY > 0) { 
-      goToNextSection();
-    } else {
-      goToPrevSection();
+    function getCurrentSectionIndex() {
+      let index = 0;
+      let scrollPos = window.scrollY + window.innerHeight / 2;
+      sections.forEach((sec, i) => {
+        if (scrollPos >= sec.offsetTop) index = i;
+      });
+      return index;
     }
-  }, { passive: false });
 
-  function getCurrentSectionIndex() {
-    let index = 0;
-    let scrollPos = window.scrollY + window.innerHeight / 2;
-    sections.forEach((sec, i) => {
-      if (scrollPos >= sec.offsetTop) index = i;
-    });
-    return index;
-  }
-
-  function goToNextSection() {
-    const currentIndex = getCurrentSectionIndex();
-    if (currentIndex < sections.length - 1) {
-      scrollToSection(currentIndex + 1);
+    function goToNextSection() {
+      const currentIndex = getCurrentSectionIndex();
+      if (currentIndex < sections.length - 1) {
+        scrollToSection(currentIndex + 1);
+      }
     }
-  }
 
-  function goToPrevSection() {
-    const currentIndex = getCurrentSectionIndex();
-    if (currentIndex > 0) {
-      scrollToSection(currentIndex - 1);
+    function goToPrevSection() {
+      const currentIndex = getCurrentSectionIndex();
+      if (currentIndex > 0) {
+        scrollToSection(currentIndex - 1);
+      }
     }
-  }
 
-  function scrollToSection(index) {
-    isScrolling = true;
-    sections[index].scrollIntoView({ behavior: "smooth" });
-    setTimeout(() => { isScrolling = false; }, 800);
+    function scrollToSection(index) {
+      isScrolling = true;
+      sections[index].scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => { isScrolling = false; }, 800);
+    }
   }
 });
-
-
 
 /* ============================================== */
 /* BANNER */
