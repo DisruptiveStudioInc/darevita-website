@@ -5,7 +5,7 @@
 <section class="rel hero-pin">
     <div class="anchor" id="home"></div>
     <div class="dh-100 of-h">
-        <video class="full-img" src="https://temporal.darevita.com/wp-content/uploads/2025/07/DV-secuencia-1-2.mp4#t=2,41" autoplay loop muted></video>
+        <video class="full-img" src="https://temporal.darevita.com/wp-content/uploads/2025/07/DV-secuencia-1-2.mp4#t=2.41" autoplay loop muted></video>
     </div> 
 
     <div class="text-hero t-c hero-text">
@@ -13,7 +13,6 @@
         <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
     </div>
 </section>
-
 
 <section class="c-sec">
 	<div class="anchor" id="inside"></div>
@@ -133,26 +132,29 @@ foreach ($Modal as $item){
 <section>
 	<div class="h-100 med-h-0 med-fd-col-rev content-scroll jc-center ai-center rel">
 
-		<div class="box_product img-one">
+		<div class="box_product img-one rel">
 			<span>
-				<button type="button" class="btn c-pri br-50" onclick="openModal('Modal1')"><?php echo $Btn_view; ?></button>
-				<a href="#" class="btn c-ter br-50"><?php echo $Btn_buy; ?></a>
+				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal1')"></button>
+				<a href="<?php echo $Shop_usa_restore; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1"><?php echo $Btn_buy; ?></a>
+				<a href="<?php echo $Shop_mex_restore; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2"><?php echo $Btn_buy; ?></a>
 			</span>
 			<img src="./images/body/treo/restore.webp" class="product" alt="restore"/>
 		</div>
 
 		<div class="box_product img-two">
 			<span>
-				<button type="button" class="btn c-pri br-50" onclick="openModal('Modal2')"><?php echo $Btn_view; ?></button>
-				<a href="#" class="btn c-ter br-50"><?php echo $Btn_buy; ?></a>
+				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal2')"></button>
+				<a href="<?php echo $Shop_usa_rejuvenate; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1"><?php echo $Btn_buy; ?></a>
+				<a href="<?php echo $Shop_mex_rejuvenate; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2"><?php echo $Btn_buy; ?></a>
 			</span>
 			<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate"/>
 		</div>
 
 		<div class="box_product img-three">
 			<span>
-				<button type="button" class="btn c-pri br-50" onclick="openModal('Modal3')"><?php echo $Btn_view; ?></button>
-				<a href="#" class="btn c-ter br-50"><?php echo $Btn_buy; ?></a>
+				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal3')"></button>
+				<a href="<?php echo $Shop_usa_revive; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1"><?php echo $Btn_buy; ?></a>
+				<a href="<?php echo $Shop_mex_revive; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2"><?php echo $Btn_buy; ?></a>
 			</span>
 			<img src="./images/body/treo/revive.webp" class="product" alt="revive"/>
 		</div>
@@ -169,7 +171,7 @@ foreach ($Modal as $item){
 	<div class="mw-1280 t-c big">
 		<h2 class="h1"><?php echo $Slogan_title; ?></h2>
 		<p class="h3">“<?php echo $Slogan_text; ?>”</p>
-		<a href="#" class="btn big c-ter br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
+		<a href="<?php echo $Register; ?>" class="btn big c-ter br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
 	</div>
 </section>
 
@@ -262,12 +264,12 @@ foreach ($Modal as $item){
 <section class="c-ter">
 	<div class="mw-1280 t-c big">
 		<h2 class="h1"><?php echo $Traits_title; ?></h2>
-		<a href="#" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_part; ?></a>
+		<a href="<?php echo $Register; ?>" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_part; ?></a>
 	</div>
 </section>
 
 <script>
-	/* ============================================== */
+/* ============================================== */
 /* SCROLL-MAGIC */
 /* ============================================== */
 

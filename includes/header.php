@@ -44,6 +44,7 @@
 
     <link rel="stylesheet" type="text/css" href="./css/body/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/body/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./css/body/slick.css" />
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
@@ -73,12 +74,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+    <!-- jQuery y Slick -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- GSAP + ScrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
 
 </head>
     <body id="page-content">
@@ -109,7 +113,7 @@
                             <div class="btn-lan <?= htmlspecialchars($idioma); ?>"><?= $Condicion_lan; ?></div>
                             <div class="lan">
                                 <?php
-                                $idiomas = ['esp', 'eng', 'chi', 'cor', 'fra', 'jpn', 'por'];
+                                $idiomas = ['esp', 'eng'];
                                 foreach ($idiomas as $idioma_opcion) {
                                     $activeClass = ($_SESSION["language"] === $idioma_opcion) ? 'selected' : '';
                                     echo "<a class='$idioma_opcion $activeClass' href='?language=$idioma_opcion$Actual_Page_Lan$Client_Page_Id'>" . ucfirst($idioma_opcion) . "</a>";
@@ -122,10 +126,22 @@
                     <div class="menu">
                         <ul>
                             <?php
+                            $id = $_GET['id'] ?? '';
                             $counter = 0;
+
                             foreach ($Menu as $item) {
                                 $counter++;
-                                
+
+                                // Si es el primer item (Home) y existe ID → cambiar link a "../"
+                                if ($counter == 1 && !empty($id)) {
+                                    $item[0] = './';
+                                }
+
+                                // Saltar el segundo elemento (Menu_02) si existe ID
+                                if (!empty($id) && $counter == 2) {
+                                    continue;
+                                }
+
                                 // === 3er elemento (submenú con sub-sub) ===
                                 if ($counter == 3) {
                                     echo "<li class='rel'>";
@@ -143,8 +159,8 @@
                                             echo "<ul class='sub-sub'>";
                                             foreach ($item_sub[1] as $subsub) {
                                                 echo "<li>
-                                                        <span class='img'><img src='./images/body/treo/{$subsub[2]}.webp' alt='{$subsub[3]}'></span>
-                                                        <a href='?p={$subsub[0]}'>{$subsub[1]}<span>{$subsub[3]}</span></a>
+                                                        <span class='img'><img src='./images/body/treo/{$subsub[0]}.webp' alt='{$subsub[2]}'></span>
+                                                        <a href='?p=product&id={$subsub[0]}'>{$subsub[1]}<span>{$subsub[2]}</span></a>
                                                       </li>";
                                             }
                                             echo "</ul>";
@@ -183,12 +199,13 @@
                                 }
                             }
                             ?>
+
                             <div class="d-none med-d-block mt-20">
                                 <div class="mb-10">
-                                    <a href="#" class="btn c-ter br-30 small-w-100">Login</a>
+                                    <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100">Login</a>
                                 </div>
                                 <div>
-                                    <a href="#" class="btn c-pri br-30 small-w-100">Register</a>
+                                    <a href="<?php echo $Register; ?>" target="_blank" class="btn c-pri br-30 small-w-100">Register</a>
                                 </div>
                             </div>
                         </ul>
@@ -196,8 +213,8 @@
 
                     <div class="jc-center ai-center">
                         <div class="btns m-0 g-20 med-d-none">
-                            <a href='#' class="btn c-ter br-30">Login</a>
-                            <a href='#' class="btn c-pri br-30">Register</a>
+                            <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30">Login</a>
+                            <a href='<?php echo $Register; ?>' target="_blank" class="btn c-pri br-30">Register</a>
                         </div>
                         <div class="hamburguer">
                             <span></span>

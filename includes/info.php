@@ -64,6 +64,25 @@ $Lang           = "es";
 $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
 
     //-------------------------//
+    // LINKS
+    //-------------------------//
+
+$Register = "https://usdev.darevita.com/register/";
+$Login = "https://usdev.darevita.com/my-account/";
+
+$Shop_usa = "usdev.darevita.com";
+$Shop_mex = "mxdev.darevita.com";
+$Shop_int = "intdev.darevita.com";
+
+$Shop_usa_restore = "https://usdev.darevita.com/product/restore/";
+$Shop_usa_revive = "https://usdev.darevita.com/product/revive/";
+$Shop_usa_rejuvenate = "https://usdev.darevita.com/product/rejuvenate/";
+
+$Shop_mex_restore = "https://mxdev.darevita.com/product/restore/";
+$Shop_mex_revive = "https://mxdev.darevita.com/product/revive/";
+$Shop_mex_rejuvenate = "https://mxdev.darevita.com/product/rejuvenate/";
+
+    //-------------------------//
     // MENU
     //-------------------------//
 
@@ -80,15 +99,15 @@ $Menu = array(
 
 $Sub = array(
     array('Treo', array(
-        array('revive', 'Revive','revive',$Products_title_03),
-        array('revive', 'Rejuvenate','rejuvenate',$Products_title_02),
-        array('revive', 'Restore','restore',$Products_title_01)
+        array('revive', 'Revive',$Products_title_03),
+        array('rejuvenate', 'Rejuvenate',$Products_title_02),
+        array('restore', 'Restore',$Products_title_01)
     ))
 );
 $Sub_reg = array(
-    array('usdev.darevita.com','USA'),
-    array('mxdev.darevita.com','MEX'),
-    array('intdev.darevita.com','INT')
+    array($Shop_usa,'USA'),
+    array($Shop_mex,'MEX'),
+    array($Shop_int,'INT')
 );
 
     //-------------------------//
@@ -97,12 +116,12 @@ $Sub_reg = array(
 
 $idiomas = [
     'eng' => 'Eng',
-    'esp' => 'Esp',
-    'fra' => 'Fra',
-    'jpn' => 'Jpn',
-    'por' => 'Por',
-    'chi' => 'Chi',
-    'cor' => 'Cor'
+    'esp' => 'Esp'
+    //'fra' => 'Fra',
+    //'jpn' => 'Jpn',
+    //'por' => 'Por',
+    //'chi' => 'Chi',
+    //'cor' => 'Cor'
 ];
 
 $Condicion_lan = isset($idiomas[$idioma]) ? $idiomas[$idioma] : 'Desconocido';

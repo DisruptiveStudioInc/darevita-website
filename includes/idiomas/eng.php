@@ -15,6 +15,8 @@
 
     $Btn_view = "View More";
     $Btn_buy = "Buy";
+    $Btn_start = "Start now";
+    $Btn_store = "Visit our store";
     $Btn_live = "Live DareVita";
     $Btn_part = "Be part of the change";
    
@@ -76,12 +78,13 @@
     // Products
     //-------------------------//
 
-    $Products_title_01 = "Sleep Deep";
-    $Products_text_01 = "Restore is crafted to promote the most vital stage of sleep—REM—where the mind and body recharge at the cellular level.";
-    $Products_res_key_01 = "Enhances REM sleep and cognitive support";
-    $Products_res_key_02 = "Supports regeneration for skin and muscles";
-    $Products_res_key_03 = "Boosts cognitive, hormonal, immune functions";
-    $Products_res_key_04 = "Supports stress balance and emotional well-bein";
+    $Products_title_01 = "Wake Sharp Think Limitless";
+    $Products_text_01 = "Rejuvenate supports healthy immune function and promotes normal tissue regeneration, which are important for maintaining skin elasticity, muscle health, and overall well-being.";
+    $Products_rev_key_01 = "Mental clarity and sharper focus";
+    $Products_rev_key_02 = "Long-term memory and learning support";
+    $Products_rev_key_03 = "Enhanced neural communication and awareness";
+    $Products_rev_key_04 = "Sustained energy without stimulants";
+
 
     $Products_title_02 = "Fuel Vitality Immune Support";
     $Products_text_02 = "Rejuvenate supports healthy immune function and promotes normal tissue regeneration, which are important for maintaining skin elasticity, muscle health, and overall well-being.";
@@ -90,12 +93,12 @@
     $Products_rej_key_03 = "Aids immunity and tissue regeneration";
     $Products_rej_key_04 = "Supports metabolism and lean muscle";
 
-    $Products_title_03 = "Wake Sharp Think Limitless";
-    $Products_text_03 = "Rejuvenate supports healthy immune function and promotes normal tissue regeneration, which are important for maintaining skin elasticity, muscle health, and overall well-being.";
-    $Products_rev_key_01 = "Mental clarity and sharper focus";
-    $Products_rev_key_02 = "Long-term memory and learning support";
-    $Products_rev_key_03 = "Enhanced neural communication and awareness";
-    $Products_rev_key_04 = "Sustained energy without stimulants";
+    $Products_title_03 = "Sleep Deep";
+    $Products_text_03 = "Restore is crafted to promote the most vital stage of sleep—REM—where the mind and body recharge at the cellular level.";
+    $Products_res_key_01 = "Enhances REM sleep and cognitive support";
+    $Products_res_key_02 = "Supports regeneration for skin and muscles";
+    $Products_res_key_03 = "Boosts cognitive, hormonal, immune functions";
+    $Products_res_key_04 = "Supports stress balance and emotional well-bein";
 
     //-------------------------//
     // Slogan
@@ -144,8 +147,67 @@
     $Traits_title = "These traits define how we look, sound, and act in all we do.";
 
     //-------------------------//
+    // Benefits
+    //-------------------------//
+
+    $Benefits = "Benefits";
+    $Benefits_sub_01 = "Add well-being to your day";
+    $Benefits_sub_02 = "Vitality isn’t optional, it’s essential";
+    $Benefits_sub_03 = "Yes to deep sleep & better days";
+
+    //-------------------------//
+    // Ingredients
+    //-------------------------//
+
+    $Ingredients_01 = "Wake up your mind, own the day";
+    $Ingredients_02 = "Reignite your energy, own every moment";
+    $Ingredients_03 = "Unlock your best sleep now";
+
+    $Ingredients_01_01 = "Green Tea (EGCG)";
+    $Ingredients_01_02 = "L-Carnitine";
+    $Ingredients_01_03 = "Cordyceps Mushroom";
+    $Ingredients_01_04 = "Guaraná Extract";
+    $Ingredients_01_05 = "Hydration Salts";
+    $Ingredients_01_06 = "Shiitake Mushroom";
+
+    $Ingredients_02_01 = "Green Tea (EGCG)";
+    $Ingredients_02_02 = "Resveratrol";
+    $Ingredients_02_03 = "Vitamin Premix";
+    $Ingredients_02_04 = "Ginger";
+    $Ingredients_02_05 = "Cordyceps Mushroom";
+    $Ingredients_02_06 = "Shiitake Mushroom";
+
+    $Ingredients_03_01 = "GABA";
+    $Ingredients_03_02 = "L-Theanine";
+    $Ingredients_03_03 = "Magnesium";
+    $Ingredients_03_04 = "Lemon Balm";
+    $Ingredients_03_05 = "Lavender";
+    $Ingredients_03_06 = "Vitamin B6";
+
+    //-------------------------//
+    // Satarted
+    //-------------------------//
+
+    $Satarted_title = "Get started with DareVita T”REO”";
+    $Satarted_sub = "One goal, three essentials, unlock your full potential.";
+
+    $Satarted_title_01 = "Activate your full system";
+    $Satarted_text_01 = "DareVita works in synergy across your day:";
+    $Satarted_list_01 = "Revive sharpens your mind and unlocks focus";
+    $Satarted_list_02 = "Rejuvenate restores your energy and cellular strength";
+    $Satarted_list_03 = "Restore optimizes your deep sleep and recovery";
+
+    $Satarted_title_02 = "Begin your transformation";
+    $Satarted_text_02 = "Designed to support your body’s natural rhythms—cognitive, physical, and hormonal—24 hours a day.";
+
+    $Satarted_title_03 = "Track your evolution";
+    $Satarted_text_03 = "Feel the clarity, vitality, and calm. Your body becomes more adaptive, efficient, and resilient with consistent use.";
+
+    //-------------------------//
     // Footer
     //-------------------------//
+
+    $Footer_subpage = "One goal, three essentials, unlock your full potential.";
 
     $Footer_content = "Content";
     $Footer_content_link_01 = "Pay-to-Play";
