@@ -299,6 +299,8 @@ b                    {  font-weight: 600;  }
     margin: 10px 0;
     text-align: center;
     color: var(--color-pri);
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   .pin h2 span{
@@ -951,6 +953,12 @@ ul.textos li span img {
     transform: none !important;
     opacity: 1 !important;
   }
+
+  ul.textos li h2{
+    font-size: 2rem;
+  }
+
+
 }
 
 
@@ -1000,7 +1008,7 @@ ul.textos li span img {
 
 
 .modal .icon-close{
-  position: absolute;
+  position: fixed;
   top:20px;
   right: 20px;
 }

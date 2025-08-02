@@ -45,7 +45,6 @@
 			<h2 class="word_01"><?php echo $Letters_title_01; ?><span><?php echo $Letters_text_01; ?></span></h2>
 			<img class="img_01" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
 		</div>
-
 		<div>
 			<h2 class="word_02"><?php echo $Letters_title_02; ?><span><?php echo $Letters_text_02; ?></span></h2>
 			<img class="img_02" src="./images/body/letters/2.webp" alt="<?php echo $Letters_title_02; ?>">
@@ -187,7 +186,7 @@ foreach ($Modal as $item){
 
 <section class="c-sec">
 	<div class="anchor"></div>
-	<div class="mw-1440 t-c pb-0">
+	<div class="mw-1440 t-c pt-40 pb-0">
 		<p class="h2"><?php echo $Truth_title; ?></p>
 	</div>
 	<div>
