@@ -215,7 +215,7 @@
 .get a {
   position: relative;
   display: block;
-  width: 70px;
+  width: 150px;
   padding: 5px 5px 5px 30px !important;
   border-radius: 40px;
   background: var(--color-0);
@@ -246,6 +246,7 @@
 
 .get a.eng::before { background-image: url('./../../images/flags/eng.svg'); }
 .get a.esp::before { background-image: url('./../../images/flags/esp.svg'); }
+.get a.int::before { background-image: url('./../../images/flags/int.svg'); }
 
 
 /* ============================================== */

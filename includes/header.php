@@ -84,11 +84,15 @@
             <a href="https://usdev.darevita.com/product-category/starter-plans/" 
                target="_blank" 
                class="eng" 
-               aria-label="Buy in USA">USA</a>
+               aria-label="Buy in USA">United States</a>
             <a href="https://mxdev.darevita.com/product-category/starter-plans/" 
                target="_blank" 
                class="esp" 
-               aria-label="Buy in Mexico">ESP</a>
+               aria-label="Buy in Mexico">Mexico</a>
+            <a href="https://intdev.darevita.com/product-category/starter-plans/" 
+               target="_blank" 
+               class="int" 
+               aria-label="Buy International">International</a>
           </div>
         </div>
 
