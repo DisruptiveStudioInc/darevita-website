@@ -124,8 +124,6 @@
 <section class="c-sec">
 	<div class="mw-1440">
 		<div class="t-c ai-center fd-col">
-			<p class="h3 fw-600 mb-20"><?php echo $Payments; ?></p>
-			<img src="./images/body/plan/cards.webp" class="mw-300 p-10 c-0 br-10" alt="<?php echo $Plan_Title; ?>" />
 			<a href="?p=plan" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Plan_Title; ?></a>
 		</div>
 	</div>
