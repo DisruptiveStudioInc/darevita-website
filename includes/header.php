@@ -89,7 +89,7 @@
                target="_blank" 
                class="esp" 
                aria-label="Buy in Mexico">Mexico</a>
-            <a href="https://intdev.darevita.com/product-category/starter-plans/" 
+            <a href="https://intdev.darevita.com/" 
                target="_blank" 
                class="int" 
                aria-label="Buy International">International</a>
