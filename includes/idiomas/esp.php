@@ -365,7 +365,7 @@ $Acknowledgment_text = "Este resumen no es un contrato. Su propósito es ayudart
 // Footer
 //-------------------------//
 
-$Payments = "Pagos con Tarjeta de Débito y Crédito:";
+$Payments = "Aceptamos:";
 
 $Footer_subpage = "Un objetivo, tres esenciales, desbloquea tu máximo potencial.";
 

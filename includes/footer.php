@@ -18,7 +18,7 @@
                         </ul>
 
                         <p style="font-size: 0.8rem"><?php echo $Payments; ?></p>
-                        <img src="./images/body/plan/cards.webp" class="mw-100" alt="Payments" />
+                        <img src="./images/body/plan/cards.jpg" class="mw-100" alt="Payments" />
                     </div>
                     <div class="w-100 jc-end med-jc-center g-40 small-g-20">
                     	<ul class="menu-list link">

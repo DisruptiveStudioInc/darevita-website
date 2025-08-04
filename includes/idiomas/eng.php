@@ -367,7 +367,7 @@
     // Footer
     //-------------------------//
 
-    $Payments = "Payments with Debit and Credit Card:";
+    $Payments = "We accept:";
 
     $Footer_subpage = "One goal, three essentials, unlock your full potential.";
 
