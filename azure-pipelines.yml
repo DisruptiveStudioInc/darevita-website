@@ -5,7 +5,7 @@ stages:
     jobs:
       - job: Deployment
         pool:
-          name: Backoffice
+          name: Disruptive
         steps:
         - task: SSH@0
           displayName: 'SSH Prod server'
