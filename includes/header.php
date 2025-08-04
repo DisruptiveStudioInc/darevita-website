@@ -78,9 +78,18 @@
 </head>
     <body id="page-content">
 
-        <div class="btn_start jc-center ai-center g-20 small-d-none">
-            <a href="https://usdev.darevita.com/product-category/starter-plans/" target="_blank" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Btn_started; ?></a>
-            <a href="https://mxdev.darevita.com/product-category/starter-plans/" target="_blank" class="btn c-ter br-50 v-custom my_flags icon-text icon-2" aria-label="Buy in Mexico"><?php echo $Btn_started; ?></a>
+        <div class="wrap-get">
+          <div class="btn-get"><?php echo $Btn_started; ?></div>
+          <div class="get">
+            <a href="https://usdev.darevita.com/product-category/starter-plans/" 
+               target="_blank" 
+               class="eng" 
+               aria-label="Buy in USA">USA</a>
+            <a href="https://mxdev.darevita.com/product-category/starter-plans/" 
+               target="_blank" 
+               class="esp" 
+               aria-label="Buy in Mexico">ESP</a>
+          </div>
         </div>
 
         <!-- ============================================== -->

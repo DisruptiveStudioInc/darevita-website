@@ -5,7 +5,7 @@
 <section class="hero-pin">
 
 	<div class="section-arrows">
-	    <button class="arrow down">↓</button>
+	    <button class="arrow down"></button>
 	</div>
 
     <div class="anchor" id="home"></div>
@@ -26,8 +26,8 @@
 <section>
 
 	<div class="section-arrows">
-	    <button class="arrow up">↑</button>
-	    <button class="arrow down">↓</button>
+	    <button class="arrow up"></button>
+	    <button class="arrow down"></button>
 	</div>
 
 	<div class="anchor" id="darevita"></div>
@@ -59,8 +59,8 @@
 	<div class="h-100 pin rel of-h small-h-0 letters">
 		<div>
 			<div class="section-arrows">
-			    <button class="arrow up">↑</button>
-			    <button class="arrow down">↓</button>
+			    <button class="arrow up"></button>
+			    <button class="arrow down"></button>
 			</div>
 			<h2 class="word_01"><?php echo $Letters_title_01; ?><span><?php echo $Letters_text_01; ?></span></h2>
 			<img class="img_01" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
@@ -83,8 +83,8 @@
 <section>
 
 	<div class="section-arrows">
-	    <button class="arrow up">↑</button>
-	    <button class="arrow down">↓</button>
+	    <button class="arrow up"></button>
+	    <button class="arrow down"></button>
 	</div>
 
 	<div class="mw-1440 t-c h-100 med-h-0 med-fd-col g-20 jc-center ai-center rel parallax">
@@ -169,8 +169,8 @@ foreach ($Modal as $item){
 	<div class="h-100 med-h-0 med-fd-col-rev content-scroll jc-center ai-center rel">
 
 	<div class="section-arrows">
-	    <button class="arrow up">↑</button>
-	    <button class="arrow down">↓</button>
+	    <button class="arrow up"></button>
+	    <button class="arrow down"></button>
 	</div>
 
 		<div class="box_product img-one rel">
@@ -208,8 +208,8 @@ foreach ($Modal as $item){
 <section>
 
 	<div class="section-arrows">
-	    <button class="arrow up">↑</button>
-	    <button class="arrow down">↓</button>
+	    <button class="arrow up"></button>
+	    <button class="arrow down"></button>
 	</div>
 
 	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
@@ -223,8 +223,8 @@ foreach ($Modal as $item){
 <section class="c-sec">
 
 	<div class="section-arrows">
-	    <button class="arrow up">↑</button>
-	    <button class="arrow down">↓</button>
+	    <button class="arrow up"></button>
+	    <button class="arrow down"></button>
 	</div>
 
 	<div class="mw-1440 t-c">
@@ -263,8 +263,8 @@ foreach ($Modal as $item){
 <section>
 
 	<div class="section-arrows">
-	    <button class="arrow up">↑</button>
-	    <button class="arrow down">↓</button>
+	    <button class="arrow up"></button>
+	    <button class="arrow down"></button>
 	</div>
 
 	
@@ -319,7 +319,7 @@ foreach ($Modal as $item){
 <section class="c-ter">
 
 	<div class="section-arrows">
-	    <button class="arrow up">↑</button>
+	    <button class="arrow up"></button>
 	</div>
 
 	<div class="mw-1280 t-c big">

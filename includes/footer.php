@@ -4,21 +4,21 @@
 	    <!-- FOOTER -->
 	    <!-- ============================================== -->
 
-        <footer>
+        <footer class="c-pri all-tc-0">
             <div class="mw-1440">
                 <div class="jc-between med-fd-col g-30">
                     <div class="w-100">
-                        <img src="./images/logo/logo.svg" class="mw-100 med-m-center" alt="logo darevita">
+                        <img src="./images/logo/logo_white.svg" class="mw-100 med-m-center" alt="logo darevita">
 
                         <ul class="fw-wrap med-jc-center g-10 mt-20">
-                            <li><a target="_blank" href="#" class="v-black icon small br-2 icon-facebook"></a></li>
-                            <li><a target="_blank" href="#" class="v-black icon small br-2 icon-youtube"></a></li>
-                            <li><a target="_blank" href="#" class="v-black icon small br-2 icon-instagram"></a></li>
-                            <li><a target="_blank" href="#" class="v-black icon small br-2 icon-linkedin"></a></li>
+                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-facebook"></a></li>
+                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-youtube"></a></li>
+                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-instagram"></a></li>
+                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-linkedin"></a></li>
                         </ul>
 
                         <p style="font-size: 0.8rem"><?php echo $Payments; ?></p>
-                        <img src="./images/body/plan/cards.jpg" class="mw-100" alt="Payments" />
+                        <img src="./images/body/plan/cards.jpg" class="mw-100 br-5 p-5 c-0" alt="Payments" />
                     </div>
                     <div class="w-100 jc-end med-jc-center g-40 small-g-20">
                     	<ul class="menu-list link">
@@ -37,7 +37,7 @@
                     	</ul>
                     </div>
                 </div>
-                <div class="t-c p-10 mt-20" style="border-top:1px solid #444444;">
+                <div class="t-c p-10 mt-20" style="border-top:1px solid #464f77;">
                 <p><?php echo $Footer_Rights; ?></p>
                 </div>
             </div>

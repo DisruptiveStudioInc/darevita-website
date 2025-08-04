@@ -253,7 +253,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 /* SECTIONS */
 /* ============================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
   let isScrolling = false;
 
@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => { isScrolling = false; }, 800);
     }
   }
-});
+});*/
 
 /* ============================================== */
 /* BANNER */

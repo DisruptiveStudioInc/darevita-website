@@ -114,13 +114,14 @@ $(document).ready(function () {
 /* ============================================== */
 /* LANGUAGE + SUBMENU + SUB-SUBMENU                */
 /* ============================================== */
+
 document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("click", function (e) {
-        const allMenus = document.querySelectorAll(".lan, .sub, .cus");
-        const allButtons = document.querySelectorAll(".btn-lan, .btn-sub, .btn-cus");
+        const allMenus = document.querySelectorAll(".lan, .sub, .cus, .get");
+        const allButtons = document.querySelectorAll(".btn-lan, .btn-sub, .btn-cus, .btn-get");
 
         // Detecta si clic fue en algún botón de submenú
-        const clickedBtn = e.target.closest(".btn-lan, .btn-sub, .btn-cus");
+        const clickedBtn = e.target.closest(".btn-lan, .btn-sub, .btn-cus, .btn-get");
         const clickedMenu = clickedBtn?.nextElementSibling;
 
         if (clickedBtn && clickedMenu) {
@@ -156,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // === Click fuera de cualquier menú ===
-        if (!e.target.closest(".lan, .sub, .cus")) {
+        if (!e.target.closest(".lan, .sub, .cus, .get")) {
             allMenus.forEach(menu => menu.classList.remove("active"));
             allButtons.forEach(btn => btn.classList.remove("open"));
             document.querySelectorAll(".sub li.open").forEach(li => li.classList.remove("open"));
@@ -166,12 +167,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Cerrar todo con Escape
     document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
-            document.querySelectorAll(".lan, .sub, .cus").forEach(menu => menu.classList.remove("active"));
-            document.querySelectorAll(".btn-lan, .btn-sub, .btn-cus").forEach(btn => btn.classList.remove("open"));
+            document.querySelectorAll(".lan, .sub, .cus, .get").forEach(menu => menu.classList.remove("active"));
+            document.querySelectorAll(".btn-lan, .btn-sub, .btn-cus, .btn-get").forEach(btn => btn.classList.remove("open"));
             document.querySelectorAll(".sub li.open").forEach(li => li.classList.remove("open"));
         }
     });
 });
+
 
 /* ============================================== */
 /* EFFECT MENU */
