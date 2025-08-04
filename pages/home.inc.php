@@ -5,7 +5,11 @@
 <section class="rel hero-pin">
     <div class="anchor" id="home"></div>
     <div class="dh-100 of-h">
-        <video class="full-img" src="https://temporal.darevita.com/wp-content/uploads/2025/07/DV-secuencia-1-2.mp4#t=2.41" autoplay loop muted></video>
+        <video class="full-img" 
+		       src="./video/test.webm" 
+		       autoplay loop muted playsinline
+		       poster="./images/body/letters/1.webp">
+		</video>
     </div> 
 
     <div class="text-hero t-c hero-text">
@@ -121,7 +125,7 @@ foreach ($Modal as $item){
 	echo "
 	<div id='Modal{$counter}' class='modal'>
 	<div class='modal-content rel'>
-	<span class='v-white c-pri icon br-10 icon-close' onclick=\"closeModal('Modal{$counter}')\"></span>
+	<span class='v-white c-pri icon icon-close' onclick=\"closeModal('Modal{$counter}')\"></span>
 	<h2 class='h2 tc-pri t-c med-t-l'>{$item[0]}</h2>
 	<p class='h5'>{$item[1]}</p>
 	<p>{$item[2]}</p>
@@ -281,141 +285,131 @@ foreach ($Modal as $item){
 /* SCROLL-MAGIC */
 /* ============================================== */
 
-$(document).ready(function() {
-    var controller = new ScrollMagic.Controller();
-    var animationSpeed = 0.75;
-    var animationLinear = Power3.easeInOut;
+document.addEventListener("DOMContentLoaded", function() {
 
-    //*------------- GALLERY
+    // Solo ejecutar si ancho >= 1080px
+    if (window.innerWidth >= 1080) {
 
-    if (window.matchMedia("(min-width: 1080px)").matches) {
+        // Función para cargar scripts dinámicamente
+        function loadScript(src) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
 
-    var textoTimeline = new TimelineMax();
-    textoTimeline
-        .fromTo('.word_01', animationSpeed, {opacity: 1, scale: 1}, {opacity: 0, scale: 4, ease: animationLinear,immediateRender: false})
-        .fromTo('.word_02', animationSpeed, {opacity: 0, scale: 1}, {opacity: 1, scale: 1, ease: animationLinear,immediateRender: false})
-        .to('.word_02', animationSpeed, {opacity: 0, scale: 4, ease: animationLinear})
-        .fromTo('.word_03', animationSpeed, {opacity: 0, scale: 1}, {opacity: 1, scale: 1, ease: animationLinear,immediateRender: false})
-        .to('.word_03', animationSpeed, {opacity: 0, scale: 4, ease: animationLinear})
-        .fromTo('.word_04', animationSpeed, {opacity: 0, scale: 1}, {opacity: 1, scale: 1, ease: animationLinear,immediateRender: false});
+        // Cargar librerías en orden
+        Promise.all([
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"),
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js")
+        ])
+        .then(() => Promise.all([
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"),
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
+        ]))
+        .then(() => {
 
-    // Timeline de imagen
-    var imgTimeline = new TimelineMax();
-    imgTimeline
-        .fromTo('.img_01', animationSpeed, {opacity: 1}, {opacity: 0, ease: animationLinear, immediateRender: false}, "+=0.2")
-        .fromTo('.img_02', animationSpeed, {opacity: 1}, {opacity: 0, ease: animationLinear, immediateRender: false}, "+=0.8")
-        .fromTo('.img_03', animationSpeed, {opacity: 1}, {opacity: 0, ease: animationLinear, immediateRender: false}, "+=0.8")
-        .fromTo('.img_04', animationSpeed, {opacity: 1}, {opacity: 1, ease: animationLinear, immediateRender: false}, "+=0.8");
+            // ====== Aquí va TODO tu código ScrollMagic ======
+            var controller = new ScrollMagic.Controller();
+            var animationSpeed = 0.75;
+            var animationLinear = Power3.easeInOut;
 
-    // Creamos un timeline maestro donde los sincronizamos
-    var master = new TimelineMax();
-    master.add(textoTimeline, 0); // Inicia al mismo tiempo
-    master.add(imgTimeline, 0);   // Inicia también al mismo tiempo
+            //*------------- GALLERY
+            var textoTimeline = new TimelineMax();
+            textoTimeline
+                .fromTo('.word_01', animationSpeed, {opacity: 1, scale: 1}, {opacity: 0, scale: 4, ease: animationLinear,immediateRender: false})
+                .fromTo('.word_02', animationSpeed, {opacity: 0, scale: 1}, {opacity: 1, scale: 1, ease: animationLinear,immediateRender: false})
+                .to('.word_02', animationSpeed, {opacity: 0, scale: 4, ease: animationLinear})
+                .fromTo('.word_03', animationSpeed, {opacity: 0, scale: 1}, {opacity: 1, scale: 1, ease: animationLinear,immediateRender: false})
+                .to('.word_03', animationSpeed, {opacity: 0, scale: 4, ease: animationLinear})
+                .fromTo('.word_04', animationSpeed, {opacity: 0, scale: 1}, {opacity: 1, scale: 1, ease: animationLinear,immediateRender: false});
 
-    // ScrollMagic Scene única con pin
-    new ScrollMagic.Scene({
-        triggerElement: '.pin',
-        duration: '300%',
-        triggerHook: 0
-    })
-    .setPin('.pin')
-    .setTween(master)
-    //.addIndicators()
-    .addTo(controller);
+            var imgTimeline = new TimelineMax();
+            imgTimeline
+                .fromTo('.img_01', animationSpeed, {opacity: 1}, {opacity: 0, ease: animationLinear, immediateRender: false}, "+=0.2")
+                .fromTo('.img_02', animationSpeed, {opacity: 1}, {opacity: 0, ease: animationLinear, immediateRender: false}, "+=0.8")
+                .fromTo('.img_03', animationSpeed, {opacity: 1}, {opacity: 0, ease: animationLinear, immediateRender: false}, "+=0.8")
+                .fromTo('.img_04', animationSpeed, {opacity: 1}, {opacity: 1, ease: animationLinear, immediateRender: false}, "+=0.8");
 
+            var master = new TimelineMax();
+            master.add(textoTimeline, 0); 
+            master.add(imgTimeline, 0);
+
+            new ScrollMagic.Scene({
+                triggerElement: '.pin',
+                duration: '300%',
+                triggerHook: 0
+            })
+            .setPin('.pin')
+            .setTween(master)
+            .addTo(controller);
+
+            //*------------- HERO
+            var heroTimeline = new TimelineMax();
+            heroTimeline
+                .fromTo('.hero-text', animationSpeed,{opacity: 0},{opacity: 1}, "+=0.5");
+
+            new ScrollMagic.Scene({
+                triggerElement: '.hero-pin',
+                duration: '100%',
+                triggerHook: 0
+            })
+            .setPin('.hero-pin')
+            .setTween(heroTimeline)
+            .addTo(controller);
+
+            //*------------- PARALLAX
+            var rot1 = Math.random() * 30 - 10; 
+            var rot2 = Math.random() * 5 - 5;
+            var rot3 = Math.random() * 20 - 15;
+
+            var parallaxTimeline = new TimelineMax();
+            parallaxTimeline
+                .fromTo('.parallax .box_1', animationSpeed,{ left: "0%", top: "40%", rotation: 0 },{ left: "0%", top: "20%", rotation: rot1, ease: animationLinear })
+                .fromTo('.parallax .box_2', animationSpeed,{ left: "40%", top: "70%", rotation: 0 },{ left: "40%", top: "30%", rotation: rot2, ease: animationLinear }, 0)
+                .fromTo('.parallax .box_3', animationSpeed,{ left: "80%", top: "60%", rotation: 0 },{ left: "80%", top: "40%", rotation: rot3, ease: animationLinear }, 0);
+
+            new ScrollMagic.Scene({
+                triggerElement: '.parallax',
+                duration: "150%",
+                triggerHook: 1
+            })
+            .setTween(parallaxTimeline)
+            .addTo(controller);
+
+            //*------------- CONTENT SCROLL
+            var content = new TimelineMax();
+
+            new ScrollMagic.Scene({
+                triggerElement: '.content-scroll',
+                duration: '50%',
+                triggerHook: 0
+            })
+            .setPin('.content-scroll')
+            .addTo(controller);
+
+            content
+                .fromTo('.content-scroll .polvo', animationSpeed,{ opacity: 0, scale: 0 },{ opacity: 1, scale: 1 })
+                .to('.content-scroll .img-one',  animationSpeed, {x: "100%" },0)
+                .to('.content-scroll .img-two',  animationSpeed, {x: "-100%"},0)
+                .to('.content-scroll .img-three',animationSpeed, {x: "0%"   },0)
+                .to('.content-scroll .img-one',  animationSpeed, {x: "0%"   },1)
+                .to('.content-scroll .img-two',  animationSpeed, {x: "0%"   },1)
+                .to('.content-scroll .img-three',animationSpeed, {x: "0%"   },1);
+                        
+            new ScrollMagic.Scene({
+                triggerElement: '.content-scroll',
+                duration: '100%',
+                triggerHook: 0
+            })
+            .setTween(content)
+            .addTo(controller);
+
+        });
     }
-
-    //*------------- HERO
-
-    if (window.matchMedia("(min-width: 1080px)").matches) {
-        var heroTimeline = new TimelineMax();
-        heroTimeline
-            .fromTo('.hero-text', animationSpeed,
-                {opacity: 0},
-                {opacity: 1}, "+=0.5"
-            );
-
-        // ScrollMagic Scene
-        new ScrollMagic.Scene({
-            triggerElement: '.hero-pin',
-            duration: '100%',
-            triggerHook: 0
-        })
-        .setPin('.hero-pin')
-        .setTween(heroTimeline)
-        //.addIndicators()
-        .addTo(controller);
-    }
-
-
-    //*------------- PAPALLAX
-
-    if (window.matchMedia("(min-width: 1080px)").matches) {
-
-    var rot1 = Math.random() * 30 - 10; // entre -5 y 5 grados
-    var rot2 = Math.random() * 5 - 5;
-    var rot3 = Math.random() * 20 - 15;
-
-    var parallaxTimeline = new TimelineMax();
-
-    parallaxTimeline
-      .fromTo('.parallax .box_1', animationSpeed, 
-        { left: "0%", top: "40%", rotation: 0 }, 
-        { left: "0%", top: "20%", rotation: rot1, ease: animationLinear })
-      .fromTo('.parallax .box_2', animationSpeed, 
-        { left: "40%", top: "70%", rotation: 0 }, 
-        { left: "40%", top: "30%", rotation: rot2, ease: animationLinear }, 0)
-      .fromTo('.parallax .box_3', animationSpeed, 
-        { left: "80%", top: "60%", rotation: 0 }, 
-        { left: "80%", top: "40%", rotation: rot3, ease: animationLinear }, 0);
-
-
-    var parallax = new ScrollMagic.Scene({
-        triggerElement: '.parallax',
-        duration: "150%",
-        triggerHook: 1
-    })
-    .setTween(parallaxTimeline)
-    //.addIndicators()
-    .addTo(controller);
-
-    }
-
-    //*------------- CONTENT SCROLL
-
-    if (window.matchMedia("(min-width: 1080px)").matches) {
-        var content = new TimelineMax();
-
-        new ScrollMagic.Scene({
-            triggerElement: '.content-scroll',
-            duration: '50%',
-            triggerHook: 0
-        })
-        .setPin('.content-scroll')
-        //.addIndicators()
-        .addTo(controller);
-
-        content
-            .fromTo('.content-scroll .polvo', animationSpeed, 
-                { opacity: 0, scale: 0 }, 
-                { opacity: 1, scale: 1 })
-            .to('.content-scroll .img-one',  animationSpeed, {x: "100%" },0)
-            .to('.content-scroll .img-two',  animationSpeed, {x: "-100%"},0)
-            .to('.content-scroll .img-three',animationSpeed, {x: "0%"   },0)
-            .to('.content-scroll .img-one',  animationSpeed, {x: "0%"   },1)
-            .to('.content-scroll .img-two',  animationSpeed, {x: "0%"   },1)
-            .to('.content-scroll .img-three',animationSpeed, {x: "0%"   },1);
-                    
-        new ScrollMagic.Scene({
-            triggerElement: '.content-scroll',
-            duration: '100%',
-            triggerHook: 0
-        })
-        .setTween(content)
-        //.addIndicators()
-        .addTo(controller);
-    }
-
 
 });
 

@@ -64,6 +64,18 @@ $Ingredients_list_map = [
     ]
 ];
 
+$Benefits_list_map = [
+    "revive" => [
+        $Benefits_01_01, $Benefits_01_02, $Benefits_01_03, $Benefits_01_04
+    ],
+    "rejuvenate" => [
+        $Benefits_02_01, $Benefits_02_02, $Benefits_02_03, $Benefits_02_04
+    ],
+    "restore" => [
+        $Benefits_03_01, $Benefits_03_02, $Benefits_03_03, $Benefits_03_04
+    ]
+];
+
 $Benefits_sub_map = [
     "revive"      => $Benefits_sub_01,
     "rejuvenate"  => $Benefits_sub_02,
@@ -83,6 +95,8 @@ $Text        = $Text_map[$id]            ?? "";
 $Ingredients = $Ingredients_map[$id]     ?? "";
 $Ingredients_list = $Ingredients_list_map[$id] ?? [];
 $Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
+$Benefits_list = $Benefits_list_map[$id] ?? [];
+
 ?>
 
 <section>
@@ -125,25 +139,41 @@ $Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
     </div>
 </section>
 
+<div id='Modal_<?php echo $id; ?>' class='modal modal_product'>
+    <div class='modal-content rel' style="padding: 10px;">
+    <button type="button" class="v-white c-pri icon icon-close" onclick="closeModal('Modal_<?php echo $id; ?>')"></button>
+
+    <video class="full-img" 
+        src="./video/test.webm" 
+        autoplay loop muted playsinline
+        poster="./images/body/letters/1.webp">
+    </video>
+    </div>
+</div>
+
 <section>
-    <div class="h-100 rel all-tc-0">
+    <div class="h-100 rel all-tc-0 overlay o-50 custom">
         <div class="center">
             <h2 class="h1"><?php echo $Benefits; ?></h2>
             <p><?php echo $Benefits_Sub; ?></p>
-            <a href="<?php echo $Links; ?>" target="_blank" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_store; ?></a>
+            <button type="button" class="btn big c-pri br-50 mt-40 small-mt-20" onclick="openModal('Modal_<?php echo $id; ?>')"><?php echo $Btn_view; ?></button>
         </div>
 
         <ul class="benefits-list small-d-none">
-            <li class="benefits b-1"><span class="v-custom icon icon-7 <?php echo $id; ?> i-big"></span><p>Mental clarity and sharp focus</p></li>
-            <li class="benefits b-2"><span class="v-custom icon icon-8 <?php echo $id; ?> i-big"></span><p>Enhanced neural communication and awareness</p></li>
-            <li class="benefits b-3"><span class="v-custom icon icon-9 <?php echo $id; ?> i-big"></span><p>Long-term memory and learning support</p></li>
-            <li class="benefits b-4"><span class="v-custom icon icon-10 <?php echo $id; ?> i-big"></span><p>Sustained energy without stimulants</p></li>
+            <?php foreach ($Benefits_list as $index => $benefit): ?>
+                <?php if (!empty($benefit)): // Evita imprimir vacíos ?>
+                    <li class="benefits b-<?php echo $index + 1; ?>">
+                        <span class="v-custom icon icon-<?php echo 7 + $index; ?> <?php echo $id; ?> i-big"></span>
+                        <p><?php echo $benefit; ?></p>
+                    </li>
+                <?php endif; ?>
+            <?php endforeach; ?>
         </ul>
 
-        <video class="full-img" src="https://temporal.darevita.com/wp-content/uploads/2025/07/DV-secuencia-1-2.mp4#t=2.41" autoplay loop muted></video>
+        <img class="full-img" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?>">
+
     </div>
 </section>
-
 
 <section>
 	<div class="mw-1280">
@@ -176,7 +206,7 @@ $Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
 				            	<p>{$item[0]}</p>
 				            	<p>{$item[1]}</p>
 				            </div>
-				            <img src='./images/body/banner/0{$counter}.png' alt='{$item[0]}'/>
+				            <img src='./images/body/banner/0{$counter}.webp' alt='{$item[0]}'/>
 			            </li>
 			            ";
 			            $counter++;
@@ -317,6 +347,46 @@ document.addEventListener("DOMContentLoaded", () => {
   banner.addEventListener("mouseenter", stopSlider);
   banner.addEventListener("mouseleave", startSlider);
 });
+
+/* ============================================== */
+/* MODAL */
+/* ============================================== */
+
+// Función para abrir el modal
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('open'); // Muestra el modal
+        document.body.classList.add('no-scroll'); // Bloquea el scroll
+    }
+}
+
+// Función para cerrar el modal
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('open'); // Oculta el modal
+        checkModalsOpen(); // Verifica si hay otros modales abiertos
+    }
+}
+
+// Función para verificar si hay modales abiertos y desbloquear el scroll
+function checkModalsOpen() {
+    var openModals = document.querySelectorAll('.modal.open');
+    if (openModals.length === 0) {
+        document.body.classList.remove('no-scroll'); // Reactiva el scroll
+    }
+}
+
+// Función para cerrar el modal si se hace clic fuera de él
+window.onclick = function(event) {
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+        if (event.target === modal) {
+            closeModal(modal.id);
+        }
+    });
+};
 
 </script>
 

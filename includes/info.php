@@ -3,7 +3,7 @@
 //-------------------------------------------//
 // FUNCIÓN PARA DETECTAR PAÍS POR IP
 //-------------------------------------------//
-function obtenerPaisPorIP() {
+/*function obtenerPaisPorIP() {
     $ip = $_SERVER['REMOTE_ADDR'];
     $json = @file_get_contents("http://ipinfo.io/{$ip}/json");
     if ($json) {
@@ -11,12 +11,12 @@ function obtenerPaisPorIP() {
         return isset($datos['country']) ? $datos['country'] : null; // ej. "MX", "US"
     }
     return null;
-}
+}*/
 
 //-------------------------------------------//
 // DETECCIÓN DE REGIÓN Y ASIGNACIÓN DE LINK
 //-------------------------------------------//
-if (!isset($_SESSION["pais"])) {
+/*if (!isset($_SESSION["pais"])) {
     $_SESSION["pais"] = obtenerPaisPorIP();
 }
 
@@ -29,7 +29,7 @@ switch ($pais) {
     default:
     $link_regional = 'https://us.darevita.com';
     break;
-}
+}*/
 
 //-------------------------------------------//
 // OBTENER PÁGINA ACTUAL Y PARÁMETROS

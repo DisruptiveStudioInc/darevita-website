@@ -166,6 +166,7 @@
   padding: 10px 40px 10px 45px !important;
 }
 
+.sub > li > a:after,
 .btn-lan:after,
 .btn-sub:after,
 .btn-cus:after {

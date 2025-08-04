@@ -155,6 +155,22 @@
     $Benefits_sub_02 = "Vitality isn’t optional, it’s essential";
     $Benefits_sub_03 = "Yes to deep sleep & better days";
 
+    $Benefits_01_01 = "Mental clarity and sharp focus";
+    $Benefits_01_02 = "Enhanced neural communication and awareness";
+    $Benefits_01_03 = "Long-term memory and learning support";
+    $Benefits_01_04 = "Sustained energy without stimulants";
+
+    $Benefits_02_01 = "Supports immune system vitality";
+    $Benefits_02_02 = "Aids immunity and tissue regeneration";
+    $Benefits_02_03 = "Boosts energy, cells, and collagen";
+    $Benefits_02_04 = "Supports metabolism and lean muscle";
+
+    $Benefits_03_01 = "Enhances REM sleep and cognitive support";
+    $Benefits_03_02 = "Boosts cognitive, hormonal, immune functions";
+    $Benefits_03_03 = "Supports regeneration for skin and muscles";
+    $Benefits_03_04 = "Supports stress balance and emotional well-being";
+
+
     //-------------------------//
     // Ingredients
     //-------------------------//
@@ -204,8 +220,151 @@
     $Satarted_text_03 = "Feel the clarity, vitality, and calm. Your body becomes more adaptive, efficient, and resilient with consistent use.";
 
     //-------------------------//
+    // EARN
+    //-------------------------//
+
+    $Earn_Title = "Earn commissions";
+    $Earn_Sub = "Earn Commissions by Referring Customers – The Impact Bonus";
+
+    $Earn_Intro = "At DareVita, everyone is a customer first—and sharing the products you love should be simple and rewarding.";
+    $Earn_Sub_intro = "What Is the Impact Bonus?";
+    $Earn_Sub_intro_text = "The Impact Bonus is DareVita’s direct referral reward. It allows Independent Brand Ambassadors (IBAs) to earn 40% commission on the product volume of any purchase made by a new customer they personally refer. 40% of the product's CV (Commissionable Volume) is instantly eligible for payout Paid weekly to qualified, active IBAs($50.00 USD monthly purchase) Applies to every first-time order placed through your personal link";
+
+    //-------------------------//
+
+    $Works = "How It Works";
+
+    $Works_title_01 = "Activate Your IBA Account";
+    $Works_title_01_sub_01 = "Place a qualifying personal product order to become an “Active IBA”";
+    $Works_title_01_sub_02 = "Stay active to remain eligible for weekly commissions";
+
+    $Works_title_02 = "Share Your Personalized Website Link";
+    $Works_title_02_sub_01 = "Every IBA receives a free, mobile-friendly referral website";
+    $Works_title_02_sub_02 = "Simply share your link with anyone who wants to try the products";
+
+    $Works_title_03 = "Earn 40% on Their Purchase";
+    $Works_title_03_sub_01 = "When your referral places a product order, you receive 40% of the commissionable volume (CV)";
+    $Works_title_03_sub_02 = "Example: If a referred customer purchases a product with 100 CV, you earn $40 in commission";
+
+    //-------------------------//
+
+    $Who = "Who Can Earn the Impact Bonus?";
+
+    $Who_sub = "Only Active IBAs are eligible.";
+    $Who_sub_text = "An IBA is considered “Active” if they:";
+    $Who_sub_text_01 = "Maintain a qualifying personal purchase during the current commission cycle";
+    $Who_sub_text_02 = "Are in good standing with DareVita’s Policies & Procedures";
+
+    $Who_text = "Inactive IBAs will not earn on customer referrals until they reactivate their account.";
+
+    //-------------------------//
+
+    $What = "What Makes It Unique?";
+
+    $What_01 = "No need to recruit or build a team to earn this commission";
+    $What_02 = "You can earn just by referring someone to try a product";
+    $What_03 = "Designed for customers who want to casually share DareVita products and/ or the opportunit";
+
+    //-------------------------//
+    // PLAN
+    //-------------------------//
+
+    $Plan_Title = "Compensation plan";
+    $Plan_Sub = "DareVita International Compensation Plan Summary";
+
+    //-------------------------//
+
+    $Overview = "Overview";
+    $Overview_text = "DareVita International is a consumer-based brand and community that rewards individuals—called Independent Brand Ambassadors (IBAs)—for referring others to our wellness products through an innovative, volume-based rewards system.";
+
+    $Overview_sub = "DareVita’s compensation plan is designed to:";
+    $Overview_sub_01 = "Reward product purchases and customer referrals";
+    $Overview_sub_02 = "Provide earning opportunities without requiring recruitment";
+    $Overview_sub_03 = "Promote long-term product use and customer satisfaction";
+    $Overview_sub_04 = "Ensure compliance with applicable U.S. and global direct selling regulations.";
+
+    //-------------------------//
+
+    $Consumer = "Consumer-Focused Model";
+
+    $Consumer_sub = "At DareVita, every participant is a customer first";
+    $Consumer_text = "Whether someone is a retail customer or an IBA, they are purchasing DareVita products for personal use. The ability to earn income is always secondary to the use of and satisfaction with the product.";
+
+    //-------------------------//
+
+    $Earnings = "Earnings Structure";
+    $Earnings_sub = "The DareVita Rewards Plan includes five main ways to earn, with income tied directly to product volume:";
+
+    $Earnings_01 = "A. Impact Bonus";
+    $Earnings_01_01 = "Earn 40% commission on the CV (Commissionable Volume) of any first-time order placed by a new customer or IBA you personally refer.";
+    $Earnings_01_02 = "No team-building required.";
+    $Earnings_01_03 = "Only Active IBAs (with a qualifying personal order of $50.00 USD monthly) are eligible.";
+
+    $Earnings_02 = "B. Subscription Bonus";
+    $Earnings_02_01 = "Earn recurring commissions when customers or IBAs you referred enroll in monthly product subscriptions.";
+    $Earnings_02_02 = "Bonus percentages vary based on volume and participation tier.";
+    $Earnings_02_03 = " ";
+
+    $Earnings_03 = "C. Team Volume Bonus";
+    $Earnings_03_01 = "IBAs who build sales organizations may earn bonuses based on total group volume.";
+    $Earnings_03_02 = "Bonuses are capped by rank and tied to balanced team development.";
+    $Earnings_03_03 = " ";
+
+    $Earnings_04 = "D. Matching Check Bonus";
+    $Earnings_04_01 = "Earn a percentage of the commissions earned by personally enrolled IBAs.";
+    $Earnings_04_02 = "Requires leadership development and active mentorship.";
+    $Earnings_04_03 = " ";
+
+    $Earnings_05 = "E. Unity & Leadership Bonuses";
+    $Earnings_05_01 = "For higher ranks only.";
+    $Earnings_05_02 = "Recognizes company-wide impact and global volume contribution.";
+
+    //-------------------------//
+
+    $Guaranteed = "No Guaranteed Income";
+    $Guaranteed_text = "DareVita makes no guarantees of income or success. Your ability to earn is based on:";
+
+    $Guaranteed_01 = "Your effort and consistency";
+    $Guaranteed_02 = "Your ability to refer and retain customers;";
+    $Guaranteed_03 = "Your leadership and training of others";
+    $Guaranteed_04 = "Product volume generated through legitimate sales";
+    $Guaranteed_text = "Many IBAs may earn modest supplemental income or participate purely for the product discount.";
+
+    //-------------------------//
+
+    $Participation = "Costs of Participation";
+    $Participation_text = "To participate as an IBA:";
+
+    $Participation_01 = "You may purchase an Onboarding Kit (optional, refundable within 30 days if unused)";
+    $Participation_02 = "You must place a qualifying personal order($50.00 USD monthly) to remain Active and earn commissions";
+    $Participation_03 = "There are no inventory loading requirements, quotas, or forced purchases.";
+
+    //-------------------------//
+
+    $Customer = "Customer Protections";
+    $Customer_text = "DareVita provides all participants:";
+
+    $Customer_01 = "A 30-day money-back guarantee on product purchases";
+    $Customer_02 = "A non-retaliation policy for customers who do not wish to become IBAs";
+    $Customer_03 = "A clear refund policy on onboarding kits and digital tools";
+    $Customer_04 = "Transparent, equal-access pricing for customers and IBAs alike.";
+
+    //-------------------------//
+
+    $Additional = "Additional Compliance Measures";
+    $Additional_text = "DareVita maintains a full-time Compliance Department to monitor field conduct, review marketing claims, and ensure adherence to all policies and FTC standards.<br>For questions, contact: compliance@darevita.com";
+
+    //-------------------------//
+
+
+    $Acknowledgment = "Acknowledgment";
+    $Acknowledgment_text = "This summary is not a contract. It is intended to help you understand DareVita’s commission plan in a fair and legal way. For complete details, please refer to the DareVita Policies & Procedures and Compensation Plan Document.";
+
+    //-------------------------//
     // Footer
     //-------------------------//
+
+    $Payments = "Payments with Debit and Credit Card:";
 
     $Footer_subpage = "One goal, three essentials, unlock your full potential.";
 
@@ -216,7 +375,7 @@
     $Footer_content_link_04 = "Contact Us";
 
     $Footer_darevita_link_01 = "Earn Commissions";
-    $Footer_darevita_link_02 = "Compensation plane";
+    $Footer_darevita_link_02 = "Compensation plan";
     $Footer_darevita_link_03 = "Privacy Policy";
     $Footer_darevita_link_04 = "Returns Policy";
 

@@ -70,19 +70,10 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
     <!-- jQuery y Slick -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- GSAP + ScrollMagic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
 
 </head>
     <body id="page-content">
@@ -132,22 +123,21 @@
                             foreach ($Menu as $item) {
                                 $counter++;
 
-                                // Si es el primer item (Home) y existe ID → cambiar link a "../"
-                                if ($counter == 1 && !empty($id)) {
+                                // Primer item -> siempre "./"
+                                if ($counter == 1) {
                                     $item[0] = './';
                                 }
 
-                                // Saltar el segundo elemento (Menu_02) si existe ID
-                                if (!empty($id) && $counter == 2) {
+                                // Segundo item -> solo mostrar si estamos en "home" o vacío
+                                if ($counter == 2 && $Actual_Page !== '' && $Actual_Page !== 'home') {
                                     continue;
                                 }
 
-                                // === 3er elemento (submenú con sub-sub) ===
+                                // Submenú con sub-sub
                                 if ($counter == 3) {
                                     echo "<li class='rel'>";
                                     echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
                                     
-                                    // Submenú principal
                                     echo "<ul class='sub'>";
                                     foreach ($Sub as $item_sub) {
                                         $hasSubSub = isset($item_sub[1]) && is_array($item_sub[1]);
@@ -170,7 +160,7 @@
                                     echo "</ul>";
                                     echo "</li>";
 
-                                // === 4to elemento (submenú simple) ===
+                                // Submenú simple
                                 } elseif ($counter == 4) {
                                     echo "<li class='rel'>";
                                     echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
@@ -182,7 +172,7 @@
                                     echo "</ul>";
                                     echo "</li>";
 
-                                // === Último elemento (submenú propio independiente) ===
+                                // Último item (submenú independiente)
                                 } elseif ($counter == count($Menu)) {
                                     echo "<li class='rel'>";
                                     echo "<a href='#' class='btn-cus'>{$item[2]}</a>";
@@ -194,6 +184,7 @@
                                     echo "</ul>";
                                     echo "</li>";
 
+                                // Items normales
                                 } else {
                                     echo "<li><a href='{$item[0]}' class='{$item[1]}'>{$item[2]}</a></li>";
                                 }
