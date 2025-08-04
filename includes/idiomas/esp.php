@@ -6,8 +6,10 @@
 
     $Menu_01 = "Inicio";
     $Menu_02 = "DareVita";
-    $Menu_03 = "Productos";
-    $Menu_04 = "Tienda";
+    $Menu_03 = "Treo";
+    $Menu_04 = "Productos";
+    $Menu_05 = "Tienda";
+    $Menu_06 = "Gana";
 
     //-------------------------//
     // Botones
@@ -19,6 +21,7 @@
     $Btn_store = "Visita nuestra tienda";
     $Btn_live = "Vive DareVita";
     $Btn_part = "Sé parte del cambio";
+    $Btn_started = "Empezar";
    
     //-------------------------//
     // Hero

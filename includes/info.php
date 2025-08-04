@@ -70,9 +70,9 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
 $Register = "https://usdev.darevita.com/register/";
 $Login = "https://usdev.darevita.com/my-account/";
 
-$Shop_usa = "usdev.darevita.com";
-$Shop_mex = "mxdev.darevita.com";
-$Shop_int = "intdev.darevita.com";
+$Shop_usa = "https://usdev.darevita.com";
+$Shop_mex = "https://mxdev.darevita.com";
+$Shop_int = "https://intdev.darevita.com/";
 
 $Shop_usa_restore = "https://usdev.darevita.com/product/restore/";
 $Shop_usa_revive = "https://usdev.darevita.com/product/revive/";
@@ -88,9 +88,11 @@ $Shop_mex_rejuvenate = "https://mxdev.darevita.com/product/rejuvenate/";
 
 $Menu = array(
     array('#home','active',$Menu_01),
-    array('#inside','',$Menu_02),
-    array('','',$Menu_03),
-    array('','', $Menu_04)
+    array('#darevita','',$Menu_02),
+    array('#treo','',$Menu_03),
+    array('','',$Menu_04),
+    array('','', $Menu_05),
+    array('?p=earn','', $Menu_06)
 );
 
     //-------------------------//

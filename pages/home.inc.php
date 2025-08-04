@@ -2,11 +2,16 @@
 <!-- ONE -->
 <!-- ============================================== -->
 
-<section class="rel hero-pin">
+<section class="hero-pin">
+
+	<div class="section-arrows">
+	    <button class="arrow down">↓</button>
+	</div>
+
     <div class="anchor" id="home"></div>
     <div class="dh-100 of-h">
         <video class="full-img" 
-		       src="./video/test.webm" 
+		       src="./video/video.webm" 
 		       autoplay loop muted playsinline
 		       poster="./images/body/letters/1.webp">
 		</video>
@@ -18,9 +23,15 @@
     </div>
 </section>
 
-<section class="c-sec">
-	<div class="anchor" id="inside"></div>
-	<div class="mw-1440 jc-center ai-center">
+<section>
+
+	<div class="section-arrows">
+	    <button class="arrow up">↑</button>
+	    <button class="arrow down">↓</button>
+	</div>
+
+	<div class="anchor" id="darevita"></div>
+	<div class="mw-1440 jc-center ai-center h-100 med-h-0">
 		<div class="t-c">
 			<h2 class="h1-special mb-50 small-mb-0"><?php echo $Journey_title; ?></h2>
 			<div class="tabs t-c">
@@ -44,8 +55,13 @@
 </section>
 
 <section>
+
 	<div class="h-100 pin rel of-h small-h-0 letters">
 		<div>
+			<div class="section-arrows">
+			    <button class="arrow up">↑</button>
+			    <button class="arrow down">↓</button>
+			</div>
 			<h2 class="word_01"><?php echo $Letters_title_01; ?><span><?php echo $Letters_text_01; ?></span></h2>
 			<img class="img_01" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
 		</div>
@@ -65,7 +81,13 @@
 </section>
 
 <section>
-	<div class="mw-1440 t-c h-100 small-h-0 small-fd-col g-20 jc-center ai-center rel parallax">
+
+	<div class="section-arrows">
+	    <button class="arrow up">↑</button>
+	    <button class="arrow down">↓</button>
+	</div>
+
+	<div class="mw-1440 t-c h-100 med-h-0 med-fd-col g-20 jc-center ai-center rel parallax">
 		<h2 class="h1-special"><?php echo $Vision_text; ?></h2>
 		<div class="box box_1">
 			<h3 class="h3"><?php echo $Vision_title_01; ?></h3>
@@ -142,13 +164,19 @@ foreach ($Modal as $item){
 ?>
 
 <section>
+
+	<div class="anchor" id="treo"></div>
 	<div class="h-100 med-h-0 med-fd-col-rev content-scroll jc-center ai-center rel">
+
+	<div class="section-arrows">
+	    <button class="arrow up">↑</button>
+	    <button class="arrow down">↓</button>
+	</div>
 
 		<div class="box_product img-one rel">
 			<span>
 				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal1')"></button>
-				<a href="<?php echo $Shop_usa_restore; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1"><?php echo $Btn_buy; ?></a>
-				<a href="<?php echo $Shop_mex_restore; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2"><?php echo $Btn_buy; ?></a>
+				<a href="?p=product&id=restore" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
 			</span>
 			<img src="./images/body/treo/restore.webp" class="product" alt="restore"/>
 		</div>
@@ -156,8 +184,7 @@ foreach ($Modal as $item){
 		<div class="box_product img-two">
 			<span>
 				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal2')"></button>
-				<a href="<?php echo $Shop_usa_rejuvenate; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1"><?php echo $Btn_buy; ?></a>
-				<a href="<?php echo $Shop_mex_rejuvenate; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2"><?php echo $Btn_buy; ?></a>
+				<a href="?p=product&id=rejuvenate" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
 			</span>
 			<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate"/>
 		</div>
@@ -165,8 +192,7 @@ foreach ($Modal as $item){
 		<div class="box_product img-three">
 			<span>
 				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal3')"></button>
-				<a href="<?php echo $Shop_usa_revive; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1"><?php echo $Btn_buy; ?></a>
-				<a href="<?php echo $Shop_mex_revive; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2"><?php echo $Btn_buy; ?></a>
+				<a href="?p=product&id=revive" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
 			</span>
 			<img src="./images/body/treo/revive.webp" class="product" alt="revive"/>
 		</div>
@@ -180,7 +206,13 @@ foreach ($Modal as $item){
 </section>
 
 <section>
-	<div class="mw-1280 t-c big">
+
+	<div class="section-arrows">
+	    <button class="arrow up">↑</button>
+	    <button class="arrow down">↓</button>
+	</div>
+
+	<div class="mw-1280 t-c h-100 med-h-0 jc-center fd-col">
 		<h2 class="h1"><?php echo $Slogan_title; ?></h2>
 		<p class="h3">“<?php echo $Slogan_text; ?>”</p>
 		<a href="<?php echo $Register; ?>" class="btn big c-ter br-50 mt-40 small-mt-20"><?php echo $Btn_live; ?></a>
@@ -189,8 +221,13 @@ foreach ($Modal as $item){
 
 
 <section class="c-sec">
-	<div class="anchor"></div>
-	<div class="mw-1440 t-c pt-40 pb-0">
+
+	<div class="section-arrows">
+	    <button class="arrow up">↑</button>
+	    <button class="arrow down">↓</button>
+	</div>
+
+	<div class="mw-1440 t-c">
 		<p class="h2"><?php echo $Truth_title; ?></p>
 	</div>
 	<div>
@@ -224,8 +261,14 @@ foreach ($Modal as $item){
 </section>
 
 <section>
-	<div class="mw-1280 big">
-		<div class="jc-center g-40 ai-center small-ai-start small-fd-col">
+
+	<div class="section-arrows">
+	    <button class="arrow up">↑</button>
+	    <button class="arrow down">↓</button>
+	</div>
+
+	
+		<div class="mw-1280 jc-center h-100 med-h-0 g-40 ai-center small-ai-start small-fd-col">
 
 			<div class="img_spirit small-d-none">
 				<span class="img_product">
@@ -269,11 +312,16 @@ foreach ($Modal as $item){
 				</div>
 			</div>
 
-		</div>
+	
 	</div>
 </section>
 
 <section class="c-ter">
+
+	<div class="section-arrows">
+	    <button class="arrow up">↑</button>
+	</div>
+
 	<div class="mw-1280 t-c big">
 		<h2 class="h1"><?php echo $Traits_title; ?></h2>
 		<a href="<?php echo $Register; ?>" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_part; ?></a>
@@ -316,6 +364,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var controller = new ScrollMagic.Controller();
             var animationSpeed = 0.75;
             var animationLinear = Power3.easeInOut;
+            var animationIn = Expo.easeIn;
 
             //*------------- GALLERY
             var textoTimeline = new TimelineMax();
@@ -362,20 +411,17 @@ document.addEventListener("DOMContentLoaded", function() {
             .addTo(controller);
 
             //*------------- PARALLAX
-            var rot1 = Math.random() * 30 - 10; 
-            var rot2 = Math.random() * 5 - 5;
-            var rot3 = Math.random() * 20 - 15;
 
             var parallaxTimeline = new TimelineMax();
             parallaxTimeline
-                .fromTo('.parallax .box_1', animationSpeed,{ left: "0%", top: "40%", rotation: 0 },{ left: "0%", top: "20%", rotation: rot1, ease: animationLinear })
-                .fromTo('.parallax .box_2', animationSpeed,{ left: "40%", top: "70%", rotation: 0 },{ left: "40%", top: "30%", rotation: rot2, ease: animationLinear }, 0)
-                .fromTo('.parallax .box_3', animationSpeed,{ left: "80%", top: "60%", rotation: 0 },{ left: "80%", top: "40%", rotation: rot3, ease: animationLinear }, 0);
+                .fromTo('.parallax .box_1', animationSpeed,{ left: "0%", top: "40%",opacity: 0},{ left: "15%", top: "40%",opacity: 1, ease: animationIn })
+                .fromTo('.parallax .box_2', animationSpeed,{ left: "40%", top: "50%",opacity: 0},{ left: "40%", top: "40%",opacity: 1, ease: animationIn }, 0)
+                .fromTo('.parallax .box_3', animationSpeed,{ left: "80%", top: "40%",opacity: 0},{ left: "65%", top: "40%",opacity: 1, ease: animationIn }, 0);
 
             new ScrollMagic.Scene({
                 triggerElement: '.parallax',
-                duration: "150%",
-                triggerHook: 1
+                duration: "50%",
+                triggerHook: 0.5
             })
             .setTween(parallaxTimeline)
             .addTo(controller);
@@ -392,17 +438,17 @@ document.addEventListener("DOMContentLoaded", function() {
             .addTo(controller);
 
             content
-                .fromTo('.content-scroll .polvo', animationSpeed,{ opacity: 0, scale: 0 },{ opacity: 1, scale: 1 })
-                .to('.content-scroll .img-one',  animationSpeed, {x: "100%" },0)
-                .to('.content-scroll .img-two',  animationSpeed, {x: "-100%"},0)
-                .to('.content-scroll .img-three',animationSpeed, {x: "0%"   },0)
-                .to('.content-scroll .img-one',  animationSpeed, {x: "0%"   },1)
-                .to('.content-scroll .img-two',  animationSpeed, {x: "0%"   },1)
-                .to('.content-scroll .img-three',animationSpeed, {x: "0%"   },1);
+                .fromTo('.content-scroll .polvo', animationSpeed,{ opacity: 0, scale: 0, xPercent: -50, yPercent: -50 },{ opacity: 1, scale: 1,ease: animationIn })
+                .to('.content-scroll .img-one',  animationSpeed, {x: "100%",ease: animationIn },0)
+                .to('.content-scroll .img-two',  animationSpeed, {x: "-100%",ease: animationIn},0)
+                .to('.content-scroll .img-three',animationSpeed, {x: "0%",ease: animationIn   },0)
+                .to('.content-scroll .img-one',  animationSpeed, {x: "0%",ease: animationIn  },1)
+                .to('.content-scroll .img-two',  animationSpeed, {x: "0%",ease: animationIn   },1)
+                .to('.content-scroll .img-three',animationSpeed, {x: "0%",ease: animationIn   },1);
                         
             new ScrollMagic.Scene({
                 triggerElement: '.content-scroll',
-                duration: '100%',
+                duration: '50%',
                 triggerHook: 0
             })
             .setTween(content)

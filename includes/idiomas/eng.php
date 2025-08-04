@@ -5,9 +5,11 @@
     //-------------------------//
 
     $Menu_01 = "Home";
-    $Menu_02 = "Inside Darevita";
-    $Menu_03 = "Products";
-    $Menu_04 = "Shop";
+    $Menu_02 = "Darevita";
+    $Menu_03 = "Treo";
+    $Menu_04 = "Products";
+    $Menu_05 = "Shop";
+    $Menu_06 = "Earn";
 
     //-------------------------//
     // Btn
@@ -19,6 +21,7 @@
     $Btn_store = "Visit our store";
     $Btn_live = "Live DareVita";
     $Btn_part = "Be part of the change";
+    $Btn_started = "Get Started";
    
     //-------------------------//
     // Hero

@@ -156,7 +156,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
         <div class="center">
             <h2 class="h1"><?php echo $Benefits; ?></h2>
             <p><?php echo $Benefits_Sub; ?></p>
-            <button type="button" class="btn big c-pri br-50 mt-40 small-mt-20" onclick="openModal('Modal_<?php echo $id; ?>')"><?php echo $Btn_view; ?></button>
+            <!--<button type="button" class="btn big c-pri br-50 mt-40 small-mt-20" onclick="openModal('Modal_<?php echo $id; ?>')"><?php echo $Btn_view; ?></button>-->
         </div>
 
         <ul class="benefits-list small-d-none">
@@ -182,8 +182,6 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 			<h2 class="h2"><?php echo $Satarted_title; ?></h2>
 			<p class="h4"><?php echo $Satarted_sub; ?></p>
 		</div>
-
-
 
 		<div class="jc-center g-20 ai-center small-fd-col">
 

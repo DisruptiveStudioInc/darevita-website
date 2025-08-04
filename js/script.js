@@ -194,8 +194,24 @@ $(function () {
 });
 
 /* ============================================== */
-/* INGREDIENTS */
+/* SECTIONS */
 /* ============================================== */
+
+document.querySelectorAll('.section-arrows').forEach(arrows => {
+  const section = arrows.closest('section');
+  const allSections = Array.from(document.querySelectorAll('section'));
+
+  arrows.querySelector('.arrow.down')?.addEventListener('click', () => {
+    const next = allSections[allSections.indexOf(section) + 1];
+    if (next) next.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  arrows.querySelector('.arrow.up')?.addEventListener('click', () => {
+    const prev = allSections[allSections.indexOf(section) - 1];
+    if (prev) prev.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 
 
 

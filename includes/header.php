@@ -78,6 +78,11 @@
 </head>
     <body id="page-content">
 
+        <div class="btn_start jc-center ai-center g-20 small-d-none">
+            <a href="https://usdev.darevita.com/product-category/starter-plans/" target="_blank" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Btn_started; ?></a>
+            <a href="https://mxdev.darevita.com/product-category/starter-plans/" target="_blank" class="btn c-ter br-50 v-custom my_flags icon-text icon-2" aria-label="Buy in Mexico"><?php echo $Btn_started; ?></a>
+        </div>
+
         <!-- ============================================== -->
         <!-- PRELOADER -->
         <!-- ============================================== -->
@@ -129,12 +134,12 @@
                                 }
 
                                 // Segundo item -> solo mostrar si estamos en "home" o vacío
-                                if ($counter == 2 && $Actual_Page !== '' && $Actual_Page !== 'home') {
+                                if (in_array($counter, [2,3]) && $Actual_Page !== '' && $Actual_Page !== 'home') {
                                     continue;
                                 }
 
-                                // Submenú con sub-sub
-                                if ($counter == 3) {
+                                // Submenú con sub-sub (Menu 4)
+                                if ($counter == 4) {
                                     echo "<li class='rel'>";
                                     echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
                                     
@@ -160,26 +165,14 @@
                                     echo "</ul>";
                                     echo "</li>";
 
-                                // Submenú simple
-                                } elseif ($counter == 4) {
+                                // Submenú simple (Menu 5)
+                                } elseif ($counter == 5) {
                                     echo "<li class='rel'>";
                                     echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
                                     
                                     echo "<ul class='sub'>";
                                     foreach ($Sub_reg as $item_sub) {
-                                        echo "<li><a href='{$item_sub[0]}'>{$item_sub[1]}</a></li>";
-                                    }
-                                    echo "</ul>";
-                                    echo "</li>";
-
-                                // Último item (submenú independiente)
-                                } elseif ($counter == count($Menu)) {
-                                    echo "<li class='rel'>";
-                                    echo "<a href='#' class='btn-cus'>{$item[2]}</a>";
-                                    
-                                    echo "<ul class='cus'>";
-                                    foreach ($Sub_custom as $item_custom) {
-                                        echo "<li><a href='{$item_custom[0]}'>{$item_custom[1]}</a></li>";
+                                        echo "<li><a href='{$item_sub[0]}' target='_blank'>{$item_sub[1]}</a></li>";
                                     }
                                     echo "</ul>";
                                     echo "</li>";
