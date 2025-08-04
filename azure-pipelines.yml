@@ -1,0 +1,22 @@
+trigger:
+- main
+stages:
+  - stage: Deploy
+    jobs:
+      - job: Deployment
+        pool:
+          name: Backoffice
+        steps:
+        - task: SSH@0
+          displayName: 'SSH Prod server'
+          condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+          inputs:
+            sshEndpoint: 'creative-staging'
+            runOptions: 'inline'
+            inline: |
+              cd /var/www/$(Build.Repository.Name)
+              git reset --hard
+              git pull origin
+              docker restart darevita-website2
+            readyTimeout: '20000'
+          continueOnError: true
