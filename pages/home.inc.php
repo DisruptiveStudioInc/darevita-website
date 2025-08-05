@@ -7,7 +7,7 @@
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="text-hero t-c hero-text mt-40 small-mt-0">
+	<div class="text-hero t-c hero-text">
         <h1 class="h1-special first"><span>Darevita:</span> <?php echo $Hero_01; ?></h1>
         <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
     </div>
@@ -446,9 +446,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var parallaxTimeline = new TimelineMax();
             parallaxTimeline
-                .fromTo('.parallax .box_1', animationSpeed,{ left: "0%", top: "70%",opacity: 0},{ left: "15%", top: "55%",opacity: 1, ease: animationIn })
-                .fromTo('.parallax .box_2', animationSpeed,{ left: "40%", top: "70%",opacity: 0},{ left: "40%", top: "55%",opacity: 1, ease: animationIn }, 0)
-                .fromTo('.parallax .box_3', animationSpeed,{ left: "80%", top: "70%",opacity: 0},{ left: "65%", top: "55%",opacity: 1, ease: animationIn }, 0);
+                .fromTo('.parallax .box_1', animationSpeed,{ left: "0%", top: "70%",opacity: 0},{ left: "15%", top: "60%",opacity: 1, ease: animationIn })
+                .fromTo('.parallax .box_2', animationSpeed,{ left: "40%", top: "70%",opacity: 0},{ left: "40%", top: "60%",opacity: 1, ease: animationIn }, 0)
+                .fromTo('.parallax .box_3', animationSpeed,{ left: "80%", top: "70%",opacity: 0},{ left: "65%", top: "60%",opacity: 1, ease: animationIn }, 0);
 
             new ScrollMagic.Scene({
                 triggerElement: '.parallax',
