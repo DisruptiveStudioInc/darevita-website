@@ -3,23 +3,32 @@
 <!-- ============================================== -->
 
 <section class="hero-pin">
-
 	<div class="section-arrows">
 	    <button class="arrow down"></button>
 	</div>
 
-    <div class="anchor" id="home"></div>
-    <div class="dh-100 of-h">
-        <video class="full-img" 
-		       src="./video/video.webm" 
-		       autoplay loop muted playsinline
-		       poster="./images/body/letters/1.webp">
-		</video>
-    </div> 
-
-    <div class="text-hero t-c hero-text">
+	<div class="text-hero t-c hero-text">
         <h1 class="h1-special first"><span>Darevita:</span> <?php echo $Hero_01; ?></h1>
         <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
+    </div>
+
+    <div class="anchor" id="home"></div>
+
+    <div class="dh-100 of-h video-wrapper">
+    	<!-- Imagen mientras carga el video -->
+    	<div class="video-placeholder">
+    		<img src="./images/body/letters/1.webp" alt="Placeholder" />
+    	</div>
+
+    	<!-- Video oculto hasta que esté listo -->
+        <video id="heroVideo"
+        	   class="full-img"
+		       autoplay
+		       loop
+		       muted
+		       playsinline
+		       style="display: none;">
+        </video>
     </div>
 </section>
 
@@ -329,6 +338,29 @@ foreach ($Modal as $item){
 </section>
 
 <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("heroVideo");
+    const placeholder = document.querySelector(".video-placeholder");
+
+    // Crea un source dinámicamente
+    const source = document.createElement("source");
+    source.src = "./video/video.webm";
+    source.type = "video/webm";
+
+    // Añade el source al video
+    video.appendChild(source);
+
+    // Espera a que el video esté listo
+    video.addEventListener("canplaythrough", function () {
+        placeholder.style.display = "none";
+        video.style.display = "block";
+    });
+
+    // En caso de que el video no cargue, sigue mostrando la imagen
+    video.load();
+});
+
 /* ============================================== */
 /* SCROLL-MAGIC */
 /* ============================================== */
@@ -414,9 +446,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var parallaxTimeline = new TimelineMax();
             parallaxTimeline
-                .fromTo('.parallax .box_1', animationSpeed,{ left: "0%", top: "40%",opacity: 0},{ left: "15%", top: "40%",opacity: 1, ease: animationIn })
-                .fromTo('.parallax .box_2', animationSpeed,{ left: "40%", top: "50%",opacity: 0},{ left: "40%", top: "40%",opacity: 1, ease: animationIn }, 0)
-                .fromTo('.parallax .box_3', animationSpeed,{ left: "80%", top: "40%",opacity: 0},{ left: "65%", top: "40%",opacity: 1, ease: animationIn }, 0);
+                .fromTo('.parallax .box_1', animationSpeed,{ left: "0%", top: "70%",opacity: 0},{ left: "15%", top: "55%",opacity: 1, ease: animationIn })
+                .fromTo('.parallax .box_2', animationSpeed,{ left: "40%", top: "70%",opacity: 0},{ left: "40%", top: "55%",opacity: 1, ease: animationIn }, 0)
+                .fromTo('.parallax .box_3', animationSpeed,{ left: "80%", top: "70%",opacity: 0},{ left: "65%", top: "55%",opacity: 1, ease: animationIn }, 0);
 
             new ScrollMagic.Scene({
                 triggerElement: '.parallax',

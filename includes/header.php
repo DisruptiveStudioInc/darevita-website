@@ -88,7 +88,7 @@
             <a href="https://mxdev.darevita.com/product-category/starter-plans/" 
                target="_blank" 
                class="esp" 
-               aria-label="Buy in Mexico">Mexico</a>
+               aria-label="Buy in Mexico">México</a>
             <a href="https://intdev.darevita.com/" 
                target="_blank" 
                class="int" 
@@ -209,7 +209,7 @@
                     </div>
 
                     <div class="jc-center ai-center">
-                        <div class="btns m-0 g-20 med-d-none">
+                        <div class="btns m-0 g-10 med-d-none">
                             <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30">Login</a>
                             <a href='<?php echo $Register; ?>' target="_blank" class="btn c-pri br-30">Register</a>
                         </div>

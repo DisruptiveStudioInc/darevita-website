@@ -27,7 +27,7 @@
     // Hero
     //-------------------------//
 
-    $Hero_01 = "Joy Loves<br>Company";
+    $Hero_01 = "Reignite, reimagine, redefine";
     $Hero_02 = "Welcome to the world of DareVita. We’re not just a company; we’re a movement of positive change.";
 
     //-------------------------//
@@ -44,7 +44,7 @@
     $Journey_text_1 = "Experience our revolutionary products that transform lives.";
     $Journey_text_2 = "Join a community that believes in giving without expectation.";
     $Journey_text_3 = "Build a future where purpose and prosperity go hand in hand.";
-    $Journey_text_4 = "Witness the power of positive change in yourself and others.";
+    $Journey_text_4 = "Witness the power of DareVita in yourself and others.";
 
     //-------------------------//
     // Letters
@@ -53,21 +53,21 @@
     $Letters_title_01 = "Revitalize";
     $Letters_text_01 = "Our products breathe new energy into your daily routine.";
 
-    $Letters_title_02 = "Transform";
+    $Letters_title_02 = "Renew";
     $Letters_text_02 = "Our platform offers individuals a way to explore flexible income opportunities.";
 
     $Letters_title_03 = "Inspire";
     $Letters_text_03 = "Our community celebrates each step toward positive change.";
 
     $Letters_title_04 = "Our Brand Promise";
-    $Letters_text_04 = "To give new life to any-and-all, who are open to positive change";
+    $Letters_text_04 = "To give new life to any-and-all, who are open to DareVita";
 
     //-------------------------//
     // Vision
     //-------------------------//
 
     $Vision_title_01 = "Vision";
-    $Vision_text_01 = "A world transformed by positive change";
+    $Vision_text_01 = "A world reimagined by DareVita";
 
     $Vision_title_02 = "Promise";
     $Vision_text_02 = "Give new life to those open to change";
@@ -117,16 +117,16 @@
     $Truth_title = "This is how we fulfill our brand promise to give new life.";
 
     $Truth_title_01 = "Truth";
-    $Truth_text_01 = "We operate with complete transparency.";
+    $Truth_text_01 = "We operate with complete transparency";
 
     $Truth_title_02 = "Innovation";
-    $Truth_text_02 = "We create products that truly transform.";
+    $Truth_text_02 = "We create products that truly work";
 
     $Truth_title_03 = "Platform";
-    $Truth_text_03 = "We provide opportunities for growth.";
+    $Truth_text_03 = "We provide opportunities for growth";
 
     $Truth_title_04 = "Life";
-    $Truth_text_04 = "We embuda our name: Dare Vita - give life";
+    $Truth_text_04 = "We embrace our name: Dare Vita - give life";
 
     //-------------------------//
     // Spirit
@@ -331,7 +331,7 @@
     $Guaranteed_02 = "Your ability to refer and retain customers;";
     $Guaranteed_03 = "Your leadership and training of others";
     $Guaranteed_04 = "Product volume generated through legitimate sales";
-    $Guaranteed_text = "Many IBAs may earn modest supplemental income or participate purely for the product discount.";
+    $Guaranteed_text = "IBAs may earn modest supplemental income or participate purely for the product discount.";
 
     //-------------------------//
 
@@ -349,7 +349,7 @@
 
     $Customer_01 = "A 30-day money-back guarantee on product purchases";
     $Customer_02 = "A non-retaliation policy for customers who do not wish to become IBAs";
-    $Customer_03 = "A clear refund policy on onboarding kits and digital tools";
+    $Customer_03 = "Check out on onboarding kits and digital tools";
     $Customer_04 = "Transparent, equal-access pricing for customers and IBAs alike.";
 
     //-------------------------//

@@ -314,29 +314,34 @@ section{
   width: 100%;
 }
 
-.text-hero{
+.text-hero {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   max-width: 1920px;
   width: 100%;
-  padding: 30px;
-  transform: translate(-50%,-50%);
+  padding: 0 30px;
+  transform: translate(-50%, -50%);
   z-index: 2;
   opacity: 0;
+  display: block;
+  text-align: center;
   transition: opacity 0.5s ease;
 }
 
-.text-hero :is(h1,p){
+.text-hero h1,
+.text-hero p {
   color: white;
 }
 
 @media screen and (max-width: 1080px) {
-  .text-hero{
+  .text-hero {
     opacity: 1;
     transition: none;
+    top: 50%;
   }
 }
+
 
 /* ============================================== */
 /* BOX */
@@ -544,6 +549,14 @@ img.polvo{
     transform: translateX(-50%);
   }
 
+}
+
+/* ============================================== */
+/* PARALLAX */
+/* ============================================== */
+
+.h1-special{
+  margin-top: -10%;
 }
 
 /* ============================================== */
@@ -805,6 +818,19 @@ img.polvo{
   .tab-content {
     margin-top: 0;
     padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tab-header {
+    flex-direction: column;
+  }
+  .tabs {
+    margin: 20px auto;
+  }
+  .content {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 

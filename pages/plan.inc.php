@@ -137,7 +137,6 @@
 						<li><?php echo $Guaranteed_04; ?></li>
 					</ul>
 			    </div>
-			    <p><?php echo $Guaranteed_text; ?></p>
 		    </div>
 		</div>
 
