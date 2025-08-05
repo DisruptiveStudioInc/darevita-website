@@ -552,14 +552,6 @@ img.polvo{
 }
 
 /* ============================================== */
-/* PARALLAX */
-/* ============================================== */
-
-.h1-special{
-  margin-top: -10%;
-}
-
-/* ============================================== */
 /* SPIRIT */
 /* ============================================== */
 
@@ -767,8 +759,8 @@ img.polvo{
 }
 
 .tab-content {
-  margin-top: 20px;
-  padding: 20px;
+  margin: 0;
+  padding-top: 20px;
   border-radius: 10px;
   transition: height 0.5s ease;
   overflow: hidden;
@@ -814,10 +806,6 @@ img.polvo{
   }
   .tab.active {
     background: var(--color-pri);
-  }
-  .tab-content {
-    margin-top: 0;
-    padding: 20px 0;
   }
 }
 

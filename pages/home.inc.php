@@ -7,7 +7,7 @@
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="text-hero t-c hero-text">
+	<div class="text-hero t-c hero-text mt-40 small-mt-0">
         <h1 class="h1-special first"><span>Darevita:</span> <?php echo $Hero_01; ?></h1>
         <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
     </div>
