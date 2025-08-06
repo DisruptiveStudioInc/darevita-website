@@ -1,6 +1,7 @@
 /* ============================================== */
 /* LAZY-LOAD */
 /* ============================================== */
+
 const observer = lozad();
 observer.observe();
 
@@ -38,68 +39,101 @@ window.addEventListener("load", () => {
 /* MENU HAMBURGUER */
 /* ============================================== */
 
-if (document.documentElement.clientWidth < 1080) {
-    $('.hamburguer').click(function () {
+function initMobileMenu() {
+    $('.hamburguer').off('click').on('click', function () {
         $('.navigation .menu').toggleClass('active');
         $(this).toggleClass("active");
     });
 
-    $('.navigation .menu a').click(function (e) {
-        // Si el <a> pertenece a un li con sub-submenú, no cerrar el menú
+    $('.navigation .menu a').off('click').on('click', function (e) {
         if ($(this).closest('li').find('.sub-sub').length) {
-            e.preventDefault(); // Evita navegación
-            return; // Salimos sin cerrar el menú
+            e.preventDefault();
+            return;
         }
-
-        // Si es un link normal, cerrar el menú
         $('.navigation .menu').removeClass('active');
         $('.hamburguer').removeClass("active");
     });
-
 }
+
+function checkMenu() {
+    if ($(window).width() < 1080) {
+        initMobileMenu();
+    } else {
+        // Limpia clases si vuelves a desktop
+        $('.hamburguer').removeClass('active');
+        $('.navigation .menu').removeClass('active');
+        $('.hamburguer').off('click');
+        $('.navigation .menu a').off('click');
+    }
+}
+
+$(document).ready(checkMenu);
+$(window).on('resize', checkMenu);
+
 
 /* ============================================== */
 /* NAVIGATION                                     */
 /* ============================================== */
-$(document).ready(function () {
-    var sections = $('.anchor');
-    var nav = $('nav .navigation');
-    var nav_height = nav.outerHeight();
 
-    // Scroll activo para resaltar secciones
-    $(window).on('scroll', function () {
-        var cur_pos = $(this).scrollTop();
+$(document).ready(function () {
+    const sections = $('.anchor');
+    const nav = $('nav .navigation');
+    let navHeight = nav.outerHeight();
+    let activeSection = null; // Para no actualizar clases si no cambió
+    let ticking = false;      // Control para requestAnimationFrame
+
+    // Función para detectar sección activa
+    function onScroll() {
+        const curPos = $(window).scrollTop();
+        let newActive = null;
 
         sections.each(function () {
-            var top = $(this).parent().offset().top - nav_height;
-            var bottom = top + $(this).parent().outerHeight();
+            const top = $(this).parent().offset().top - navHeight;
+            const bottom = top + $(this).parent().outerHeight();
 
-            if (cur_pos >= top && cur_pos <= bottom) {
-                nav.find('a').removeClass('active');
-                sections.removeClass('active');
-
-                $(this).addClass('active');
-                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            if (curPos >= top && curPos <= bottom) {
+                newActive = this; // Guardamos la sección activa
+                return false; // Rompe el each
             }
         });
+
+        if (newActive && activeSection !== newActive) {
+            activeSection = newActive;
+
+            nav.find('a').removeClass('active');
+            sections.removeClass('active');
+
+            $(activeSection).addClass('active');
+            nav.find(`a[href="#${$(activeSection).attr('id')}"]`).addClass('active');
+        }
+    }
+
+    // Scroll con requestAnimationFrame
+    $(window).on('scroll', function () {
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                onScroll();
+                ticking = false;
+            });
+            ticking = true;
+        }
     });
 
     // Scroll suave para anchors internos
-    $('a[href*="#"]:not([href="#"])').click(function () {
+    $('a[href*="#"]:not([href="#"])').click(function (e) {
         if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname
+            location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+            location.hostname === this.hostname
         ) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            const target = $(this.hash.length ? this.hash : `[name=${this.hash.slice(1)}]`);
             if (target.length) {
-                var nav_height = nav.outerHeight();
+                navHeight = nav.outerHeight(); // Recalcular por si cambió en responsive
 
                 $('html, body').stop().animate({
-                    scrollTop: target.offset().top - nav_height
+                    scrollTop: target.offset().top - navHeight
                 }, 500, 'swing');
 
-                // Cierra submenús al hacer clic en enlaces del menú
+                // Cierra submenús si están abiertos
                 document.querySelector(".lan")?.classList.remove("active");
                 document.querySelector(".btn-lan")?.classList.remove("open");
                 document.querySelector(".sub")?.classList.remove("active");
@@ -109,70 +143,77 @@ $(document).ready(function () {
             }
         }
     });
+
+    // Ejecuta una vez al cargar
+    onScroll();
 });
 
+
 /* ============================================== */
-/* LANGUAGE + SUBMENU + SUB-SUBMENU                */
+/* LANGUAGE + SUBMENU + SUB-SUBMENU
 /* ============================================== */
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.addEventListener("click", function (e) {
-        const allMenus = document.querySelectorAll(".lan, .sub, .cus, .get");
-        const allButtons = document.querySelectorAll(".btn-lan, .btn-sub, .btn-cus, .btn-get");
+document.addEventListener("DOMContentLoaded", () => {
+    const menusSelector = ".lan, .sub, .cus, .get";
+    const buttonsSelector = ".btn-lan, .btn-sub, .btn-cus, .btn-get";
 
-        // Detecta si clic fue en algún botón de submenú
-        const clickedBtn = e.target.closest(".btn-lan, .btn-sub, .btn-cus, .btn-get");
+    const allMenus = document.querySelectorAll(menusSelector);
+    const allButtons = document.querySelectorAll(buttonsSelector);
+
+    function closeAll() {
+        allMenus.forEach(menu => menu.classList.remove("active"));
+        allButtons.forEach(btn => btn.classList.remove("open"));
+        document.querySelectorAll(".sub li.open").forEach(li => li.classList.remove("open"));
+    }
+
+    document.addEventListener("click", (e) => {
+        const clickedBtn = e.target.closest(buttonsSelector);
         const clickedMenu = clickedBtn?.nextElementSibling;
 
+        // === Click en botón principal ===
         if (clickedBtn && clickedMenu) {
             e.preventDefault();
 
-            // Cierra todos los demás
-            allMenus.forEach(menu => {
-                if (menu !== clickedMenu) menu.classList.remove("active");
-            });
-            allButtons.forEach(btn => {
-                if (btn !== clickedBtn) btn.classList.remove("open");
-            });
+            // Cierra todos los demás menús y sub-sub
+            closeAll();
 
-            // Alterna el clic actual
+            // Abre o cierra el actual
             clickedMenu.classList.toggle("active");
             clickedBtn.classList.toggle("open");
             return;
         }
 
-        // === Click en sub-submenú ===
+        // === Click en item que tiene sub-sub ===
         const subSubTrigger = e.target.closest(".sub > li");
         const isRealLink = e.target.closest(".sub-sub a");
 
         if (subSubTrigger && subSubTrigger.querySelector(".sub-sub") && !isRealLink) {
             e.preventDefault();
-            subSubTrigger.classList.toggle("open");
 
-            // Cierra otros sub-sub abiertos
+            // Cierra otros sub-sub en el mismo nivel
             subSubTrigger.parentElement.querySelectorAll("li.open").forEach(li => {
                 if (li !== subSubTrigger) li.classList.remove("open");
             });
+
+            // Alterna el actual
+            subSubTrigger.classList.toggle("open");
             return;
         }
 
         // === Click fuera de cualquier menú ===
-        if (!e.target.closest(".lan, .sub, .cus, .get")) {
-            allMenus.forEach(menu => menu.classList.remove("active"));
-            allButtons.forEach(btn => btn.classList.remove("open"));
-            document.querySelectorAll(".sub li.open").forEach(li => li.classList.remove("open"));
+        if (!e.target.closest(menusSelector)) {
+            closeAll();
         }
     });
 
-    // Cerrar todo con Escape
-    document.addEventListener("keydown", function (e) {
+    // === Cerrar todo con Escape ===
+    document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            document.querySelectorAll(".lan, .sub, .cus, .get").forEach(menu => menu.classList.remove("active"));
-            document.querySelectorAll(".btn-lan, .btn-sub, .btn-cus, .btn-get").forEach(btn => btn.classList.remove("open"));
-            document.querySelectorAll(".sub li.open").forEach(li => li.classList.remove("open"));
+            closeAll();
         }
     });
 });
+
 
 
 /* ============================================== */

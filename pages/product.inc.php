@@ -123,6 +123,8 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 <section class="c-sub <?php echo $id; ?>">
     <div class="h-100 of-h rel small-h-0">
 
+        <img class="img-middle small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
+
         <div class="ingredients_wrap">
             <h2 class="abs-text h1 t-c"><?php echo $Ingredients; ?></h2>
             <ul class="ingredients">
@@ -135,7 +137,6 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
             </ul>
         </div>
 
-        <img class="img-middle small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
     </div>
 </section>
 
@@ -250,59 +251,63 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 <script>
 
 /* ============================================== */
-/* SECTIONS */
+/* SCROLL-MAGIC */
 /* ============================================== */
 
-/*document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  let isScrolling = false;
+document.addEventListener("DOMContentLoaded", function() {
 
-  // Solo activar scroll forzado en pantallas >= 768px
-  if (window.innerWidth >= 768) {
-    
-    window.addEventListener("wheel", (e) => {
-      if (isScrolling) return; // Evita múltiples triggers
+    // Solo ejecutar si ancho >= 1080px
+    if (window.innerWidth >= 1080) {
 
-      const currentIndex = getCurrentSectionIndex();
+        // Función para cargar scripts dinámicamente
+        function loadScript(src) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
 
-      // Detecta dirección
-      if (e.deltaY > 0) { 
-        goToNextSection();
-      } else {
-        goToPrevSection();
-      }
-    }, { passive: false });
+        // Cargar librerías en orden
+        Promise.all([
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"),
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js")
+        ])
+        .then(() => Promise.all([
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"),
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
+        ]))
+        .then(() => {
 
-    function getCurrentSectionIndex() {
-      let index = 0;
-      let scrollPos = window.scrollY + window.innerHeight / 2;
-      sections.forEach((sec, i) => {
-        if (scrollPos >= sec.offsetTop) index = i;
-      });
-      return index;
+            // ====== Aquí va TODO tu código ScrollMagic ======
+            var controller = new ScrollMagic.Controller();
+            var animationSpeed = 0.75;
+            var animationLinear = Power3.easeInOut;
+            var animationIn = Expo.easeIn;
+
+            $('.ingredients_wrap').each(function() {
+                var ingredientsElement = this.querySelector('.ingredients');
+
+                if (ingredientsElement) {
+                    var scene = new ScrollMagic.Scene({
+                        triggerElement: this,
+                        triggerHook: 0.2,
+                        duration: "80%"
+                    })
+                    .setClassToggle(ingredientsElement, 'fade-in')
+                    //.addIndicators()
+                    .addTo(controller);
+                }
+            });
+
+        });
+
     }
 
-    function goToNextSection() {
-      const currentIndex = getCurrentSectionIndex();
-      if (currentIndex < sections.length - 1) {
-        scrollToSection(currentIndex + 1);
-      }
-    }
+});
 
-    function goToPrevSection() {
-      const currentIndex = getCurrentSectionIndex();
-      if (currentIndex > 0) {
-        scrollToSection(currentIndex - 1);
-      }
-    }
-
-    function scrollToSection(index) {
-      isScrolling = true;
-      sections[index].scrollIntoView({ behavior: "smooth" });
-      setTimeout(() => { isScrolling = false; }, 800);
-    }
-  }
-});*/
 
 /* ============================================== */
 /* BANNER */

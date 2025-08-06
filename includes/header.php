@@ -141,13 +141,18 @@
                             foreach ($Menu as $item) {
                                 $counter++;
 
-                                // Primer item -> siempre "./"
+                                // Primer item -> dinámico
                                 if ($counter == 1) {
-                                    $item[0] = './';
+                                    // Si NO estamos en home ni vacío -> ir a "./"
+                                    if ($Actual_Page !== '' && $Actual_Page !== 'home') {
+                                        $item[0] = './';
+                                    } else {
+                                        $item[0] = '#home';
+                                    }
                                 }
 
-                                // Segundo item -> solo mostrar si estamos en "home" o vacío
-                                if (in_array($counter, [2,3]) && $Actual_Page !== '' && $Actual_Page !== 'home') {
+                                // Segundo y tercer item -> solo mostrar en "home" o vacío
+                                if (in_array($counter, [2, 3]) && $Actual_Page !== '' && $Actual_Page !== 'home') {
                                     continue;
                                 }
 

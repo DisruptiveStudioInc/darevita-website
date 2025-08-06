@@ -339,6 +339,10 @@ foreach ($Modal as $item){
 
 <script>
 
+/* ============================================== */
+/* VIDEO HERO */
+/* ============================================== */
+
 document.addEventListener("DOMContentLoaded", function() {
     const video = document.getElementById("heroVideo");
     const placeholder = document.querySelector(".video-placeholder");
@@ -556,7 +560,6 @@ window.onclick = function(event) {
         }
     });
 };
-
 
 /* ============================================== */
 /* TABS */

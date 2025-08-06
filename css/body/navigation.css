@@ -31,10 +31,10 @@
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   transition: padding 0.3s ease, background 0.3s ease;
 }
 
@@ -54,15 +54,9 @@
   cursor: pointer;
   font-size: var(--fs-base);
   margin: 0;
-  color: white;
-  opacity: 0.5;
+  opacity: 0.8;
   border-radius: 10px;
   transition: color 0.3s ease, opacity 0.3s ease;
-}
-
-.navigation.effect ul li a,
-.navigation.effect .btn-lan {
-  color: var(--color-pri);
 }
 
 .navigation ul li a.active,
@@ -163,6 +157,7 @@
   background: var(--color-ter);
   color: white;
   cursor: pointer;
+  font-weight: 600;
 }
 
 /* Flecha de despliegue */
@@ -255,51 +250,58 @@
 
 .btn-lan,
 .btn-sub,
-.btn-cus{
+.btn-cus {
+  position: relative;
+  display: inline-block;
   padding: 10px 40px 10px 15px !important;
+  color: var(--color-pri);
+  cursor: pointer;
+  border-radius: 40px; /* Solo afecta btn-lan visualmente */
+  transition: background 0.25s ease;
 }
 
+/* Solo btn-lan: corrige padding */
+.btn-lan { padding-left: 40px !important; }
+
+/* Hover */
 .btn-lan:hover,
 .btn-sub:hover,
-.btn-cus:hover{
-  cursor: pointer;
-}
+.btn-cus:hover { cursor: pointer; }
 
-.btn-lan{
-  border-radius: 40px;
-  padding: 10px 40px 10px 45px !important;
-}
-
-.sub > li > a:after,
-.btn-lan:after,
-.btn-sub:after,
-.btn-cus:after {
+/* Flecha after */
+.btn-lan::after,
+.btn-sub::after,
+.btn-cus::after,
+.sub > li > a::after {
   content: url("./../../images/icons/body/chevron.svg");
-  position:absolute;
+  position: absolute;
   right: 10px;
-  top:13px;
+  top: 50%;
   width: 20px;
   height: 20px;
-  transform: rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
   transition: transform 0.25s ease;
 }
 
-.btn-lan.open:after,
-.btn-sub.open:after,
-.btn-cus.open:after{
-  transform: rotate(0deg);
-}
+/* Flecha abierta */
+.btn-lan.open::after,
+.btn-sub.open::after,
+.btn-cus.open::after { transform: translateY(-50%) rotate(0deg); }
 
-.btn-sub.open,
+/* Estado activo */
 .btn-lan.open,
+.btn-sub.open,
 .btn-cus.open,
 .lan,
 .sub,
-.cus{
+.cus {
   background: var(--color-0);
-  color: var(--color-100);
+  color: var(--color-pri);
 }
 
+/* ========================= */
+/* LISTAS DESPLEGABLES       */
+/* ========================= */
 .lan,
 .sub,
 .cus {
@@ -315,19 +317,17 @@
   padding: 10px;
   color: white;
   transition: all 250ms ease;
+  z-index: 9;
 }
 
 .sub,
-.cus {
-  width: var(--width-sub);
-  left: 0px;
-}
+.cus { width: var(--width-sub); }
 
 ul.sub li,
 ul.cus li {
   display: flex;
   gap: 10px;
-  transition:all 250ms ease;
+  transition: all 250ms ease;
 }
 
 ul.sub-sub li span.img {
@@ -335,7 +335,7 @@ ul.sub-sub li span.img {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 30px;    /* Solo controlamos el ancho */
+  width: 30px;
 }
 
 ul.sub-sub li span.img img {
@@ -352,19 +352,13 @@ ul.cus li a {
   text-decoration: none;
 }
 
-ul.sub li a span{
+ul.sub li a span {
   font-size: 0.8rem;
   width: 100%;
   display: block;
   margin: 0;
   height: auto;
   opacity: 0.5;
-}
-
-ul.lan,
-ul.sub,
-ul.cus{
-  z-index: 9;
 }
 
 .lan.active,
@@ -375,15 +369,12 @@ ul.cus{
   transform: translateY(0px);
 }
 
-.btn-lan, .lan,
-.btn-sub, .sub,
-.btn-cus, .cus{
-  color: white;
-}
-
+/* ========================= */
+/* LINKS INTERNOS            */
+/* ========================= */
 .navigation .lan a,
 .navigation .sub a,
-.navigation .cus a{
+.navigation .cus a {
   position: relative;
   display: block;
   width: 100%;
@@ -393,28 +384,21 @@ ul.cus{
   border-radius: 5px;
 }
 
-.lan a:hover,
-.sub a:hover,
-.cus a:hover{
-  color: var(--color-100);
-}
-
-.navigation .sub a:hover,
-.navigation .cus a:hover{
-  background: var(--color-sec);
-}
-
-.navigation .lan {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); /* 1 columna */
-  gap: 10px; /* espacio entre elementos */
-}
-
-.navigation .lan a{
+.navigation .lan a {
   width: 70px;
   padding: 5px 5px 5px 30px !important;
 }
 
+.navigation .sub a:hover,
+.navigation .cus a:hover { background: var(--color-sec); }
+
+.lan a:hover,
+.sub a:hover,
+.cus a:hover { color: var(--color-100); }
+
+/* ========================= */
+/* FLAGS                     */
+/* ========================= */
 .lan a::before,
 .btn-lan::before {
   content: "";
@@ -430,30 +414,18 @@ ul.cus{
   background-position: center;
 }
 
-.lan a::before{
-  top: 7px;
-  left: 0;
-}
+.lan a::before { top: 7px; left: 0; }
+.lan a.selected { opacity: 1; font-weight: 600; }
 
-.lan a.selected{
-  opacity: 1;
-  font-weight: 600;
-}
+/* Idiomas */
+.lan a.esp::before, .btn-lan.esp::before { background-image: url('./../../images/flags/esp.svg'); }
+.lan a.eng::before, .btn-lan.eng::before { background-image: url('./../../images/flags/eng.svg'); }
+.lan a.chi::before, .btn-lan.chi::before { background-image: url('./../../images/flags/chi.svg'); }
+.lan a.cor::before, .btn-lan.cor::before { background-image: url('./../../images/flags/cor.svg'); }
+.lan a.fra::before, .btn-lan.fra::before { background-image: url('./../../images/flags/fra.svg'); }
+.lan a.jpn::before, .btn-lan.jpn::before { background-image: url('./../../images/flags/jpn.svg'); }
+.lan a.por::before, .btn-lan.por::before { background-image: url('./../../images/flags/por.svg'); }
 
-.lan a.esp::before,
-.btn-lan.esp::before {  background-image: url('./../../images/flags/esp.svg');  }
-.lan a.eng::before,
-.btn-lan.eng::before {  background-image: url('./../../images/flags/eng.svg');  }
-.lan a.chi::before,
-.btn-lan.chi::before {  background-image: url('./../../images/flags/chi.svg');  }
-.lan a.cor::before,
-.btn-lan.cor::before {  background-image: url('./../../images/flags/cor.svg');  }
-.lan a.fra::before,
-.btn-lan.fra::before {  background-image: url('./../../images/flags/fra.svg');  }
-.lan a.jpn::before,
-.btn-lan.jpn::before {  background-image: url('./../../images/flags/jpn.svg');  }
-.lan a.por::before,
-.btn-lan.por::before {  background-image: url('./../../images/flags/por.svg');  }
 
 /* ============================================== */
 /* NUEVO: Sub-submenú anidado                     */
