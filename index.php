@@ -1,6 +1,13 @@
 <!-- header -->
 	<?php
 	session_start();
+	if(isset($_SESSION['user_replica']) && !isset($_GET['ref'])){
+		$user_replica = $_SESSION['user_replica'];
+	}
+	else{
+		$user_replica = isset($_GET['ref']) ? $_GET['ref'] : NULL;
+		$_SESSION['user_replica'] = $user_replica;
+	}
 	include("./includes/header.php");
 	?>
 <!-- /header -->

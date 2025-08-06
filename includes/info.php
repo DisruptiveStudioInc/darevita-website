@@ -67,20 +67,20 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
     // LINKS
     //-------------------------//
 
-$Register = "https://usdev.darevita.com/register/";
+$Register = "https://usdev.darevita.com/register/?ref=$user_replica";
 $Login = "https://usdev.darevita.com/my-account/";
 
-$Shop_usa = "https://usdev.darevita.com";
-$Shop_mex = "https://mxdev.darevita.com";
-$Shop_int = "https://intdev.darevita.com/";
+$Shop_usa = "https://usdev.darevita.com/?ref=$user_replica";
+$Shop_mex = "https://mxdev.darevita.com/?ref=$user_replica";
+$Shop_int = "https://intdev.darevita.com/?ref=$user_replica";
 
-$Shop_usa_restore = "https://usdev.darevita.com/product/restore/";
-$Shop_usa_revive = "https://usdev.darevita.com/product/revive/";
-$Shop_usa_rejuvenate = "https://usdev.darevita.com/product/rejuvenate/";
+$Shop_usa_restore = "https://usdev.darevita.com/product/restore/?ref=$user_replica";
+$Shop_usa_revive = "https://usdev.darevita.com/product/revive/?ref=$user_replica";
+$Shop_usa_rejuvenate = "https://usdev.darevita.com/product/rejuvenate/?ref=$user_replica";
 
-$Shop_mex_restore = "https://mxdev.darevita.com/product/restore/";
-$Shop_mex_revive = "https://mxdev.darevita.com/product/revive/";
-$Shop_mex_rejuvenate = "https://mxdev.darevita.com/product/rejuvenate/";
+$Shop_mex_restore = "https://mxdev.darevita.com/product/restore/?ref=$user_replica";
+$Shop_mex_revive = "https://mxdev.darevita.com/product/revive/?ref=$user_replica";
+$Shop_mex_rejuvenate = "https://mxdev.darevita.com/product/rejuvenate/?ref=$user_replica";
 
     //-------------------------//
     // MENU
