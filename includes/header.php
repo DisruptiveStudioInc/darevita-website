@@ -81,15 +81,15 @@
         <div class="wrap-get">
           <div class="btn-get"><?php echo $Btn_started; ?></div>
           <div class="get">
-            <a href="https://usdev.darevita.com/product-category/starter-plans/" 
+            <a href="https://usdev.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
                target="_blank" 
                class="eng" 
                aria-label="Buy in USA">United States</a>
-            <a href="https://mxdev.darevita.com/product-category/starter-plans/" 
+            <a href="https://mxdev.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
                target="_blank" 
                class="esp" 
                aria-label="Buy in Mexico">México</a>
-            <a href="https://intdev.darevita.com/" 
+            <a href="https://intdev.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
                target="_blank" 
                class="int" 
                aria-label="Buy International">International</a>
@@ -211,7 +211,7 @@
                                 </div>
                                 <?php if($user_replica): ?>
                                 <div>
-                                    <a href="<?php echo $Register . $user_replica; ?>" target="_blank" class="btn c-pri br-30 small-w-100">Register</a>
+                                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-pri br-30 small-w-100">Register</a>
                                 </div>
                                 <?php endif; ?>
                             </div>
@@ -222,7 +222,7 @@
                         <div class="btns m-0 g-10 med-d-none">
                             <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30">Login</a>
                             <?php if($user_replica): ?>
-                                <a href='<?php echo $Register . $user_replica; ?>' target="_blank" class="btn c-pri br-30">Register</a>
+                                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-pri br-30">Register</a>
                             <?php endif; ?>
                         </div>
                         <div class="hamburguer">
