@@ -1,6 +1,7 @@
 <!-- header -->
 	<?php
 	session_start();
+	$user_replica = isset($_GET['ref']) ? $_GET['ref'] : NULL;
 	include("./includes/header.php");
 	?>
 <!-- /header -->

@@ -67,7 +67,7 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
     // LINKS
     //-------------------------//
 
-$Register = "https://usdev.darevita.com/register/";
+$Register = "https://usdev.darevita.com/register/?ref=";
 $Login = "https://usdev.darevita.com/my-account/";
 
 $Shop_usa = "https://usdev.darevita.com";

@@ -141,6 +141,9 @@
                             foreach ($Menu as $item) {
                                 $counter++;
 
+                                if($item[0] == '?p=earn' && !$user_replica)
+                                    continue;
+
                                 // Primer item -> dinámico
                                 if ($counter == 1) {
                                     // Si NO estamos en home ni vacío -> ir a "./"
@@ -206,9 +209,11 @@
                                 <div class="mb-10">
                                     <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100">Login</a>
                                 </div>
+                                <?php if($user_replica): ?>
                                 <div>
-                                    <a href="<?php echo $Register; ?>" target="_blank" class="btn c-pri br-30 small-w-100">Register</a>
+                                    <a href="<?php echo $Register . $user_replica; ?>" target="_blank" class="btn c-pri br-30 small-w-100">Register</a>
                                 </div>
+                                <?php endif; ?>
                             </div>
                         </ul>
                     </div>
@@ -216,7 +221,9 @@
                     <div class="jc-center ai-center">
                         <div class="btns m-0 g-10 med-d-none">
                             <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30">Login</a>
-                            <a href='<?php echo $Register; ?>' target="_blank" class="btn c-pri br-30">Register</a>
+                            <?php if($user_replica): ?>
+                                <a href='<?php echo $Register . $user_replica; ?>' target="_blank" class="btn c-pri br-30">Register</a>
+                            <?php endif; ?>
                         </div>
                         <div class="hamburguer">
                             <span></span>
