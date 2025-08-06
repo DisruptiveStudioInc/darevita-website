@@ -16,7 +16,7 @@
     <meta name="twitter:title"       content="<?php echo $Company_Name; ?>">
     <meta name="twitter:description" content="<?php echo $Description_Site; ?>">
     <meta name="twitter:creator"     content="<?php echo $Company_Name; ?>">
-    <meta name="twitter:image"       content="/images/facebook/facebook.jpg">
+    <meta name="twitter:image"       content="<?php echo $Host_Site; ?>/images/facebook/facebook.jpg">
 
     <!-- FACEBOOK -->
     <meta property="og:site_name"    content="<?php echo $Company_Name; ?>" />
@@ -24,7 +24,7 @@
     <meta property="og:title"        content="<?php echo $Company_Name; ?>" />
     <meta property="og:type"         content="website" />
     <meta property="og:description"  content="<?php echo $Description_Site; ?>" />
-    <meta property="og:image"        content="/images/facebook/facebook.jpg" />
+    <meta property="og:image"        content="<?php echo $Host_Site; ?>/images/facebook/facebook.jpg" />
     <meta property="og:image:width"  content="1024" />
     <meta property="og:image:height" content="538" />
 

@@ -172,44 +172,44 @@ foreach ($Modal as $item){
 }
 ?>
 
-<section>
+<section class="treo">
 
 	<div class="anchor" id="treo"></div>
-	<div class="h-100 med-h-0 med-fd-col-rev content-scroll jc-center ai-center rel">
+	<div class="h-100 med-h-0 med-fd-col-rev content-scroll jc-center ai-center rel wrap_treo">
 
 	<div class="section-arrows">
 	    <button class="arrow up"></button>
 	    <button class="arrow down"></button>
 	</div>
 
-		<div class="box_product img-one rel">
-			<span>
-				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal1')"></button>
-				<a href="?p=product&id=restore" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
-			</span>
-			<img src="./images/body/treo/restore.webp" class="product" alt="restore"/>
-		</div>
+	<div class="box_product img-one rel">
+		<span>
+			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal1')"></button>
+			<a href="?p=product&id=restore" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
+		</span>
+		<img src="./images/body/treo/restore.webp" class="product" alt="restore"/>
+	</div>
 
-		<div class="box_product img-two">
-			<span>
-				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal2')"></button>
-				<a href="?p=product&id=rejuvenate" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
-			</span>
-			<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate"/>
-		</div>
+	<div class="box_product img-two">
+		<span>
+			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal2')"></button>
+			<a href="?p=product&id=rejuvenate" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
+		</span>
+		<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate"/>
+	</div>
 
-		<div class="box_product img-three">
-			<span>
-				<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal3')"></button>
-				<a href="?p=product&id=revive" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
-			</span>
-			<img src="./images/body/treo/revive.webp" class="product" alt="revive"/>
-		</div>
+	<div class="box_product img-three">
+		<span>
+			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal3')"></button>
+			<a href="?p=product&id=revive" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
+		</span>
+		<img src="./images/body/treo/revive.webp" class="product" alt="revive"/>
+	</div>
 
-		<img class="polvo med-d-none" src="./images/body/treo/polvo.webp">
-		<img class="background med-d-none img_product_restore" src="./images/body/treo/bg_restore.webp" alt="restore background">
-		<img class="background med-d-none img_product_rejuvenate" src="./images/body/treo/bg_rejuvenate.webp" alt="rejuvenate background">
-		<img class="background med-d-none img_product_revive" src="./images/body/treo/bg_revive.webp" alt="revive background">
+	<img class="polvo med-d-none" src="./images/body/treo/polvo.webp">
+	<img class="background med-d-none img_product_restore" src="./images/body/treo/bg_restore.webp" alt="restore background">
+	<img class="background med-d-none img_product_rejuvenate" src="./images/body/treo/bg_rejuvenate.webp" alt="rejuvenate background">
+	<img class="background med-d-none img_product_revive" src="./images/body/treo/bg_revive.webp" alt="revive background">
 
 	</div>
 </section>
@@ -275,7 +275,6 @@ foreach ($Modal as $item){
 	    <button class="arrow up"></button>
 	    <button class="arrow down"></button>
 	</div>
-
 	
 		<div class="mw-1280 jc-center h-100 med-h-0 g-40 ai-center small-ai-start small-fd-col">
 
@@ -463,7 +462,24 @@ document.addEventListener("DOMContentLoaded", function() {
             .addTo(controller);
 
             //*------------- CONTENT SCROLL
-            var content = new TimelineMax();
+
+            $('.treo').each(function() {
+                var treoElement = this.querySelector('.wrap_treo');
+
+                if (treoElement) {
+                    var scene = new ScrollMagic.Scene({
+                        triggerElement: this,
+                        triggerHook: 0.2,
+                        duration: "80%"
+                    })
+                    .setClassToggle(treoElement, 'fade-in')
+                    //.addIndicators()
+                    .addTo(controller);
+                }
+            });
+
+            //*------------- CONTENT SCROLL
+            /*var content = new TimelineMax();
 
             new ScrollMagic.Scene({
                 triggerElement: '.content-scroll',
@@ -475,9 +491,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             content
                 .fromTo('.content-scroll .polvo', animationSpeed,{ opacity: 0, scale: 0, xPercent: -50, yPercent: -50 },{ opacity: 1, scale: 1,ease: animationIn })
-                .to('.content-scroll .img-one',  animationSpeed, {x: "100%",ease: animationIn },0)
-                .to('.content-scroll .img-two',  animationSpeed, {x: "-100%",ease: animationIn},0)
+                .to('.content-scroll .img-one',  animationSpeed, {x: "-100%",ease: animationIn },0)
+                .to('.content-scroll .img-two',  animationSpeed, {x: "100%",ease: animationIn},0)
                 .to('.content-scroll .img-three',animationSpeed, {x: "0%",ease: animationIn   },0)
+
                 .to('.content-scroll .img-one',  animationSpeed, {x: "0%",ease: animationIn  },1)
                 .to('.content-scroll .img-two',  animationSpeed, {x: "0%",ease: animationIn   },1)
                 .to('.content-scroll .img-three',animationSpeed, {x: "0%",ease: animationIn   },1);
@@ -488,7 +505,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 triggerHook: 0
             })
             .setTween(content)
-            .addTo(controller);
+            .addTo(controller);*/
 
         });
     }

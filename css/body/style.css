@@ -172,6 +172,12 @@ section{
   margin-top: -15%;
 }
 
+@media screen and (max-width: 1080px) {
+  .parallax .h1-special{
+    margin-top: 0;
+  }
+}
+
 /* ============================================== */
 /* H1 SPECIAL */
 /* ============================================== */
@@ -396,10 +402,13 @@ section{
   position: absolute;
   top:50%;
   left:50%;
-  margin-left: -150px;
-  margin-top: -200px;
+  transform: translate(-50%,-50%);
   z-index: 2;
+  transition:all 250ms ease;
 }
+
+.wrap_treo.fade-in .box_product.img-one  { left:35%;  }
+.wrap_treo.fade-in .box_product.img-two{ left:65%;  }
 
 .product {
   max-width: 300px;
@@ -455,9 +464,13 @@ img.polvo{
   z-index: 1;
   left: 50%;
   top: 50%;
-  max-width: 800px;
+  transform: translate(-50%,-50%);
+  width: 0;
   transform-origin: center center;
+  transition:all 250ms ease;
 }
+
+.wrap_treo.fade-in img.polvo{  width: 50%; }
 
 /* Fondo visible por defecto (por ejemplo restore) */
 .img_product_revive {
@@ -503,8 +516,10 @@ img.polvo{
 @media screen and (max-width: 1080px) {
 
   .content-scroll .box_product {
+    transform: none;
     position: relative;
     height: 100vh;
+    display: block;
     width: 100%;
     margin: 0;
     top: 0;
