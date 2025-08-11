@@ -73,7 +73,7 @@
     $Vision_text_02 = "Give new life to those open to change";
 
     $Vision_title_03 = "Community";
-    $Vision_text_03 = "Distributors, customers, and tribe united";
+    $Vision_text_03 = "Distributors clients and tribe united";
 
     $Vision_text = "The Idea That Guides Everything";
 
