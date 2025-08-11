@@ -14,22 +14,23 @@
 
     <div class="anchor" id="home"></div>
 
-    <div class="dh-100 of-h video-wrapper">
-    	<!-- Imagen mientras carga el video -->
-    	<div class="video-placeholder">
-    		<img src="./images/body/letters/1.webp" alt="Placeholder" />
-    	</div>
+	<div class="dh-100 of-h video-wrapper">
+	    <div class="video-placeholder">
+	        <img src="./images/body/letters/1.webp" alt="Placeholder" />
+	    </div>
 
-    	<!-- Video oculto hasta que esté listo -->
-        <video id="heroVideo"
-        	   class="full-img"
-		       autoplay
-		       loop
-		       muted
-		       playsinline
-		       style="display: none;">
-        </video>
-    </div>
+	    <video id="heroVideo"
+	           class="full-img"
+	           autoplay
+	           loop
+	           muted
+	           playsinline
+	           preload="auto"
+	           poster="./images/body/letters/1.webp"
+	           style="opacity: 0; transition: opacity 0.5s ease;">
+	    </video>
+	</div>
+
 </section>
 
 <section>
@@ -342,25 +343,26 @@ foreach ($Modal as $item){
 /* VIDEO HERO */
 /* ============================================== */
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const video = document.getElementById("heroVideo");
     const placeholder = document.querySelector(".video-placeholder");
 
-    // Crea un source dinámicamente
-    const source = document.createElement("source");
-    source.src = "./video/video.webm";
-    source.type = "video/webm";
+    const sourceMp4 = document.createElement("source");
+    sourceMp4.src = "./video/video.mp4";
+    sourceMp4.type = "video/mp4";
 
-    // Añade el source al video
-    video.appendChild(source);
+    const sourceWebm = document.createElement("source");
+    sourceWebm.src = "./video/video.webm";
+    sourceWebm.type = "video/webm";
 
-    // Espera a que el video esté listo
+    video.appendChild(sourceMp4);
+    video.appendChild(sourceWebm);
+
     video.addEventListener("canplaythrough", function () {
         placeholder.style.display = "none";
-        video.style.display = "block";
+        video.style.opacity = "1";
     });
 
-    // En caso de que el video no cargue, sigue mostrando la imagen
     video.load();
 });
 
