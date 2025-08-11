@@ -183,7 +183,7 @@ foreach ($Modal as $item){
 	    <button class="arrow down"></button>
 	</div>
 
-	<div class="box_product img-one rel">
+	<div class="box_product img-three rel">
 		<span>
 			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal1')"></button>
 			<a href="?p=product&id=restore" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
@@ -199,7 +199,7 @@ foreach ($Modal as $item){
 		<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate"/>
 	</div>
 
-	<div class="box_product img-three">
+	<div class="box_product img-one">
 		<span>
 			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal3')"></button>
 			<a href="?p=product&id=revive" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
