@@ -207,7 +207,7 @@
     // Started
     //-------------------------//
 
-    $Satarted_title = "Comienza con DareVita T”REO”";
+    $Satarted_title = "Comienza con DareVita TREO";
     $Satarted_sub = "Un objetivo, tres esenciales, desbloquea tu máximo potencial.";
 
     $Satarted_title_01 = "Activa tu sistema completo";
