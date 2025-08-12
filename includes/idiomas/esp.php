@@ -587,9 +587,9 @@
     // 10. Contáctenos
     $ContactUs = "10. Contáctenos";
     $ContactUs_text = "Si tiene preguntas sobre esta Política de Privacidad o nuestras prácticas de datos, comuníquese con nosotros en:";
-    $ContactUs_email = "Correo: Info@https://darevita.com";
-    $ContactUs_phone = "Teléfono: +14808088204";
-    $ContactUs_address = "Dirección: DareVita International Inc., 30 N Gould St, Ste R, Sheridan, Wyoming 82801";
+    $ContactUs_email = "Email: support@darevita.com";
+    $ContactUs_phone = "Phone: +14808088204";
+    $ContactUs_address = "Address: DareVita International Inc., 30 N Gould St, Ste R, Sheridan, Wyoming 82801";
 
     //-------------------------//
     // Política de Devoluciones
@@ -650,6 +650,13 @@
     // Disclaimer
     $Disclaimer_title = "Disclaimer";
     $Disclaimer_text = "These statements have not been evaluated by the Food and Drug Administration. These products do not intend to diagnose, treat, cure or prevent any disease. Results are not typical and may vary";
+
+    //-------------------------//
+    // Income
+    //-------------------------//
+
+    $Income_title = "Income disclaimers/Testimonials";
+    $Income_text = "Earning levels or income statements (including claims such as the ability to quit a job or stay at home or portrayals of luxury lifestyles) discussed here exceed the average results achieved by all IBA’s during the same time period, are not necessarily representative of the success or compensation that any particular IBA will receive, and should not be construed as typical or average. The ability to earn income under the DareVita Compensation Plan depends on many factors including an individual IBA business, social, and sales skills; personal ambition and activity; availability of time and financial resources; and access to a large network of family, friends, and business contacts. DareVita cannot and does not guarantee any particular level of earnings. Even IBA’s who dedicate a significant amount of time, effort, and personal funds may not achieve a meaningful level of success. Results may vary and are not typica";
 
     //-------------------------//
     // Footer

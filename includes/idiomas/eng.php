@@ -5,11 +5,11 @@
     //-------------------------//
 
     $Menu_01 = "Home";
-    $Menu_02 = "Darevita";
+    $Menu_02 = "DareVita";
     $Menu_03 = "Treo";
     $Menu_04 = "Products";
     $Menu_05 = "Shop";
-    $Menu_06 = "Earn";
+    $Menu_06 = "Share DareVita";
 
     //-------------------------//
     // Btn
@@ -537,7 +537,7 @@
 
     //-------------------------//
     // 1. Information We Collect
-    $InfoCollect = "1. Information We Collect";
+    $InfoCollect = "Information We Collect";
     $InfoCollect_intro = "We collect several types of information from and about users of our Service, including:";
 
     $InfoCollect_01 = "Personal Information: Information by which you may be personally identified, such as your name, postal address, email address, phone number, payment information, and any other identifier by which you may be contacted online or offline.";
@@ -547,7 +547,7 @@
 
     //-------------------------//
     // 2. How We Collect Information
-    $InfoCollectHow = "2. How We Collect Information";
+    $InfoCollectHow = "How We Collect Information";
     $InfoCollectHow_intro = "We collect information from you in the following ways:";
 
     $InfoCollectHow_01 = "Directly from You: When you provide it to us by filling out forms on our website, creating an account, making a purchase, subscribing to our services, or communicating with us.";
@@ -556,7 +556,7 @@
 
     //-------------------------//
     // 3. How We Use Your Information
-    $InfoUse = "3. How We Use Your Information";
+    $InfoUse = "How We Use Your Information";
     $InfoUse_intro = "DareVita International Inc. uses the information we collect for various purposes, including:";
 
     $InfoUse_01 = "To Provide and Improve Our Services: To process your transactions, manage your account, and improve the functionality of our website.";
@@ -567,7 +567,7 @@
 
     //-------------------------//
     // 4. Sharing Your Information
-    $InfoShare = "4. Sharing Your Information";
+    $InfoShare = "Sharing Your Information";
     $InfoShare_intro = "We may share your information with the following parties:";
 
     $InfoShare_01 = "Third-Party Service Providers: We share your information with third parties who perform services on our behalf, such as payment processing, data analysis, email delivery, hosting services, and customer support.";
@@ -578,12 +578,12 @@
 
     //-------------------------//
     // 5. Data Security
-    $DataSecurity = "5. Data Security";
+    $DataSecurity = "Data Security";
     $DataSecurity_text = "DareVita International Inc. implements reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security.";
 
     //-------------------------//
     // 6. Your Choices and Rights
-    $UserRights = "6. Your Choices and Rights";
+    $UserRights = "Your Choices and Rights";
     $UserRights_intro = "Depending on your jurisdiction, you may have certain rights regarding your personal information, including:";
 
     $UserRights_01 = "Access and Correction: You may access and correct the personal information we hold about you.";
@@ -593,24 +593,24 @@
 
     //-------------------------//
     // 7. International Data Transfers
-    $DataTransfer = "7. International Data Transfers";
+    $DataTransfer = "International Data Transfers";
     $DataTransfer_text = "If you are accessing our Service from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States, where our servers are located and our central database is operated. By using our Service, you consent to the transfer of your information to the United States.";
 
     //-------------------------//
     // 8. Children’s Privacy
-    $ChildrenPrivacy = "8. Children’s Privacy";
+    $ChildrenPrivacy = "Children’s Privacy";
     $ChildrenPrivacy_text = "Our Service is not directed to children under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that we have collected personal information from a child under 18 without verification of parental consent, we will take steps to delete that information.";
 
     //-------------------------//
     // 9. Changes to This Privacy Policy
-    $PolicyChanges = "9. Changes to This Privacy Policy";
+    $PolicyChanges = "Changes to This Privacy Policy";
     $PolicyChanges_text = "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date at the top. We may also provide notice by other means, such as via email or with a notice on our website.";
 
     //-------------------------//
     // 10. Contact Us
-    $ContactUs = "10. Contact Us";
+    $ContactUs = "Contact Us";
     $ContactUs_text = "If you have any questions about this Privacy Policy or our data practices, please contact us at:";
-    $ContactUs_email = "Email: Info@https://darevita.com";
+    $ContactUs_email = "Email: support@darevita.com";
     $ContactUs_phone = "Phone: +14808088204";
     $ContactUs_address = "Address: DareVita International Inc., 30 N Gould St, Ste R, Sheridan, Wyoming 82801";
 
@@ -673,6 +673,13 @@
     // Disclaimer
     $Disclaimer_title = "Disclaimer";
     $Disclaimer_text = "These statements have not been evaluated by the Food and Drug Administration. These products do not intend to diagnose, treat, cure or prevent any disease. Results are not typical and may vary";
+
+    //-------------------------//
+    // Income
+    //-------------------------//
+
+    $Income_title = "Income disclaimers/Testimonials";
+    $Income_text = "Earning levels or income statements (including claims such as the ability to quit a job or stay at home or portrayals of luxury lifestyles) discussed here exceed the average results achieved by all IBA’s during the same time period, are not necessarily representative of the success or compensation that any particular IBA will receive, and should not be construed as typical or average. The ability to earn income under the DareVita Compensation Plan depends on many factors including an individual IBA business, social, and sales skills; personal ambition and activity; availability of time and financial resources; and access to a large network of family, friends, and business contacts. DareVita cannot and does not guarantee any particular level of earnings. Even IBA’s who dedicate a significant amount of time, effort, and personal funds may not achieve a meaningful level of success. Results may vary and are not typica";
 
     //-------------------------//
     // Footer

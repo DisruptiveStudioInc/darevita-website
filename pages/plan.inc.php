@@ -205,3 +205,10 @@
 		</div>
 	</div>
 </section>
+
+<section>
+    <div class="mw-1080 t-c p-20 p-tiny">
+        <h4><?php echo $Income_title; ?></h4>
+        <p><?php echo $Income_text; ?></p>
+    </div>
+</section>
