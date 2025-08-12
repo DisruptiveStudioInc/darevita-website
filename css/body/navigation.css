@@ -161,16 +161,14 @@
   border: 2px solid white;
   font-weight: 600;
   font-size: 1.5rem;
-  animation: cta-blink 1.2s infinite; /* Parpadeo CTA */
+  animation: cta-blink 1.2s infinite;
 }
 
-/* Animación de parpadeo CTA */
 @keyframes cta-blink {
   0%, 100% { background: var(--color-ter); }
-  50% { background: var(--color-pri); } /* Color intermedio de atención */
+  50% { background: var(--color-pri); }
 }
 
-/* Flecha animada */
 .btn-get::after {
   content: url("./../../images/icons/body/chevron.svg");
   position: absolute;
@@ -182,19 +180,17 @@
   height: 30px;
   transform: rotate(-90deg);
   transition: transform 0.25s ease;
-  animation: arrow-bounce 0.8s infinite; /* Rebote del icono */
+  animation: arrow-bounce 0.8s infinite;
 }
 
-/* Animación de rebote lateral */
 @keyframes arrow-bounce {
   0%, 100% { transform: rotate(-90deg) translateX(0); }
   50% { transform: rotate(-90deg) translateX(4px); }
 }
 
-/* Flecha al abrir */
 .btn-get.open::after {
   transform: rotate(-180deg);
-  animation: none; /* Detener animación cuando está abierto */
+  animation: none;
 }
 
 @media screen and (max-width: 1080px) {
@@ -221,7 +217,6 @@
   }
 }
 
-
 /* ============================== */
 /* MENÚ GET HACIA ARRIBA          */
 /* ============================== */
@@ -229,6 +224,7 @@
 .get {
   position: absolute;
   bottom: 60px;
+  width: 100%;
   left: 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -423,6 +419,7 @@ ul.sub li a span {
 /* ========================= */
 /* LINKS INTERNOS            */
 /* ========================= */
+
 .navigation .lan a,
 .navigation .sub a,
 .navigation .cus a {
@@ -450,6 +447,7 @@ ul.sub li a span {
 /* ========================= */
 /* FLAGS                     */
 /* ========================= */
+
 .lan a::before,
 .btn-lan::before {
   content: "";
@@ -476,7 +474,6 @@ ul.sub li a span {
 .lan a.fra::before, .btn-lan.fra::before { background-image: url('./../../images/flags/fra.svg'); }
 .lan a.jpn::before, .btn-lan.jpn::before { background-image: url('./../../images/flags/jpn.svg'); }
 .lan a.por::before, .btn-lan.por::before { background-image: url('./../../images/flags/por.svg'); }
-
 
 /* ============================================== */
 /* NUEVO: Sub-submenú anidado                     */

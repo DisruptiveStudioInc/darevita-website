@@ -94,7 +94,7 @@
     $Products_rej_key_01 = "Promotes immune system vitality";
     $Products_rej_key_02 = "Boosts energy, cellular support, and collagen production";
     $Products_rej_key_03 = "Supports the body’s innate healing and regeneration processes";
-    $Products_rej_key_04 = "Promotes metabolism and lean tissue maintenance";
+    $Products_rej_key_04 = "Supports metabolic efficiency and  encourages lean muscle maintenance";
 
     $Products_title_03 = "Sleep Deep";
     $Products_text_03 = "Restore is crafted to promote the most vital stage of sleep—REM—where the mind and body recharge at the cellular level.";
@@ -166,7 +166,7 @@
     $Benefits_02_01 = "Promotes immune system vitality";
     $Benefits_02_02 = "Supports the body’s innate healing and regeneration processes";
     $Benefits_02_03 = "Boosts energy, cellular support, and collagen production";
-    $Benefits_02_04 = "Promotes metabolism and lean tissue maintenance";
+    $Benefits_02_04 = "Supports metabolic efficiency and  encourages lean muscle maintenance";
 
     $Benefits_03_01 = "Enhances REM sleep cycles, allowing for vivid dreaming and cognitive support while you sleep!";
     $Benefits_03_02 = "Ignites cognitive, hormone and immune support";
@@ -284,7 +284,7 @@
     $Overview_sub_01 = "Reward product purchases and customer referrals";
     $Overview_sub_02 = "Provide earning opportunities without requiring recruitment";
     $Overview_sub_03 = "Promote long-term product use and customer satisfaction";
-    $Overview_sub_04 = "Ensure compliance with applicable U.S. and global direct selling regulations.";
+    $Overview_sub_04 = "Ensure compliance with applicable U.S. and global direct selling regulations";
 
     //-------------------------//
 
