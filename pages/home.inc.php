@@ -54,10 +54,10 @@
 				</div>
 
 				<div class="tab-content">
-					<div class="content active" data-text="Experience our revolutionary products that transform lives."><?php echo $Journey_text_1; ?></div>
-					<div class="content" data-text="Join a community that believes in giving without expectation."><?php echo $Journey_text_2; ?></div>
-					<div class="content" data-text="Build a future where purpose and prosperity go hand in hand."><?php echo $Journey_text_3; ?></div>
-					<div class="content" data-text="Witness the power of positive change in yourself and others."><?php echo $Journey_text_4; ?></div>
+					<div class="content active" data-text="<?php echo $Journey_text_1; ?>"><?php echo $Journey_text_1; ?></div>
+					<div class="content" data-text="<?php echo $Journey_text_2; ?>"><?php echo $Journey_text_2; ?></div>
+					<div class="content" data-text="<?php echo $Journey_text_3; ?>"><?php echo $Journey_text_3; ?></div>
+					<div class="content" data-text="<?php echo $Journey_text_4; ?>"><?php echo $Journey_text_4; ?></div>
 				</div>
 			</div>
 		</div>

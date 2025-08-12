@@ -15,10 +15,10 @@
                         <img src="./images/logo/logo_white.svg" class="mw-100 med-m-center" alt="logo darevita">
 
                         <ul class="fw-wrap med-jc-center g-10 mt-20">
-                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-facebook"></a></li>
-                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-youtube"></a></li>
-                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-instagram"></a></li>
-                            <li><a target="_blank" href="#" class="v-white icon small br-2 icon-linkedin"></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/DareVitaInternational" class="v-white icon small br-2 icon-facebook"></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/@DareVitaInternational" class="v-white icon small br-2 icon-youtube"></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/DareVitaInternational/" class="v-white icon small br-2 icon-instagram"></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/darevita" class="v-white icon small br-2 icon-linkedin"></a></li>
                         </ul>
 
                         <p style="font-size: 0.8rem"><?php echo $Payments; ?></p>

@@ -86,7 +86,7 @@
     $Products_rev_key_01 = "Activates mental clarity and sharpens focus";
     $Products_rev_key_02 = "Supports long-term memory and learning through neural support";
     $Products_rev_key_03 = "Supports healthy neural communication which in turn promotes mental awareness";
-    $Products_rev_key_04 = "Promotes sustainable energy without stimulants";
+    $Products_rev_key_04 = "Promotes sustainable energy";
 
 
     $Products_title_02 = "Fuel Vitality Immune Support";

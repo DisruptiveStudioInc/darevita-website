@@ -73,7 +73,7 @@
     $Vision_text_02 = "Dar nueva vida a quienes estén abiertos al cambio";
 
     $Vision_title_03 = "Comunidad";
-    $Vision_text_03 = "Distribuidores, clientes y tribu unidos";
+    $Vision_text_03 = "Distribuidores y clientes unidos en armonía";
 
     $Vision_text = "La idea que guía todo";
 
@@ -645,6 +645,11 @@
     $RefundExceptions_02 = "Errores de envío;";
     $RefundExceptions_03 = "Cargos duplicados o accidentales.";
     $RefundExceptions_note = "Todas las excepciones deben ser aprobadas por escrito por el Departamento de Cumplimiento de DareVita.";
+
+    //-------------------------//
+    // Disclaimer
+    $Disclaimer_title = "Disclaimer";
+    $Disclaimer_text = "These statements have not been evaluated by the Food and Drug Administration. These products do not intend to diagnose, treat, cure or prevent any disease. Results are not typical and may vary";
 
     //-------------------------//
     // Footer
