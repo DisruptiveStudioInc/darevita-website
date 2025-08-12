@@ -35,10 +35,12 @@ switch ($pais) {
 // OBTENER PÁGINA ACTUAL Y PARÁMETROS
 //-------------------------------------------//
 
+
 $Actual_Page = !empty($_GET['p']) ? $_GET['p'] : '';
 $Actual_Page_Lan = $Actual_Page ? '&p=' . $Actual_Page : '';
 $Client_Page_Id = (empty($_GET['id'])) ? '' : '&id=' . $_GET['id'];
 $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
+
 
     //-------------------------//
     // CLIENT

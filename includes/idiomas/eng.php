@@ -54,7 +54,7 @@
     $Letters_text_01 = "Our products breathe new energy into your daily routine.";
 
     $Letters_title_02 = "Renew";
-    $Letters_text_02 = "Our platform offers individuals a way to explore flexible income opportunities.";
+    $Letters_text_02 = "Our platform offers individuals a way to explore potential income opportunities.";
 
     $Letters_title_03 = "Inspire";
     $Letters_text_03 = "Our community celebrates each step toward positive change.";
@@ -82,7 +82,7 @@
     //-------------------------//
 
     $Products_title_01 = "Wake Sharp Think Limitless";
-    $Products_text_01 = "At the cellular level, Revive supports memory consolidation, healthy neural communication, and protein synthesis—key factors in learning, recall, and mental resilience throughout the day.";
+    $Products_text_01 = "Formulated to help your body rebuild, restore, and defend—supporting immune strength, skin resilience, and muscular health.";
     $Products_rev_key_01 = "Activates mental clarity and sharpens focus";
     $Products_rev_key_02 = "Supports long-term memory and learning through neural support";
     $Products_rev_key_03 = "Supports healthy neural communication which in turn promotes mental awareness";
@@ -101,7 +101,7 @@
     $Products_res_key_01 = "Enhances REM sleep cycles, allowing for vivid dreaming and cognitive support while you sleep!";
     $Products_res_key_02 = "Encourages restful sleep and supports the body’s natural ability to manage stress and mood";
     $Products_res_key_03 = "Ignites cognitive, hormone and immune support";
-    $Products_res_key_04 = "Supports stress balance and emotional well-bein";
+    $Products_res_key_04 = "Helps promotes emotional well-being and supports your body's natural stress levels while you sleep";
 
     //-------------------------//
     // Slogan
@@ -668,6 +668,11 @@
     $RefundExceptions_02 = "Shipping errors;";
     $RefundExceptions_03 = "Duplicate or accidental charges.";
     $RefundExceptions_note = "All exceptions must be approved in writing by the DareVita Compliance Department.";
+
+    //-------------------------//
+    // Disclaimer
+    $Disclaimer_title = "Disclaimer";
+    $Disclaimer_text = "These statements have not been evaluated by the Food and Drug Administration. These products do not intend to diagnose, treat, cure or prevent any disease. Results are not typical and may vary";
 
     //-------------------------//
     // Footer

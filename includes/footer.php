@@ -6,8 +6,12 @@
 
         <footer class="c-pri all-tc-0">
             <div class="mw-1440">
-                <div class="jc-between med-fd-col g-30">
-                    <div class="w-100">
+
+
+                <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between':''; ?>
+                <?php $Condicion =(isset($user_replica))? '':'ai-center t-c fd-col'; ?>
+                <div class="med-fd-col <?php echo $Condicion_1; ?>">
+                    <div class="w-100 <?php echo $Condicion; ?>">
                         <img src="./images/logo/logo_white.svg" class="mw-100 med-m-center" alt="logo darevita">
 
                         <ul class="fw-wrap med-jc-center g-10 mt-20">

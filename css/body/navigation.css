@@ -145,20 +145,22 @@
 
 .wrap-get {
   position: fixed;
-  left: 20px;
-  bottom: 20px;
+  left: 50%;
+  bottom: 5%;
   z-index: 99;
+  transform: translateX(-50%);
 }
 
 .btn-get {
   position: relative;
   border-radius: 40px;
-  padding: 10px 40px 10px 15px !important;
+  padding: 10px 65px 10px 20px !important;
   background: var(--color-ter);
   color: white;
   cursor: pointer;
   border: 2px solid white;
   font-weight: 600;
+  font-size: 1.5rem;
   animation: cta-blink 1.2s infinite; /* Parpadeo CTA */
 }
 
@@ -174,10 +176,10 @@
   position: absolute;
   background: var(--color-sec);
   border-radius: 50%;
-  right: 10px;
-  top: 13px;
-  width: 20px;
-  height: 20px;
+  right: 20px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
   transform: rotate(-90deg);
   transition: transform 0.25s ease;
   animation: arrow-bounce 0.8s infinite; /* Rebote del icono */
@@ -193,6 +195,30 @@
 .btn-get.open::after {
   transform: rotate(-180deg);
   animation: none; /* Detener animación cuando está abierto */
+}
+
+@media screen and (max-width: 1080px) {
+
+  .wrap-get {
+    bottom: 3%;
+  }
+
+  .btn-get {
+    padding: 10px 40px 10px 15px !important;
+    font-size: 1rem;
+  }
+
+  .btn-get::after {
+    right: 10px;
+    top: 13px;
+    width: 20px;
+    height: 20px;
+  }
+
+  @keyframes arrow-bounce {
+    0%, 100% { transform: rotate(-90deg) translateX(0); }
+    50% { transform: rotate(-90deg) translateX(4px); }
+  }
 }
 
 
@@ -318,6 +344,10 @@
 .cus {
   background: var(--color-0);
   color: var(--color-pri);
+}
+
+@media screen and (max-width: 1080px) {
+  .btn-sub::after { display:none; }
 }
 
 /* ========================= */
@@ -551,6 +581,10 @@ ul.sub li a span {
   .btn-sub:after {
     top:12px;
     right: 20px;
+  }
+
+  .btn-lan:after{
+    top:22px;
   }
 
   .btn-lan{

@@ -248,6 +248,13 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 	</div>
 </section>
 
+<section>
+    <div class="mw-1080 t-c p-20">
+        <h4><?php echo $Disclaimer_title; ?></h4>
+        <p><?php echo $Disclaimer_text; ?></p>
+    </div>
+</section>
+
 <script>
 
 /* ============================================== */
