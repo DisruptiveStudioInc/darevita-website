@@ -11,6 +11,9 @@
     $Menu_05 = "Tienda";
     $Menu_06 = "Gana";
 
+    $Menu_log = "Login";
+    $Menu_reg = "Regístrate";
+
     //-------------------------//
     // Btn
     //-------------------------//
@@ -236,6 +239,8 @@
     Se paga semanalmente a IBAs calificados y activos (con $50.00 USD de compra mensual).
     Aplica a cada pedido de primera vez hecho a través de tu enlace personal.";
 
+    //-------------------------//
+
     $Works = "Cómo Funciona";
 
     $Works_title_01 = "Activa tu cuenta de IBA";
@@ -251,8 +256,6 @@
     $Works_title_03_sub_02 = "Ejemplo: Si un cliente referido compra un producto de 100 CV, ganas $40 en comisión";
 
     //-------------------------//
-    // Who
-    //-------------------------//
 
     $Who = "¿Quién puede ganar el Bono Impacto?";
 
@@ -263,8 +266,6 @@
 
     $Who_text = "Los IBAs inactivos no ganarán por referidos de clientes hasta que reactiven su cuenta.";
 
-    //-------------------------//
-    // What
     //-------------------------//
 
     $What = "¿Qué lo hace único?";
@@ -479,30 +480,47 @@
     $Safeguards = "Política de Salvaguardas para Clientes";
     $Safeguards_intro = "DareVita se compromete a garantizar que todos los clientes—including IBAs—disfruten de una experiencia segura, justa y confiable. Las siguientes protecciones aplican a todos los participantes de DareVita:";
 
-    // A. Precios Transparentes
     $Safeguards_A = "A. Precios Transparentes";
     $Safeguards_A_01 = "Todos los precios están publicados claramente en línea y accesibles a través del back office del cliente o IBA. Los valores de envío e impuestos se muestran en el checkout.";
     $Safeguards_A_02 = "No se aplican cargos ocultos, ventas adicionales ni renovaciones automáticas sin consentimiento previo y claro.";
 
-    // B. Compras Sin Riesgo
     $Safeguards_B = "B. Compras Sin Riesgo";
     $Safeguards_B_01 = "Todas las compras de productos cuentan con una garantía de satisfacción de 30 días.";
     $Safeguards_B_02 = "Los productos sin abrir pueden devolverse dentro de los 30 días para un reembolso completo (menos envío/manejo).";
     $Safeguards_B_03 = "Los servicios digitales (p. ej., kits de inicio o herramientas de back office) son reembolsables solo si no se usan.";
 
-    // C. Ventas Sin Presión
     $Safeguards_C = "C. Ventas Sin Presión";
     $Safeguards_C_01 = "Los clientes nunca están obligados a inscribirse como IBA o participar en el plan de compensación para acceder a productos.";
     $Safeguards_C_02 = "Los IBAs deben respetar el derecho del cliente a comprar al por menor sin invitación a reclutamiento.";
 
-    // D. Derechos Claros de Cancelación y Reembolso
     $Safeguards_D = "D. Derechos Claros de Cancelación y Reembolso";
     $Safeguards_D_01 = "Los clientes pueden cancelar suscripciones, pedidos automáticos o estatus IBA en cualquier momento desde su back office.";
     $Safeguards_D_02 = "Los reembolsos se procesan dentro de los 14 días hábiles tras la aprobación.";
 
-    // E. Privacidad de Datos
     $Safeguards_E = "E. Privacidad de Datos";
     $Safeguards_E_01 = "Todos los datos de clientes están protegidos bajo la Política de Privacidad de DareVita y nunca se venden ni comparten con terceros para marketing externo.";
+
+    //-------------------------//
+
+    $PricingPolicy = "Política de Precios al Cliente";
+    $PricingPolicy_intro = "DareVita sigue un modelo de precios unificado para clientes, diseñado para la equidad y la simplicidad:";
+
+    $Pricing_A = "A. Precio de Acceso Igualitario";
+    $Pricing_A_01 = "Todos los precios de los productos son uniformes, ya sea que la persona sea un cliente minorista o un IBA inscrito.";
+    $Pricing_A_02 = "No existe diferencia entre precios mayoristas y minoristas para las compras de productos. Todos pagan la misma tarifa base.";
+    $Pricing_A_03 = "Todos los precios están en USD.";
+
+    $Pricing_B = "B. Precio de Lealtad (Opcional)";
+    $Pricing_B_01 = "Los IBA y los clientes inscritos en suscripciones mensuales de productos pueden recibir descuentos de lealtad, créditos de producto u ofertas promocionales.";
+    $Pricing_B_02 = "El precio de lealtad está disponible para cualquier cliente, sin importar si está inscrito como IBA.";
+
+    $Pricing_C = "C. Volumen Comisionable (CV)";
+    $Pricing_C_01 = "Cada producto tiene un valor de CV asociado.";
+    $Pricing_C_02 = "Ya sea comprado por un consumidor o por un IBA, el CV contribuye al cálculo de compensaciones, haciendo que todas las compras califiquen como volumen.";
+
+    $Pricing_D = "D. Integridad de Precios";
+    $Pricing_D_01 = "Los IBA no pueden modificar los precios de los productos, ofrecer descuentos no autorizados o crear paquetes personalizados.";
+    $Pricing_D_02 = "Todas las transacciones de clientes deben procesarse a través de la plataforma oficial de DareVita para garantizar precios uniformes y la correcta asignación de volumen.";
 
     //-------------------------//
     // Política de Privacidad
@@ -513,7 +531,7 @@
     $PrivacyPolicy_intro = "DareVita International Inc. (“Compañía”, “nosotros” o “nuestro”) opera el sitio web https://darevita.com (el “Servicio”). Esta Política de Privacidad describe cómo recopilamos, usamos, divulgamos y protegemos su información cuando utiliza nuestro Servicio. Al acceder o usar el Servicio, acepta la recopilación y el uso de la información de acuerdo con esta Política de Privacidad.";
 
     //-------------------------//
-    // 1. Información que Recopilamos
+
     $InfoCollect = "1. Información que Recopilamos";
     $InfoCollect_intro = "Recopilamos varios tipos de información de y sobre los usuarios de nuestro Servicio, incluyendo:";
 
@@ -523,8 +541,8 @@
     $InfoCollect_04 = "Cookies y Tecnologías de Seguimiento: Usamos cookies, balizas web y tecnologías similares para recopilar información sobre sus actividades en nuestro sitio web.";
 
     //-------------------------//
-    // 2. Cómo Recopilamos la Información
-    $InfoCollectHow = "2. Cómo Recopilamos la Información";
+
+    $InfoCollectHow = "Cómo Recopilamos la Información";
     $InfoCollectHow_intro = "Recopilamos información de usted de las siguientes maneras:";
 
     $InfoCollectHow_01 = "Directamente de Usted: Cuando la proporciona al completar formularios en nuestro sitio web, crear una cuenta, realizar una compra, suscribirse a nuestros servicios o comunicarse con nosotros.";
@@ -532,8 +550,8 @@
     $InfoCollectHow_03 = "De Terceros: Podemos recibir información sobre usted de proveedores de servicios externos y socios comerciales, incluyendo procesadores de pago y proveedores de análisis.";
 
     //-------------------------//
-    // 3. Cómo Usamos Su Información
-    $InfoUse = "3. Cómo Usamos Su Información";
+
+    $InfoUse = "Cómo Usamos Su Información";
     $InfoUse_intro = "DareVita International Inc. utiliza la información que recopilamos para diversos fines, incluyendo:";
 
     $InfoUse_01 = "Para Proporcionar y Mejorar Nuestros Servicios: Procesar transacciones, administrar su cuenta y mejorar la funcionalidad de nuestro sitio.";
@@ -543,8 +561,8 @@
     $InfoUse_05 = "Para Análisis e Investigación: Comprender cómo los usuarios interactúan con el Servicio y mejorar nuestras ofertas.";
 
     //-------------------------//
-    // 4. Compartir Su Información
-    $InfoShare = "4. Compartir Su Información";
+
+    $InfoShare = "Compartir Su Información";
     $InfoShare_intro = "Podemos compartir su información con las siguientes partes:";
 
     $InfoShare_01 = "Proveedores de Servicios Externos: Compartimos información con terceros que realizan servicios en nuestro nombre, como procesamiento de pagos, análisis de datos, envío de correos electrónicos, alojamiento y soporte al cliente.";
@@ -554,13 +572,13 @@
     $InfoShare_05 = "En Caso de Transferencias Comerciales: Podemos compartir o transferir su información en negociaciones o procesos de fusión, venta de activos, financiamiento o adquisición de la compañía.";
 
     //-------------------------//
-    // 5. Seguridad de Datos
-    $DataSecurity = "5. Seguridad de Datos";
+
+    $DataSecurity = "Seguridad de Datos";
     $DataSecurity_text = "DareVita International Inc. implementa medidas razonables de seguridad para proteger su información contra accesos no autorizados, alteración, divulgación o destrucción. Sin embargo, ningún método de transmisión por internet o almacenamiento electrónico es 100% seguro, por lo que no podemos garantizar seguridad absoluta.";
 
     //-------------------------//
-    // 6. Sus Derechos y Opciones
-    $UserRights = "6. Sus Derechos y Opciones";
+
+    $UserRights = "Sus Derechos y Opciones";
     $UserRights_intro = "Dependiendo de su jurisdicción, puede tener ciertos derechos sobre su información personal, incluyendo:";
 
     $UserRights_01 = "Acceso y Corrección: Puede acceder y corregir la información personal que tenemos sobre usted.";
@@ -569,23 +587,23 @@
     $UserRights_04 = "Gestión de Cookies: Puede administrar sus preferencias de cookies desde la configuración de su navegador, incluyendo bloquear o eliminarlas.";
 
     //-------------------------//
-    // 7. Transferencias Internacionales
-    $DataTransfer = "7. Transferencias Internacionales";
+
+    $DataTransfer = "Transferencias Internacionales";
     $DataTransfer_text = "Si accede a nuestro Servicio desde fuera de Estados Unidos, tenga en cuenta que su información puede ser transferida, almacenada y procesada en EE.UU., donde se ubican nuestros servidores y base de datos central. Al usar nuestro Servicio, usted consiente esta transferencia.";
 
     //-------------------------//
-    // 8. Privacidad de los Menores
-    $ChildrenPrivacy = "8. Privacidad de los Menores";
+
+    $ChildrenPrivacy = "Privacidad de los Menores";
     $ChildrenPrivacy_text = "Nuestro Servicio no está dirigido a menores de 18 años. No recopilamos información personal de menores de 18 años de forma consciente. Si nos percatamos de que recopilamos información sin consentimiento parental, procederemos a eliminarla.";
 
     //-------------------------//
-    // 9. Cambios a Esta Política de Privacidad
-    $PolicyChanges = "9. Cambios a Esta Política de Privacidad";
+
+    $PolicyChanges = "Cambios a Esta Política de Privacidad";
     $PolicyChanges_text = "Podemos actualizar nuestra Política de Privacidad ocasionalmente. Notificaremos cualquier cambio publicando la nueva política en esta página y actualizando la fecha de 'Última Actualización'. También podemos notificar por correo electrónico o con un aviso en el sitio web.";
 
     //-------------------------//
-    // 10. Contáctenos
-    $ContactUs = "10. Contáctenos";
+
+    $ContactUs = "Contáctenos";
     $ContactUs_text = "Si tiene preguntas sobre esta Política de Privacidad o nuestras prácticas de datos, comuníquese con nosotros en:";
     $ContactUs_email = "Email: support@darevita.com";
     $ContactUs_phone = "Phone: +14808088204";
@@ -596,12 +614,11 @@
     //-------------------------//
 
     $Returns_Policy = "Política de Devoluciones";
-
     $OnboardingRefundPolicy = "DareVita International – Política de Reembolso del Kit de Onboarding";
     $OnboardingRefundPolicy_intro = "En DareVita respaldamos la calidad de nuestra experiencia de onboarding y los recursos proporcionados a nuestros IBAs. La siguiente política describe las condiciones para el reembolso de los kits de onboarding.";
 
     //-------------------------//
-    // Elegibilidad para Reembolso
+
     $RefundEligibility = "Elegibilidad para Reembolso";
     $RefundEligibility_intro = "Los IBAs pueden solicitar un reembolso de su kit de onboarding si se cumplen las siguientes condiciones:";
 
@@ -612,7 +629,7 @@
     $RefundEligibility_05 = "La política de reembolso se muestra durante la compra y en la página principal de DareVita.com.";
 
     //-------------------------//
-    // Situaciones No Reembolsables
+
     $NonRefundable = "Situaciones No Reembolsables";
     $NonRefundable_intro = "No se otorgarán reembolsos si:";
 
@@ -622,7 +639,7 @@
     $NonRefundable_04 = "La solicitud se hace después de que el IBA haya generado comisiones o bonos.";
 
     //-------------------------//
-    // Proceso de Reembolso
+
     $RefundProcess = "Proceso de Reembolso";
     $RefundProcess_intro = "Para solicitar un reembolso:";
 
@@ -632,12 +649,12 @@
     $RefundProcess_04 = "Tras recibir e inspeccionar el kit devuelto, se emitirá el reembolso al método de pago original, menos gastos de envío, en un máximo de 14 días hábiles.";
 
     //-------------------------//
-    // Cancelación de Inscripción
+
     $CancellationEnrollment = "Cancelación de Inscripción";
     $CancellationEnrollment_text = "Si se emite un reembolso por el kit de onboarding, la inscripción del IBA puede ser cancelada o suspendida, y cualquier volumen, comisión o colocación de equipo será perdido.";
 
     //-------------------------//
-    // Excepciones
+
     $RefundExceptions = "Excepciones";
     $RefundExceptions_intro = "DareVita se reserva el derecho de hacer excepciones caso por caso debido a:";
 

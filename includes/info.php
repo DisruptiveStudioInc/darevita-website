@@ -118,11 +118,11 @@ $Sub_reg = array(
 
 $idiomas = [
     'eng' => 'Eng',
-    'esp' => 'Esp'
+    'esp' => 'Esp',
     //'fra' => 'Fra',
     //'jpn' => 'Jpn',
     //'por' => 'Por',
-    //'chi' => 'Chi',
+    'chi' => 'Chi'
     //'cor' => 'Cor'
 ];
 

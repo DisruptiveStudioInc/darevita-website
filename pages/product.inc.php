@@ -114,7 +114,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
                 </div>
             </div>
 
-            <img class="mw-400 med-w-30 small-w-60 small-mt-40" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
+            <img class="mw-300 med-w-30 small-w-60 small-mt-40" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
         </div>
         <img class="full-img-abs" src="./images/body/treo/bg_<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> background" />
     </div>

@@ -11,6 +11,9 @@
     $Menu_05 = "Shop";
     $Menu_06 = "Share DareVita";
 
+    $Menu_log = "Login";
+    $Menu_reg = "Register";
+
     //-------------------------//
     // Btn
     //-------------------------//
@@ -172,7 +175,6 @@
     $Benefits_03_02 = "Ignites cognitive, hormone and immune support";
     $Benefits_03_03 = "Encourages restful sleep and supports the body’s natural ability to manage stress and mood";
     $Benefits_03_04 = "Helps promotes emotional well-being and supports your body's natural stress levels while you sleep";
-
 
     //-------------------------//
     // Ingredients
@@ -471,58 +473,47 @@
 
     //-------------------------//
 
-    // Customer Safeguards Policy
     $Safeguards = "Customer Safeguards Policy";
     $Safeguards_intro = "DareVita is committed to ensuring that all customers—including IBAs—enjoy a safe, fair, and supportive experience. The following protections apply to all DareVita participants:";
 
-    // A. Transparent Pricing
     $Safeguards_A = "A. Transparent Pricing";
     $Safeguards_A_01 = "All pricing is clearly published online and accessible via the customer’s or IBA’s back office. Shipping and tax values are displayed at checkout.";
     $Safeguards_A_02 = "No hidden fees, upsells, or auto-renewals are applied without clear, upfront disclosure and consent.";
 
-    // B. Risk-Free Purchasing
     $Safeguards_B = "B. Risk-Free Purchasing";
     $Safeguards_B_01 = "All product purchases come with a 30-day customer satisfaction guarantee.";
     $Safeguards_B_02 = "Unopened products may be returned within 30 days for a full refund (less shipping/handling).";
     $Safeguards_B_03 = "Digital services (e.g., onboarding kits or back-office tools) are refundable only if unused.";
 
-    // C. No Pressure Sales
     $Safeguards_C = "C. No Pressure Sales";
     $Safeguards_C_01 = "Customers are never obligated to enroll as an IBA or participate in the compensation plan to access products.";
     $Safeguards_C_02 = "IBAs must respect a customer’s right to purchase retail without recruitment solicitation.";
 
-    // D. Clear Cancellation & Refund Rights
     $Safeguards_D = "D. Clear Cancellation & Refund Rights";
     $Safeguards_D_01 = "Customers may cancel subscriptions, auto-ship orders, or IBA status at any time via their account back office.";
     $Safeguards_D_02 = "Refunds are processed within 14 business days of approval.";
 
-    // E. Data Privacy
     $Safeguards_E = "E. Data Privacy";
     $Safeguards_E_01 = "All customer data is protected under DareVita’s Privacy Policy and is never sold or shared with third parties for external marketing.";
 
     //-------------------------//
 
-    // Customer Pricing Policy
     $PricingPolicy = "Customer Pricing Policy";
     $PricingPolicy_intro = "DareVita follows a unified customer pricing model, designed for fairness and simplicity:";
 
-    // A. Equal Access Pricing
     $Pricing_A = "A. Equal Access Pricing";
     $Pricing_A_01 = "All product pricing is uniform whether the individual is a retail customer or an enrolled IBA.";
     $Pricing_A_02 = "There is no wholesale/retail price differential for product purchases. Everyone pays the same base rate.";
     $Pricing_A_03 = "All prices are in USD.";
 
-    // B. Loyalty Pricing (Optional)
     $Pricing_B = "B. Loyalty Pricing (Optional)";
     $Pricing_B_01 = "IBAs and customers enrolled in monthly product subscriptions may receive loyalty discounts, product credits, or promotional offers.";
     $Pricing_B_02 = "Loyalty pricing is available to any customer, regardless of IBA enrollment.";
 
-    // C. Commissionable Volume (CV)
     $Pricing_C = "C. Commissionable Volume (CV)";
     $Pricing_C_01 = "Every product carries an associated CV value.";
     $Pricing_C_02 = "Whether purchased by a consumer or an IBA, the CV contributes toward compensation calculations, making all purchases volume-qualified.";
 
-    // D. Pricing Integrity
     $Pricing_D = "D. Pricing Integrity";
     $Pricing_D_01 = "IBAs may not alter product pricing, offer unauthorized discounts, or create custom bundles.";
     $Pricing_D_02 = "All customer transactions must be processed through the official DareVita platform to ensure uniform pricing and proper volume allocation.";
@@ -536,7 +527,7 @@
     $PrivacyPolicy_intro = "DareVita International Inc. (“Company”, “we”, “us”, or “our”) operates the website https://darevita.com (the “Service”). This Privacy Policy describes how we collect, use, disclose, and protect your information when you use our Service. By accessing or using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.";
 
     //-------------------------//
-    // 1. Information We Collect
+
     $InfoCollect = "Information We Collect";
     $InfoCollect_intro = "We collect several types of information from and about users of our Service, including:";
 
@@ -546,7 +537,7 @@
     $InfoCollect_04 = "Cookies and Tracking Technologies: We use cookies, web beacons, and similar tracking technologies to collect information about your activities on our website.";
 
     //-------------------------//
-    // 2. How We Collect Information
+
     $InfoCollectHow = "How We Collect Information";
     $InfoCollectHow_intro = "We collect information from you in the following ways:";
 
@@ -555,7 +546,7 @@
     $InfoCollectHow_03 = "From Third Parties: We may receive information about you from third-party service providers and business partners, including analytics providers and payment processors.";
 
     //-------------------------//
-    // 3. How We Use Your Information
+
     $InfoUse = "How We Use Your Information";
     $InfoUse_intro = "DareVita International Inc. uses the information we collect for various purposes, including:";
 
@@ -566,7 +557,7 @@
     $InfoUse_05 = "To Conduct Analytics and Research: To understand how our users interact with the Service and to enhance our offerings.";
 
     //-------------------------//
-    // 4. Sharing Your Information
+
     $InfoShare = "Sharing Your Information";
     $InfoShare_intro = "We may share your information with the following parties:";
 
@@ -577,12 +568,12 @@
     $InfoShare_05 = "In Connection with Business Transfers: We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.";
 
     //-------------------------//
-    // 5. Data Security
+
     $DataSecurity = "Data Security";
     $DataSecurity_text = "DareVita International Inc. implements reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security.";
 
     //-------------------------//
-    // 6. Your Choices and Rights
+
     $UserRights = "Your Choices and Rights";
     $UserRights_intro = "Depending on your jurisdiction, you may have certain rights regarding your personal information, including:";
 
@@ -592,22 +583,22 @@
     $UserRights_04 = "Cookies Management: You can manage your cookie preferences through your browser settings, including blocking or deleting cookies.";
 
     //-------------------------//
-    // 7. International Data Transfers
+
     $DataTransfer = "International Data Transfers";
     $DataTransfer_text = "If you are accessing our Service from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States, where our servers are located and our central database is operated. By using our Service, you consent to the transfer of your information to the United States.";
 
     //-------------------------//
-    // 8. Children’s Privacy
+
     $ChildrenPrivacy = "Children’s Privacy";
     $ChildrenPrivacy_text = "Our Service is not directed to children under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that we have collected personal information from a child under 18 without verification of parental consent, we will take steps to delete that information.";
 
     //-------------------------//
-    // 9. Changes to This Privacy Policy
+
     $PolicyChanges = "Changes to This Privacy Policy";
     $PolicyChanges_text = "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date at the top. We may also provide notice by other means, such as via email or with a notice on our website.";
 
     //-------------------------//
-    // 10. Contact Us
+
     $ContactUs = "Contact Us";
     $ContactUs_text = "If you have any questions about this Privacy Policy or our data practices, please contact us at:";
     $ContactUs_email = "Email: support@darevita.com";
@@ -619,12 +610,11 @@
     //-------------------------//
 
     $Returns_Policy = "Returns policy";
-
     $OnboardingRefundPolicy = "DareVita International – Onboarding Kit Refund Policy";
     $OnboardingRefundPolicy_intro = "At DareVita, we stand behind the quality of our onboarding experience and the resources provided to our Independent Brand Ambassadors (IBAs). The following policy outlines the conditions under which onboarding kits may be refunded.";
 
     //-------------------------//
-    // Refund Eligibility
+
     $RefundEligibility = "Refund Eligibility";
     $RefundEligibility_intro = "IBAs may request a refund for their onboarding kit purchase if the following conditions are met:";
 
@@ -635,7 +625,7 @@
     $RefundEligibility_05 = "The refund policy is displayed upon check out and on the front page of the DareVita.com website.";
 
     //-------------------------//
-    // Non-Refundable Situations
+
     $NonRefundable = "Non-Refundable Situations";
     $NonRefundable_intro = "Refunds will not be granted if:";
 
@@ -645,7 +635,7 @@
     $NonRefundable_04 = "The refund request is made after the IBA has earned commissions or bonuses.";
 
     //-------------------------//
-    // Refund Process
+
     $RefundProcess = "Refund Process";
     $RefundProcess_intro = "To request a refund:";
 
@@ -655,12 +645,12 @@
     $RefundProcess_04 = "Upon receipt and inspection of the returned kit, a refund will be issued to the original payment method, less shipping and handling fees, within 14 business days.";
 
     //-------------------------//
-    // Cancellation of Enrollment
+
     $CancellationEnrollment = "Cancellation of Enrollment";
     $CancellationEnrollment_text = "If a refund is issued for the onboarding kit, the IBA’s enrollment may be canceled or suspended, and any associated volume, commissions, or team placement forfeited.";
 
     //-------------------------//
-    // Exceptions
+
     $RefundExceptions = "Exceptions";
     $RefundExceptions_intro = "DareVita reserves the right to make exceptions on a case-by-case basis due to:";
 
@@ -670,7 +660,7 @@
     $RefundExceptions_note = "All exceptions must be approved in writing by the DareVita Compliance Department.";
 
     //-------------------------//
-    // Disclaimer
+
     $Disclaimer_title = "Disclaimer";
     $Disclaimer_text = "These statements have not been evaluated by the Food and Drug Administration. These products do not intend to diagnose, treat, cure or prevent any disease. Results are not typical and may vary";
 
@@ -686,7 +676,6 @@
     //-------------------------//
 
     $Payments = "We accept:";
-
     $Footer_subpage = "One goal, three essentials, unlock your full potential.";
 
     $Footer_content = "Content";

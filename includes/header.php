@@ -122,7 +122,7 @@
                             <div class="btn-lan <?= htmlspecialchars($idioma); ?>"><?= $Condicion_lan; ?></div>
                             <div class="lan">
                                 <?php
-                                $idiomas = ['esp', 'eng'];
+                                $idiomas = ['esp', 'eng', 'chi'];
                                 foreach ($idiomas as $idioma_opcion) {
                                     $activeClass = ($_SESSION["language"] === $idioma_opcion) ? 'selected' : '';
                                     echo "<a class='$idioma_opcion $activeClass' href='?language=$idioma_opcion$Actual_Page_Lan$Client_Page_Id'>" . ucfirst($idioma_opcion) . "</a>";
@@ -207,11 +207,11 @@
 
                             <div class="d-none med-d-block mt-20">
                                 <div class="mb-10">
-                                    <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100">Login</a>
+                                    <a href="<?php echo $Login; ?>" target="_blank" class="btn c-ter br-30 small-w-100"><?php echo $Menu_log; ?></a>
                                 </div>
                                 <?php if($user_replica): ?>
                                 <div>
-                                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-pri br-30 small-w-100">Register</a>
+                                    <a href="<?php echo $Register ?>" target="_blank" class="btn c-pri br-30 small-w-100"><?php echo $Menu_reg; ?></a>
                                 </div>
                                 <?php endif; ?>
                             </div>

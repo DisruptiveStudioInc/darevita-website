@@ -409,8 +409,10 @@ section{
 
 .wrap_treo .box_product.img-three { z-index: 3;}
 
-.wrap_treo.fade-in .box_product.img-one { left: 35%;}
+.wrap_treo.fade-in .box_product.img-one { left: 32.5%;}
 .wrap_treo.fade-in .box_product.img-two { left: 65%;}
+
+.wrap_treo .box_product.img-two img { scale: 0.7;}
 
 .product {
   max-width: 300px;
