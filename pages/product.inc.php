@@ -145,7 +145,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
     <button type="button" class="v-white c-pri icon icon-close" onclick="closeModal('Modal_<?php echo $id; ?>')"></button>
 
     <video class="full-img" 
-        src="./video/test.webm" 
+        src="./video/video.webm" 
         autoplay loop muted playsinline
         poster="./images/body/letters/1.webp">
     </video>

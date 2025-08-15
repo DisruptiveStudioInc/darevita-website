@@ -42,8 +42,8 @@
     <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="./css/body/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/body/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
 
     <!-- FAVICON -->
@@ -122,7 +122,7 @@
                             <div class="btn-lan <?= htmlspecialchars($idioma); ?>"><?= $Condicion_lan; ?></div>
                             <div class="lan">
                                 <?php
-                                $idiomas = ['esp', 'eng', 'chi', 'jpn'];
+                                $idiomas = ['esp', 'eng', 'chi', 'jpn','por','ita','cor','fra'];
                                 foreach ($idiomas as $idioma_opcion) {
                                     $activeClass = ($_SESSION["language"] === $idioma_opcion) ? 'selected' : '';
                                     echo "<a class='$idioma_opcion $activeClass' href='?language=$idioma_opcion$Actual_Page_Lan$Client_Page_Id'>" . ucfirst($idioma_opcion) . "</a>";

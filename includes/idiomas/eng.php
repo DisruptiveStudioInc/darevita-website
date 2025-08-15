@@ -38,7 +38,6 @@
     //-------------------------//
 
     $Journey_title = "Our Journey Together";
-
     $Journey_button_1 = "Discover";
     $Journey_button_2 = "Connect";
     $Journey_button_3 = "Grow";
@@ -90,7 +89,6 @@
     $Products_rev_key_02 = "Supports long-term memory and learning through neural support";
     $Products_rev_key_03 = "Supports healthy neural communication which in turn promotes mental awareness";
     $Products_rev_key_04 = "Promotes sustainable energy";
-
 
     $Products_title_02 = "Fuel Vitality Immune Support";
     $Products_text_02 = "Rejuvenate supports healthy immune function and promotes normal tissue regeneration, which are important for maintaining skin elasticity, muscle health, and overall well-being.";
@@ -238,15 +236,12 @@
     //-------------------------//
 
     $Works = "How It Works";
-
     $Works_title_01 = "Activate Your IBA Account";
     $Works_title_01_sub_01 = "Place a qualifying personal product order to become an “Active IBA”";
     $Works_title_01_sub_02 = "Stay active to remain eligible for weekly commissions";
-
     $Works_title_02 = "Share Your Personalized Website Link";
     $Works_title_02_sub_01 = "Every IBA receives a free, mobile-friendly referral website";
     $Works_title_02_sub_02 = "Simply share your link with anyone who wants to try the products";
-
     $Works_title_03 = "Earn 40% on Their Purchase";
     $Works_title_03_sub_01 = "When your referral places a product order, you receive 40% of the commissionable volume (CV)";
     $Works_title_03_sub_02 = "Example: If a referred customer purchases a product with 100 CV, you earn $40 in commission";

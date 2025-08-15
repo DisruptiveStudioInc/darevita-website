@@ -474,6 +474,7 @@ ul.sub li a span {
 .lan a.fra::before, .btn-lan.fra::before { background-image: url('./../../images/flags/fra.svg'); }
 .lan a.jpn::before, .btn-lan.jpn::before { background-image: url('./../../images/flags/jpn.svg'); }
 .lan a.por::before, .btn-lan.por::before { background-image: url('./../../images/flags/por.svg'); }
+.lan a.ita::before, .btn-lan.ita::before { background-image: url('./../../images/flags/ita.svg'); }
 
 /* ============================================== */
 /* NUEVO: Sub-submenú anidado                     */
