@@ -220,9 +220,9 @@
 
                     <div class="jc-center ai-center">
                         <div class="btns m-0 g-10 med-d-none">
-                            <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30">Login</a>
+                            <a href='<?php echo $Login; ?>' target="_blank" class="btn c-ter br-30"><?php echo $Menu_log; ?></a>
                             <?php if($user_replica): ?>
-                                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-pri br-30">Register</a>
+                                <a href='<?php echo $Register; ?>' target="_blank" class="btn c-pri br-30"><?php echo $Menu_reg; ?></a>
                             <?php endif; ?>
                         </div>
                         <div class="hamburguer">
