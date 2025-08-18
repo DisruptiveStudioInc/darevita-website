@@ -87,9 +87,9 @@
             <p class="h4">10. <?php echo $ContactUs; ?></p>
             <p><?php echo $ContactUs_text; ?></p>
             <ul class="menu-list icon-dot">
-                <li><?php echo $ContactUs_email; ?></li>
-                <li><?php echo $ContactUs_phone; ?></li>
-                <li><?php echo $ContactUs_address; ?></li>
+                <li><?php echo $ContactUs_email; ?> <?php echo $Email; ?></li>
+                <li><?php echo $ContactUs_phone; ?> <?php echo $Phone; ?></li>
+                <li><?php echo $ContactUs_address; ?> <?php echo $Address; ?></li>
             </ul>
         </div>
 

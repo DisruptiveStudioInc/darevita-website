@@ -162,7 +162,7 @@
     $Benefits_01_01 = "Activates mental clarity and sharpens focus";
     $Benefits_01_02 = "Supports healthy neural communication which in turn promotes mental awareness";
     $Benefits_01_03 = "Supports long-term memory and learning through neural support";
-    $Benefits_01_04 = "Promotes sustainable energy without stimulants";
+    $Benefits_01_04 = "Promotes sustainable energy";
 
     $Benefits_02_01 = "Promotes immune system vitality";
     $Benefits_02_02 = "Supports the body’s innate healing and regeneration processes";
@@ -325,7 +325,7 @@
     $Guaranteed_text = "DareVita makes no guarantees of income or success. Your ability to earn is based on:";
 
     $Guaranteed_01 = "Your effort and consistency";
-    $Guaranteed_02 = "Your ability to refer and retain customers;";
+    $Guaranteed_02 = "Your ability to refer and retain customers";
     $Guaranteed_03 = "Your leadership and training of others";
     $Guaranteed_04 = "Product volume generated through legitimate sales";
     $Guaranteed_text = "IBAs may earn modest supplemental income or participate purely for the product discount.";
@@ -596,9 +596,9 @@
 
     $ContactUs = "Contact Us";
     $ContactUs_text = "If you have any questions about this Privacy Policy or our data practices, please contact us at:";
-    $ContactUs_email = "Email: support@darevita.com";
-    $ContactUs_phone = "Phone: +14808088204";
-    $ContactUs_address = "Address: DareVita International Inc., 30 N Gould St, Ste R, Sheridan, Wyoming 82801";
+    $ContactUs_email = "Email:";
+    $ContactUs_phone = "Phone:";
+    $ContactUs_address = "Address:";
 
     //-------------------------//
     // Returns policy

@@ -89,7 +89,7 @@
     $Products_rev_key_01 = "Activa la claridad mental y mejora el enfoque";
     $Products_rev_key_02 = "Apoya la memoria a largo plazo y el aprendizaje mediante soporte neuronal";
     $Products_rev_key_03 = "Favorece la comunicación neuronal saludable, promoviendo la conciencia mental";
-    $Products_rev_key_04 = "Promueve energía sostenible sin estimulantes";
+    $Products_rev_key_04 = "Promueve energía sostenible";
 
 
     $Products_title_02 = "Energía y soporte inmune";
@@ -605,9 +605,9 @@
 
     $ContactUs = "Contáctenos";
     $ContactUs_text = "Si tiene preguntas sobre esta Política de Privacidad o nuestras prácticas de datos, comuníquese con nosotros en:";
-    $ContactUs_email = "Email: support@darevita.com";
-    $ContactUs_phone = "Phone: +14808088204";
-    $ContactUs_address = "Address: DareVita International Inc., 30 N Gould St, Ste R, Sheridan, Wyoming 82801";
+    $ContactUs_email = "Correo:";
+    $ContactUs_phone = "Teléfono:";
+    $ContactUs_address = "Dirección:";
 
     //-------------------------//
     // Política de Devoluciones

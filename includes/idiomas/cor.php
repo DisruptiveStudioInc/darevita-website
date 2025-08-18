@@ -534,9 +534,9 @@ $PolicyChanges_text = "당사는 개인정보 처리방침을 수시로 업데�
 
 $ContactUs = "문의하기";
 $ContactUs_text = "본 개인정보 처리방침 또는 당사의 데이터 처리 관행에 대해 궁금한 사항이 있으면 다음으로 연락해 주십시오:";
-$ContactUs_email = "이메일: support@darevita.com";
-$ContactUs_phone = "전화: +14808088204";
-$ContactUs_address = "주소: DareVita International Inc., 30 N Gould St, Ste R, Sheridan, Wyoming 82801";
+$ContactUs_email = "이메일:";
+$ContactUs_phone = "전화:";
+$ContactUs_address = "주소:";
 
 //-------------------------//
 // Returns policy

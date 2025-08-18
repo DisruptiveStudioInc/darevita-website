@@ -554,10 +554,9 @@ $PolicyChanges_text = "プライバシーポリシーは随時更新される場
 $ContactUs = "お問い合わせ";
 $ContactUs_text = "本プライバシーポリシーやデータ取り扱いに関する質問は、以下までご連
 絡ください:";
-$ContactUs_email = "メール: support@darevita.com";
-$ContactUs_phone = "電話: +14808088204";
-$ContactUs_address = "住所: DareVita International Inc., 30 N Gould St, Ste R, Sheridan,
-Wyoming 82801";
+$ContactUs_email = "メール:";
+$ContactUs_phone = "電話:";
+$ContactUs_address = "住所:";
 //-------------------------//
 // 返品ポリシー
 //-------------------------//

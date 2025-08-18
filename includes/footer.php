@@ -11,7 +11,7 @@
                 <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between':''; ?>
                 <?php $Condicion =(isset($user_replica))? '':'ai-center t-c fd-col'; ?>
                 <div class="med-fd-col <?php echo $Condicion_1; ?>">
-                    <div class="w-100 <?php echo $Condicion; ?>">
+                    <div class="<?php echo $Condicion; ?>">
                         <img src="./images/logo/logo_white.svg" class="mw-100 med-m-center" alt="logo darevita">
 
                         <ul class="fw-wrap med-jc-center g-10 mt-20">
@@ -38,6 +38,12 @@
                                 <li><a href="?p=plan"><?php echo $Footer_darevita_link_02; ?></a></li>
                                 <li><a href="?p=privacy_policy#"><?php echo $Footer_darevita_link_03; ?></a></li>
                                 <li><a href="?p=returns_policy#"><?php echo $Footer_darevita_link_04; ?></a></li>
+                            </ul>
+                            <ul class="menu-list link">
+                                <h3><?php echo $ContactUs; ?></h3>
+                                <li><?php echo $Email; ?></li>
+                                <li><?php echo $Phone; ?></li>
+                                <li><?php echo $Address; ?></li>
                             </ul>
                         </div>
                     <?php endif; ?>

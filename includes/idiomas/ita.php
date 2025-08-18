@@ -594,10 +594,9 @@ mezzi, ad esempio via email o con un avviso sul nostro sito web.";
 $ContactUs = "Contattaci";
 $ContactUs_text = "Se hai domande su questa Privacy Policy o sulle nostre pratiche sui dati,
 contattaci a:";
-$ContactUs_email = "Email: support@darevita.com";
-$ContactUs_phone = "Telefono: +14808088204";
-$ContactUs_address = "Indirizzo: DareVita International Inc., 30 N Gould St, Ste R, Sheridan,
-Wyoming 82801";
+$ContactUs_email = "Email:";
+$ContactUs_phone = "Telefono:";
+$ContactUs_address = "Indirizzo:";
 //-------------------------//
 // Returns policy
 //-------------------------//

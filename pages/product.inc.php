@@ -200,11 +200,13 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 			        foreach ($Service as $item){
 			            echo "
 			            <li>
-				            <div class='text c-{$item[2]}'>
-				            	<span class='v-black c-{$item[2]} icon br-5 icon-quote'></span>
-				            	<p>{$item[0]}</p>
-				            	<p>{$item[1]}</p>
-				            </div>
+				            <!--
+                            <div class='text c-{$item[2]}'>
+                                <span class='v-black c-{$item[2]} icon br-5 icon-quote'></span>
+                                <p>{$item[0]}</p>
+                                <p>{$item[1]}</p>
+                            </div>
+                            -->
 				            <img src='./images/body/banner/0{$counter}.webp' alt='{$item[0]}'/>
 			            </li>
 			            ";
