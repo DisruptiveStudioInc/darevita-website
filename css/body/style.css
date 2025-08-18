@@ -522,6 +522,11 @@ img.polvo {
   transform: translateY(-5%);
 }
 
+@media screen and (max-width: 1440px) {
+  .wrap_treo.fade-in .box_product.img-one { left: 28%;}
+  .wrap_treo.fade-in .box_product.img-two { left: 69%;}
+}
+
 @media screen and (max-width: 1080px) {
   .content-scroll .box_product {
     transform: none;
@@ -695,6 +700,12 @@ img.polvo {
 /* Animación solo afecta al contenedor interno */
 .img_product.show .product_wrapper {
     animation: productFlip 0.8s ease forwards;
+}
+
+@media screen and (max-width: 1440px) {
+  .img_product img.product {
+      min-width: 300px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
