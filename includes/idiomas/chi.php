@@ -82,7 +82,7 @@ $Products_text_01 = "专为帮助您的身体重建、恢复与防护而配制�
 $Products_rev_key_01 = "激活思维清晰度并提升专注力";
 $Products_rev_key_02 = "通过神经系统支持促进长期记忆与学习能力";
 $Products_rev_key_03 = "支持健康的神经信号传导,从而提升思维敏锐度";
-$Products_rev_key_04 = "促进可持续能量供应";
+$Products_rev_key_04 = "推广可持续能源";
 
 $Products_title_02 = "激发活力 免疫支持";
 $Products_text_02 = "Rejuvenate 支持健康的免疫功能并促进正常组织再生,这对于维持皮肤

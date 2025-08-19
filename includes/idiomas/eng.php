@@ -242,9 +242,9 @@
     $Works_title_02 = "Share Your Personalized Website Link";
     $Works_title_02_sub_01 = "Every IBA receives a free, mobile-friendly referral website";
     $Works_title_02_sub_02 = "Simply share your link with anyone who wants to try the products";
-    $Works_title_03 = "Earn 40% on Their Purchase";
-    $Works_title_03_sub_01 = "When your referral places a product order, you receive 40% of the commissionable volume (CV)";
-    $Works_title_03_sub_02 = "Example: If a referred customer purchases a product with 100 CV, you earn $40 in commission";
+    $Works_title_03 = "Earn 40% on Their Purchases (First 30 Days)";
+    $Works_title_03_sub_01 = "When your referral places a product order within their first 30 days as a new customer, you receive 40% of the commissionable volume (CV). Example: If a referred customer purchases a product with 100 CV during their first 30 days, you earn $40 in commission.";
+    $Works_title_03_sub_02 = "After the initial 30-day period, standard commission rates apply to any future purchases they make.";
 
     //-------------------------//
 

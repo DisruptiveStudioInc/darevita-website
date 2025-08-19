@@ -676,9 +676,9 @@
     // Income
     //-------------------------//
 
-    $Income_title = "Income disclaimers/Testimonials";
-    $Income_text = "Earning levels or income statements (including claims such as the ability to quit a job or stay at home or portrayals of luxury lifestyles) discussed here exceed the average results achieved by all IBA’s during the same time period, are not necessarily representative of the success or compensation that any particular IBA will receive, and should not be construed as typical or average. The ability to earn income under the DareVita Compensation Plan depends on many factors including an individual IBA business, social, and sales skills; personal ambition and activity; availability of time and financial resources; and access to a large network of family, friends, and business contacts. DareVita cannot and does not guarantee any particular level of earnings. Even IBA’s who dedicate a significant amount of time, effort, and personal funds may not achieve a meaningful level of success. Results may vary and are not typica";
-
+    $Income_title = "Descargos de responsabilidad de ingresos/Testimonios";  
+    $Income_text = "Los niveles de ingresos o declaraciones de ingresos (incluyendo afirmaciones como la capacidad de renunciar a un empleo o quedarse en casa, o representaciones de estilos de vida lujosos) discutidos aquí superan los resultados promedio alcanzados por todos los IBA en el mismo período de tiempo, no son necesariamente representativos del éxito o compensación que recibirá cualquier IBA en particular, y no deben interpretarse como típicos o promedio. La capacidad de generar ingresos bajo el Plan de Compensación de DareVita depende de muchos factores, incluyendo las habilidades empresariales, sociales y de ventas de cada IBA; la ambición y actividad personal; la disponibilidad de tiempo y recursos financieros; y el acceso a una amplia red de familiares, amigos y contactos de negocios. DareVita no puede ni garantiza ningún nivel específico de ingresos. Incluso los IBA que dediquen una cantidad significativa de tiempo, esfuerzo y fondos personales pueden no alcanzar un nivel significativo de éxito. Los resultados pueden variar y no son típicos.";
+    
     //-------------------------//
     // Footer
     //-------------------------//
