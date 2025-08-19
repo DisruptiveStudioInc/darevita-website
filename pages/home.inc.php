@@ -340,7 +340,7 @@ foreach ($Modal as $item){
 
 <section>
     <div class="mw-1080 t-c p-20 p-tiny">
-        <p><?php echo $Disclaimer_home_text; ?></p>
+        <p><?php echo $Disclaimer_Home_text; ?></p>
     </div>
 </section>
 
