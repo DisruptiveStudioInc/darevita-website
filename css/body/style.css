@@ -813,7 +813,6 @@ img.polvo {
   font-weight: 600;
 }
 
-.tab:hover,
 .tab.active {
   color: white;
 }
