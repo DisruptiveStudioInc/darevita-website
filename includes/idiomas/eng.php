@@ -220,7 +220,7 @@
     $Satarted_text_02 = "Designed to support your body’s natural rhythms—cognitive, physical, and hormonal—24 hours a day.";
 
     $Satarted_title_03 = "Track your evolution";
-    $Satarted_text_03 = "Feel the clarity, vitality, and calm. Your body becomes more adaptive, efficient, and resilient with consistent use.";
+    $Satarted_text_03 = "Feel clarity, vitality and calm. Your body becomes more adaptive, efficient, and resilient with consistent use.";
 
     //-------------------------//
     // EARN
