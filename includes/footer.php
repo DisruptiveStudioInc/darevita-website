@@ -28,7 +28,7 @@
                         <div class="w-100 jc-end med-jc-center g-40 small-g-20">
                             <ul class="menu-list link">
                                 <h3><?php echo $Footer_content; ?></h3>
-                                <li><a href="?p=pay_to_pay"><?php echo $Footer_content_link_01; ?></a></li>
+                                <!--<li><a href="?p=pay_to_pay"><?php echo $Footer_content_link_01; ?></a></li>-->
                                 <li><a href="?p=retail_disclosure"><?php echo $Footer_content_link_02; ?></a></li>
                                 <li><a href="?p=retail_pricing"><?php echo $Footer_content_link_03; ?></a></li>
                             </ul>
