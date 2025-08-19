@@ -10,11 +10,11 @@
 
                 <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between':''; ?>
                 <?php $Condicion =(isset($user_replica))? '':'ai-center t-c fd-col'; ?>
-                <div class="med-fd-col <?php echo $Condicion_1; ?>">
-                    <div class="<?php echo $Condicion; ?>">
-                        <img src="./images/logo/logo_white.svg" class="mw-100 med-m-center" alt="logo darevita">
+                <div class="med-fd-col ai-start <?php echo $Condicion_1; ?>">
+                    <div class="w-50 <?php echo $Condicion; ?>">
 
-                        <ul class="fw-wrap med-jc-center g-10 mt-20">
+                        <img src="./images/logo/logo_white.svg" class="mw-100 med-m-center" alt="logo darevita">
+                        <ul class="fw-wrap med-jc-center g-0 mt-20">
                             <li><a target="_blank" href="https://www.facebook.com/DareVitaInternational" class="v-white icon small br-2 icon-facebook"></a></li>
                             <li><a target="_blank" href="https://www.youtube.com/@DareVitaInternational" class="v-white icon small br-2 icon-youtube"></a></li>
                             <li><a target="_blank" href="https://www.instagram.com/DareVitaInternational/" class="v-white icon small br-2 icon-instagram"></a></li>
@@ -25,7 +25,7 @@
                         <img src="./images/body/plan/cards.png" class="mw-200" alt="Payments" style="opacity: 0.5;" />
                     </div>
                     <?php if($user_replica): ?>
-                        <div class="w-100 jc-end med-jc-center g-40 small-g-20">
+                        <div class="w-100 jc-end med-jc-center med-fd-col g-40 small-g-20">
                             <ul class="menu-list link">
                                 <h3><?php echo $Footer_content; ?></h3>
                                 <!--<li><a href="?p=pay_to_pay"><?php echo $Footer_content_link_01; ?></a></li>-->
