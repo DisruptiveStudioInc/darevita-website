@@ -3,34 +3,35 @@
 <!-- ============================================== -->
 
 <section class="hero-pin">
-	<div class="section-arrows">
-	    <button class="arrow down"></button>
-	</div>
+    <div class="section-arrows">
+        <button class="arrow down"></button>
+    </div>
 
-	<div class="text-hero t-c hero-text">
+    <div class="text-hero t-c hero-text">
         <h1 class="h1-special first"><span>Darevita:</span> <?php echo $Hero_01; ?></h1>
         <p class="h4 w-50 med-w-80 small-w-100 m-center"><?php echo $Hero_02; ?></p>
     </div>
 
     <div class="anchor" id="home"></div>
 
-	<div class="dh-100 of-h video-wrapper">
+    <div class="dh of-h rel">
 	    <div class="video-placeholder">
-	        <img src="./images/body/letters/1.webp" alt="Placeholder" />
+	        <img src="./images/body/letters/4.webp" alt="Placeholder" />
 	    </div>
 
-	    <video id="heroVideo"
-	           class="full-img"
-	           autoplay
-	           loop
-	           muted
-	           playsinline
-	           preload="auto"
-	           poster="./images/body/letters/1.webp"
-	           style="opacity: 0; transition: opacity 0.5s ease;">
-	    </video>
+	    <div class="video-iframe-wrapper">
+	        <iframe 
+    src="https://player.vimeo.com/video/1111374770?background=1&autoplay=1&muted=1&loop=1" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture"
+    title="Darevita video agosto 2025_1">
+  </iframe>
+	    </div>
 	</div>
 
+
+    <!-- Vimeo API -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
 </section>
 
 <section>
@@ -73,19 +74,19 @@
 			    <button class="arrow down"></button>
 			</div>
 			<h2 class="word_01"><?php echo $Letters_title_01; ?><span><?php echo $Letters_text_01; ?></span></h2>
-			<img class="img_01" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>">
+			<img class="img_01" src="./images/body/letters/1.webp" alt="<?php echo $Letters_title_01; ?>" loading="lazy">
 		</div>
 		<div>
 			<h2 class="word_02"><?php echo $Letters_title_02; ?><span><?php echo $Letters_text_02; ?></span></h2>
-			<img class="img_02" src="./images/body/letters/2.webp" alt="<?php echo $Letters_title_02; ?>">
+			<img class="img_02" src="./images/body/letters/2.webp" alt="<?php echo $Letters_title_02; ?>" loading="lazy">
 		</div>
 		<div>
 			<h2 class="word_03"><?php echo $Letters_title_03; ?><span><?php echo $Letters_text_03; ?></span></h2>
-			<img class="img_03" src="./images/body/letters/3.webp" alt="<?php echo $Letters_title_03; ?>">
+			<img class="img_03" src="./images/body/letters/3.webp" alt="<?php echo $Letters_title_03; ?>" loading="lazy">
 		</div>
 		<div>
 			<h2 class="word_04"><?php echo $Letters_title_04; ?><span><?php echo $Letters_text_04; ?></span></h2>
-			<img class="img_04" src="./images/body/letters/4.webp" alt="<?php echo $Letters_title_04; ?>">
+			<img class="img_04" src="./images/body/letters/4.webp" alt="<?php echo $Letters_title_04; ?>" loading="lazy">
 		</div>
 	</div>
 </section>
@@ -188,7 +189,7 @@ foreach ($Modal as $item){
 			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal1')"></button>
 			<a href="?p=product&id=restore" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
 		</span>
-		<img src="./images/body/treo/restore.webp" class="product" alt="restore"/>
+		<img src="./images/body/treo/restore.webp" class="product" alt="restore" loading="lazy"/>
 	</div>
 
 	<div class="box_product img-two">
@@ -196,7 +197,7 @@ foreach ($Modal as $item){
 			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal2')"></button>
 			<a href="?p=product&id=rejuvenate" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
 		</span>
-		<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate"/>
+		<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate" loading="lazy"/>
 	</div>
 
 	<div class="box_product img-one">
@@ -204,13 +205,13 @@ foreach ($Modal as $item){
 			<button type="button" class="v-white c-pri icon br-50 icon-more" onclick="openModal('Modal3')"></button>
 			<a href="?p=product&id=revive" class="btn c-sec br-50"><?php echo $Btn_view; ?></a>
 		</span>
-		<img src="./images/body/treo/revive.webp" class="product" alt="revive"/>
+		<img src="./images/body/treo/revive.webp" class="product" alt="revive" loading="lazy"/>
 	</div>
 
 	<img class="polvo med-d-none" src="./images/body/treo/polvo.webp">
-	<img class="background med-d-none img_product_restore" src="./images/body/treo/bg_restore.webp" alt="restore background">
-	<img class="background med-d-none img_product_rejuvenate" src="./images/body/treo/bg_rejuvenate.webp" alt="rejuvenate background">
-	<img class="background med-d-none img_product_revive" src="./images/body/treo/bg_revive.webp" alt="revive background">
+	<img class="background med-d-none img_product_restore" src="./images/body/treo/bg_restore.webp" alt="restore background" loading="lazy">
+	<img class="background med-d-none img_product_rejuvenate" src="./images/body/treo/bg_rejuvenate.webp" alt="rejuvenate background" loading="lazy">
+	<img class="background med-d-none img_product_revive" src="./images/body/treo/bg_revive.webp" alt="revive background" loading="lazy">
 
 	</div>
 </section>
@@ -244,25 +245,25 @@ foreach ($Modal as $item){
 		<ul class="textos">
 			<li>
 				<h2><?php echo $Truth_title_01; ?></h2>
-				<span><img src="./images/body/truth/1.webp" alt="<?php echo $Truth_title_01; ?>"/>
+				<span><img src="./images/body/truth/1.webp" alt="<?php echo $Truth_title_01; ?>" loading="lazy"/>
 					<p class="h4">"<?php echo $Truth_text_01; ?>"</p>
 				</span>
 			</li>
 			<li>
 				<h2><?php echo $Truth_title_02; ?></h2>
-				<span><img src="./images/body/truth/2.webp" alt="<?php echo $Truth_title_02; ?>"/>
+				<span><img src="./images/body/truth/2.webp" alt="<?php echo $Truth_title_02; ?>" loading="lazy"/>
 					<p class="h4">"<?php echo $Truth_text_02; ?>"</p>
 				</span>
 			</li>
 			<li>
 				<h2><?php echo $Truth_title_03; ?></h2>
-				<span><img src="./images/body/truth/3.webp" alt="<?php echo $Truth_title_03; ?>"/>
+				<span><img src="./images/body/truth/3.webp" alt="<?php echo $Truth_title_03; ?>" loading="lazy"/>
 					<p class="h4">"<?php echo $Truth_text_03; ?>"</p>
 				</span>
 			</li>
 			<li>
 				<h2><?php echo $Truth_title_04; ?></h2>
-				<span><img src="./images/body/truth/4.webp" alt="<?php echo $Truth_title_04; ?>"/>
+				<span><img src="./images/body/truth/4.webp" alt="<?php echo $Truth_title_04; ?>" loading="lazy"/>
 					<p class="h4">"<?php echo $Truth_text_04; ?>"</p>
 				</span>
 			</li>
@@ -282,25 +283,25 @@ foreach ($Modal as $item){
 			<div class="img_spirit small-d-none">
 				<span class="img_product">
 					<div class="product_wrapper">
-						<img src="./images/body/the_spirit/1.webp" class="img_reference" alt="revive"/>
-						<img src="./images/body/treo/revive.webp" class="product" alt="revive"/>
+						<img src="./images/body/the_spirit/1.webp" class="img_reference" alt="revive" loading="lazy"/>
+						<img src="./images/body/treo/revive.webp" class="product" alt="revive" loading="lazy"/>
 					</div>
 				</span>
 				<span class="img_product">
 					<div class="product_wrapper">
-						<img src="./images/body/the_spirit/2.webp" class="img_reference" alt="rejuvenate"/>
-						<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate"/>
+						<img src="./images/body/the_spirit/2.webp" class="img_reference" alt="rejuvenate" loading="lazy"/>
+						<img src="./images/body/treo/rejuvenate.webp" class="product" alt="rejuvenate" loading="lazy"/>
 					</div>
 				</span>
 				<span class="img_product">
 					<div class="product_wrapper">
-						<img src="./images/body/the_spirit/3.webp" class="img_reference" alt="restore"/>
-						<img src="./images/body/treo/restore.webp" class="product" alt="restore"/>
+						<img src="./images/body/the_spirit/3.webp" class="img_reference" alt="restore" loading="lazy"/>
+						<img src="./images/body/treo/restore.webp" class="product" alt="restore" loading="lazy"/>
 					</div>
 				</span>
 			</div>
 
-			<img src="./images/body/treo/all.webp" class="mw-300 m-center small-d-block d-none" alt="all products"/>
+			<img src="./images/body/treo/all.webp" class="mw-300 m-center small-d-block d-none" alt="all products" loading="lazy"/>
 
 			<!-- Textos -->
 			<div class="text_spirit">
@@ -344,26 +345,16 @@ foreach ($Modal as $item){
 /* ============================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
-    const video = document.getElementById("heroVideo");
-    const placeholder = document.querySelector(".video-placeholder");
+    const iframe = document.querySelector('.video-iframe-wrapper iframe');
+    const player = new Vimeo.Player(iframe);
+    const placeholder = document.querySelector('.video-placeholder');
 
-    const sourceMp4 = document.createElement("source");
-    sourceMp4.src = "./video/video.mp4";
-    sourceMp4.type = "video/mp4";
-
-    const sourceWebm = document.createElement("source");
-    sourceWebm.src = "./video/video.webm";
-    sourceWebm.type = "video/webm";
-
-    video.appendChild(sourceMp4);
-    video.appendChild(sourceWebm);
-
-    video.addEventListener("canplaythrough", function () {
-        placeholder.style.display = "none";
-        video.style.opacity = "1";
+    // Cuando el video empieza a reproducirse, ocultamos el placeholder
+    player.on('play', function () {
+        placeholder.style.transition = "opacity 0.8s ease";
+        placeholder.style.opacity = "0";
+        setTimeout(() => placeholder.style.display = "none", 800);
     });
-
-    video.load();
 });
 
 /* ============================================== */

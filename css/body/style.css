@@ -204,6 +204,37 @@ section{
 /* PIN */
 /* ============================================== */
 
+.dh {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.video-iframe-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-iframe-wrapper iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 56.25vw; /* 16:9 ratio → 9/16 = 0.5625 */
+  min-height: 100vh; /* asegura que siempre cubra altura */
+  min-width: 177.78vh; /* asegura que siempre cubra ancho */
+  pointer-events: none; /* opcional */
+}
+
+
 .pin{
   position: relative;
 }
@@ -737,7 +768,9 @@ img.polvo {
 /* ============================================== */
 
 .tabs {
-  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
   width: 100%;
   margin: 40px auto;
   font-family: sans-serif;
@@ -746,29 +779,30 @@ img.polvo {
 .tab-header {
   position: relative;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .tab {
-  flex: 1;
   font-size: 1.3rem;
   font-family: var(--f-family);
-  text-align: center;
-  padding: 12px;
-  display: flex;
+  padding: 12px 24px 12px 60px;
+  display: inline-flex;
   align-items: center;
-  cursor: pointer;
-  z-index: 1;
   position: relative;
+  cursor: pointer;
   border-radius: 90px;
   color: var(--color-pri);
+  opacity: 0.6;
   transition: all 0.5s cubic-bezier(0.25, 1.25, 0.5, 1.1);
-}
-
-.tab:hover {
-  color: black;
+  z-index: 1;
+  width: fit-content;
 }
 
 .tab span {
+  position: absolute;
+  left: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -777,12 +811,13 @@ img.polvo {
   border-radius: 50%;
   background: var(--color-ter);
   color: white;
-  margin-right: 20px;
   font-weight: 600;
 }
 
+.tab:hover,
 .tab.active {
   color: white;
+  opacity: 1;
 }
 
 .active-indicator {
@@ -798,6 +833,8 @@ img.polvo {
 }
 
 .tab-content {
+  flex-grow: 1;
+  width: 100%;
   margin: 0;
   border-radius: 10px;
   transition: height 0.5s ease;
@@ -828,36 +865,47 @@ img.polvo {
 }
 
 @media screen and (max-width: 1440px) {
-
   .tab {
     font-size: 1rem;
-    padding: 12px;
   }
 
   .tab span {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
   }
 
-  .tab-header {
-    flex-wrap: wrap;
-  }
   .tab.active {
     background: var(--color-pri);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .tab-header {
-    flex-direction: column;
-  }
   .tabs {
     margin: 20px auto;
+    width: 100%;
   }
+
+  .tab-header {
+    
+    align-items: stretch;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .tab {
+    padding: 12px 24px 12px 60px;
+    display: flex;
+    width: 100%;
+  }
+
+  .tab-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
   .content {
     font-size: 2rem;
-    line-height: 2rem;
   }
 }
 

@@ -123,7 +123,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 <section class="c-sub <?php echo $id; ?>">
     <div class="h-100 of-h rel small-h-0">
 
-        <img class="img-middle small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
+        <img class="img-middle small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" loading="lazy"/>
 
         <div class="ingredients_wrap">
             <h2 class="abs-text h1 t-c"><?php echo $Ingredients; ?></h2>
@@ -171,7 +171,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
             <?php endforeach; ?>
         </ul>
 
-        <img class="full-img" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?>">
+        <img class="full-img" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?>" loading="lazy">
 
     </div>
 </section>
