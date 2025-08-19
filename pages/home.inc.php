@@ -338,6 +338,12 @@ foreach ($Modal as $item){
 	</div>
 </section>
 
+<section>
+    <div class="mw-1080 t-c p-20 p-tiny">
+        <p><?php echo $Disclaimer_home_text; ?></p>
+    </div>
+</section>
+
 <script>
 
 /* ============================================== */

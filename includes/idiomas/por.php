@@ -641,6 +641,10 @@ $Disclaimer_title = "Aviso";
 $Disclaimer_text = "Estas declarações não foram avaliadas pela Food and Drug
 Administration. Estes produtos não têm a intenção de diagnosticar, tratar, curar ou prevenir
 qualquer doença. Os resultados não são típicos e podem variar";
+
+//-------------------------//
+
+$Disclaimer_Home_text = "O conteúdo deste site é estritamente comercial e informativo; não constitui aconselhamento médico e não substitui a avaliação de um profissional de saúde. Nossos produtos são suplementos alimentares, não medicamentos.";
 //-------------------------//
 // Income
 //-------------------------//

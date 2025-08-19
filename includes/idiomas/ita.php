@@ -662,6 +662,9 @@ $Disclaimer_text = "Queste affermazioni non sono state valutate dalla Food and D
 Administration. Questi prodotti non intendono diagnosticare, trattare, curare o prevenire alcuna
 malattia. I risultati non sono tipici e possono variare.";
 //-------------------------//
+
+$Disclaimer_Home_text = "Il contenuto di questo sito è strettamente commerciale e informativo; non costituisce consiglio medico e non sostituisce la valutazione di un professionista sanitario. I nostri prodotti sono integratori alimentari, non farmaci.";
+//-------------------------//
 // Income
 //-------------------------//
 $Income_title = "Dichiarazioni sul Reddito/Testimonianze";

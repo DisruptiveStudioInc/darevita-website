@@ -660,6 +660,10 @@
     $Disclaimer_text = "These statements have not been evaluated by the Food and Drug Administration. These products do not intend to diagnose, treat, cure or prevent any disease. Results are not typical and may vary";
 
     //-------------------------//
+
+    $Disclaimer_Home_text = "The content of this site is strictly commercial and informational; it does not constitute medical advice and does not replace the evaluation of a healthcare professional. Our products are dietary supplements, not medications.";
+
+    //-------------------------//
     // Income
     //-------------------------//
 
