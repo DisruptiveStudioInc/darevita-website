@@ -81,15 +81,15 @@
         <div class="wrap-get">
           <div class="btn-get"><?php echo $Btn_started; ?></div>
           <div class="get">
-            <a href="https://usdev.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
+            <a href="https://us.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
                target="_blank" 
                class="eng" 
                aria-label="Buy in USA">United States</a>
-            <a href="https://mxdev.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
+            <a href="https://mx.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
                target="_blank" 
                class="esp" 
                aria-label="Buy in Mexico">México</a>
-            <a href="https://intdev.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
+            <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
                target="_blank" 
                class="int" 
                aria-label="Buy International">International</a>
