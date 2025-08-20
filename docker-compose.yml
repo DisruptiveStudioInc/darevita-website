@@ -2,7 +2,7 @@
 
 services:
   darevita-website:
-    image: trafex/alpine-nginx-php
+    image: trafex/php-nginx
     container_name: darevita-website
     restart: unless-stopped
     volumes:
