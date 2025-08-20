@@ -50,7 +50,7 @@
 			    ),
 			    array(
 			        'icon' => 'icon-10',
-			        'title' => $Works_title_03, // <- corregido
+			        'title' => $Works_title_03,
 			        'list' => array(
 			            $Works_title_03_sub_01,
 			            $Works_title_03_sub_02
@@ -60,7 +60,7 @@
 			?>
 
 
-			<ul class="teaser_earn">
+			<ul class="teaser_earn g-20">
 			<?php
 			$counter = 1;
 			foreach ($Plan as $item){

@@ -208,7 +208,14 @@ $Works_title_02_sub_02 = "제품을 사용해보고 싶은 사람에게 링크�
 $Works_title_03 = "추천 구매로 40% 수익";
 $Works_title_03_sub_01 = "추천 고객이 제품을 주문하면 커미션 가능 볼륨(CV)의 40%를 받습니
 다";
-$Works_title_03_sub_02 = "예시: 추천 고객이 100 CV 제품을 구매하면 $40 커미션 획득";
+$Works_title_03_sub_02 = "
+    <a class='tooltip desktop-only'><span class='small-d-none'>자세히 보기</span>
+        <span class='tooltip-text'>
+            추천받은 고객이 처음 30일 동안 100 CV의 제품을 구매하면, $40의 수수료를 받게 됩니다. 
+            초기 30일 이후에는 향후 구매에 대해 표준 수수료율이 적용됩니다.
+        </span>
+    </a>
+";
 //-------------------------//
 $Who = "임팩트 보너스를 획득할 수 있는 사람은?";
 $Who_sub = "활성 IBA만 자격이 있습니다.";

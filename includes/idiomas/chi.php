@@ -226,8 +226,14 @@ $Works_title_02_sub_01 = "每位IBA都会获得一个免费的、适合手机使
 $Works_title_02_sub_02 = "只需将您的链接分享给任何想尝试产品的人。";
 $Works_title_03 = "从他们的购买中赚取40%的佣金";
 $Works_title_03_sub_01 = "当您的推荐人下单购买产品时,您将获得该订单可佣金量(CV)的40%。";
-
-$Works_title_03_sub_02 = "示例:如果被推荐的客户购买了一件CV为100的产品,您将获得40美元的佣金。";
+$Works_title_03_sub_02 = "
+    <a class='tooltip desktop-only'><span class='small-d-none'>查看详情</span>
+        <span class='tooltip-text'>
+            如果被推荐的客户在前30天内购买了一款100 CV的产品，你将获得40美元的佣金。 
+            在最初的30天之后，他们未来的任何购买将适用标准佣金率。
+        </span>
+    </a>
+";
 
 //-------------------------//
 

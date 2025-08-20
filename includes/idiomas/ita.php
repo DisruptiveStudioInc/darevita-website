@@ -220,8 +220,14 @@ prodotti";
 $Works_title_03 = "Guadagna il 40% sui loro acquisti";
 $Works_title_03_sub_01 = "Quando il tuo referral effettua un ordine, ricevi il 40% del volume
 commissionabile (CV)";
-$Works_title_03_sub_02 = "Esempio: se un cliente acquista un prodotto con 100 CV,
-guadagni $40 di commissione";
+$Works_title_03_sub_02 = "
+    <a class='tooltip desktop-only'><span class='small-d-none'>Vedi dettagli</span>
+        <span class='tooltip-text'>
+            Se un cliente segnalato acquista un prodotto con 100 CV nei primi 30 giorni, guadagni $40 di commissione. 
+            Dopo i primi 30 giorni, si applicano le tariffe di commissione standard a qualsiasi acquisto futuro.
+        </span>
+    </a>
+";
 
 //-------------------------//
 // Who

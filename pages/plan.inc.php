@@ -96,7 +96,7 @@
 			);
 			?>
 
-			<ul class="teaser_plan">
+			<ul class="teaser_plan g-20">
 			<?php
 			$counter = 1;
 			foreach ($Plan as $item) {

@@ -119,8 +119,8 @@
 $Modal = array(
 	array(
 		'Restore',
-		$Products_title_01,
-		$Products_text_01,
+		$Products_title_03,
+		$Products_text_03,
 		array(
 			$Products_res_key_01,
 			$Products_res_key_02,
@@ -141,8 +141,8 @@ $Modal = array(
 	),
 	array(
 		'Revive',
-		$Products_title_03,
-		$Products_text_03,
+		$Products_title_01,
+		$Products_text_01,
 		array(
 			$Products_rev_key_01,
 			$Products_rev_key_02,

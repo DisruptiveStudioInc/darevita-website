@@ -253,7 +253,14 @@
 
     $Works_title_03 = "Gana 40% de su compra";
     $Works_title_03_sub_01 = "Cuando tu referido realiza un pedido, recibes el 40% del volumen comisionable (CV)";
-    $Works_title_03_sub_02 = "Ejemplo: Si un cliente referido compra un producto de 100 CV, ganas $40 en comisión";
+    $Works_title_03_sub_02 = "
+    <a class='tooltip desktop-only'><span class='small-d-none'>Ver detalles</span>
+        <span class='tooltip-text'>
+            Si un cliente referido compra un producto con 100 CV durante sus primeros 30 días, ganas $40 de comisión. 
+            Después del período inicial de 30 días, se aplican las tasas de comisión estándar a cualquier compra futura que realicen.
+        </span>
+    </a>
+";
 
     //-------------------------//
 

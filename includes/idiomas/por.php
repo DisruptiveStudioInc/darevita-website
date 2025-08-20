@@ -229,8 +229,14 @@ experimentar os produtos";
 $Works_title_03 = "Ganhe 40% sobre a compra deles";
 $Works_title_03_sub_01 = "Quando seu indicado fizer um pedido de produto, você recebe
 40% do volume comissionável (CV)";
-$Works_title_03_sub_02 = "Exemplo: Se um cliente indicado comprar um produto com 100
-CV, você ganha $40 em comissão";
+$Works_title_03_sub_02 = "
+    <a class='tooltip desktop-only'><span class='small-d-none'>Ver detalhes</span>
+        <span class='tooltip-text'>
+            Se um cliente indicado comprar um produto com 100 CV durante os primeiros 30 dias, você ganha $40 de comissão. 
+            Após o período inicial de 30 dias, aplicam-se as taxas de comissão padrão a qualquer compra futura que ele fizer.
+        </span>
+    </a>
+";
 //-------------------------//
 // Who
 //-------------------------//

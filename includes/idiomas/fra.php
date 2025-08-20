@@ -228,8 +228,14 @@ essayer les produits";
 $Works_title_03 = "Gagnez 40 % sur leurs achats";
 $Works_title_03_sub_01 = "Lorsque votre filleul passe une commande, vous recevez 40 %
 du volume commissionnable (CV)";
-$Works_title_03_sub_02 = "Exemple : si un client recommandé achète un produit avec 100
-CV, vous gagnez 40 $ de commission";
+$Works_title_03_sub_02 = "
+    <a class='tooltip desktop-only'><span class='small-d-none'>Voir les détails</span>
+        <span class='tooltip-text'>
+            Si un client parrainé achète un produit de 100 CV au cours de ses 30 premiers jours, vous gagnez 40 $ de commission. 
+            Après la période initiale de 30 jours, les taux de commission standard s'appliquent à tous les futurs achats qu'il effectuera.
+        </span>
+    </a>
+";
 //-------------------------//
 $Who = "Qui peut gagner le bonus d'impact ?";
 $Who_sub = "Seuls les IBA actifs sont éligibles.";
