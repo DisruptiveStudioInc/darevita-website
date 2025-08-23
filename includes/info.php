@@ -101,8 +101,8 @@ $Menu = array(
 
 $Sub = array(
     array('Treo', array(
-        array('revive', 'Revive',$Products_title_03),
-        array('restore', 'Restore',$Products_title_01),
+        array('revive', 'Revive',$Products_title_01),
+        array('restore', 'Restore',$Products_title_03),
         array('rejuvenate', 'Rejuvenate',$Products_title_02)
     ))
 );
