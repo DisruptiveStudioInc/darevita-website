@@ -1,8 +1,8 @@
-version: "3.1"
+#version: "3.1"
 
 services:
-  disruptivex-website:
-    image: trafex/alpine-nginx-php
+  darevita-website:
+    image: trafex/php-nginx
     container_name: darevita-website
     restart: unless-stopped
     volumes:
@@ -12,4 +12,4 @@ services:
     networks:
     - darevita-network
 networks:
-  disruptivex-network:
+  darevita-network:
