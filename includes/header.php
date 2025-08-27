@@ -89,11 +89,13 @@
                target="_blank" 
                class="esp" 
                aria-label="Buy in Mexico">México</a>
+            <?php if(!$comes_from_usa_mex) : ?>
             <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
-               target="_blank" 
-               class="int" 
-               aria-label="Buy International">International</a>
-          </div>
+            target="_blank" 
+            class="int" 
+            aria-label="Buy International">International</a>
+            <?php endif; ?>
+            </div>
         </div>
 
         <!-- ============================================== -->
@@ -193,6 +195,8 @@
                                     
                                     echo "<ul class='sub'>";
                                     foreach ($Sub_reg as $item_sub) {
+                                        if($item_sub[1] == 'INT' && $comes_from_usa_mex)
+                                            continue;
                                         echo "<li><a href='{$item_sub[0]}' target='_blank'>{$item_sub[1]}</a></li>";
                                     }
                                     echo "</ul>";

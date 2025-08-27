@@ -1,6 +1,7 @@
 <!-- header -->
 	<?php
 	session_start();
+	/* sets the referral sponsor */ 
 	if(isset($_SESSION['user_replica']) && !isset($_GET['ref'])){
 		$user_replica = $_SESSION['user_replica'];
 	}
@@ -8,6 +9,11 @@
 		$user_replica = isset($_GET['ref']) ? $_GET['ref'] : NULL;
 		$_SESSION['user_replica'] = $user_replica;
 	}
+
+	/* checks if the user request comes from USA or Mexico
+	using the header sent by Cloudflare */
+	$comes_from_usa_mex = in_array($_SERVER['HTTP_CF_IPCOUNTRY'],['US','MX']);
+
 	include("./includes/header.php");
 	?>
 <!-- /header -->
