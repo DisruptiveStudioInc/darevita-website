@@ -573,6 +573,8 @@ img.polvo {
     background-repeat: no-repeat;
   }
 
+  .wrap_treo .box_product.img-two img { scale: 1;}
+
   .content-scroll .box_product img {
     position: absolute;
     top: 50%;
@@ -585,7 +587,7 @@ img.polvo {
 
   /* Fondos por clase */
   .content-scroll .box_product.img-three {
-    background-image: url('./../../images/body/treo/bg_restore.webp'); /* RESTORE por defecto */
+    background-image: url('./../../images/body/treo/bg_restore.webp');
   }
   .content-scroll .box_product.img-two {
     background-image: url('./../../images/body/treo/bg_rejuvenate.webp');

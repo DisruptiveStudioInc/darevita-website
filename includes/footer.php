@@ -8,9 +8,9 @@
             <div class="mw-1440">
 
 
-                <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between':''; ?>
-                <?php $Condicion =(isset($user_replica))? '':'ai-center t-c fd-col'; ?>
-                <div class="med-fd-col ai-start <?php echo $Condicion_1; ?>">
+                <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between':'jc-center'; ?>
+                <?php $Condicion =(isset($user_replica))? '':'ai-center t-c fd-col small-w-100'; ?>
+                <div class="med-fd-col <?php echo $Condicion_1; ?>">
                     <div class="w-50 <?php echo $Condicion; ?>">
 
                         <img src="./images/logo/logo_white.svg" class="mw-100 med-m-center" alt="logo darevita">
@@ -24,7 +24,7 @@
                         <p style="font-size: 0.8rem"><?php echo $Payments; ?></p>
                         <img src="./images/body/plan/cards.png" class="mw-200" alt="Payments" style="opacity: 0.5;" />
                     </div>
-                    <?php if($user_replica): ?>
+                    <?php if(isset($user_replica)): ?>
                         <div class="w-100 jc-end med-jc-center med-fd-col g-40 small-g-20">
                             <ul class="menu-list link">
                                 <h3><?php echo $Footer_content; ?></h3>
