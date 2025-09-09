@@ -23,6 +23,12 @@ $Links_mex_map = [
     "restore"     => $Shop_mex_restore
 ];
 
+$Links_can_map = [
+    "revive"      => $Shop_can_revive,
+    "rejuvenate"  => $Shop_can_rejuvenate,
+    "restore"     => $Shop_can_restore
+];
+
 $Bg_map = [
     "revive"      => "Revive",
     "rejuvenate"  => "Rejuvenate",
@@ -88,6 +94,7 @@ $Benefits_sub_map = [
 $Links       = $Links_map[$id]           ?? "";
 $Links_usa   = $Links_usa_map[$id]       ?? "";
 $Links_mex   = $Links_mex_map[$id]       ?? "";
+$Links_can   = $Links_can_map[$id]       ?? "";
 $Bg          = $Bg_map[$id]              ?? "";
 $Titulo      = $Titulo_map[$id]          ?? "";
 $Subtitulo   = $Subtitulo_map[$id]       ?? "";
@@ -111,6 +118,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
                 <div class="btns g-10 small-jc-center">
                     <a href="<?php echo $Links_usa; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Btn_buy; ?></a>
                     <a href="<?php echo $Links_mex; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2" aria-label="Buy in Mexico"><?php echo $Btn_buy; ?></a>
+                    <a href="<?php echo $Links_can; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-8" aria-label="Buy in Canada"><?php echo $Btn_buy; ?></a>
                 </div>
             </div>
 

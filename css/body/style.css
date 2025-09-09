@@ -1395,6 +1395,7 @@ ul.textos li span img {
 .v-custom.my_flags.icon-5::before { background-position: calc(-4 * var(--icon-size-ch)) 0; }
 .v-custom.my_flags.icon-6::before { background-position: calc(-5 * var(--icon-size-ch)) 0; }
 .v-custom.my_flags.icon-7::before { background-position: calc(-6 * var(--icon-size-ch)) 0; }
+.v-custom.my_flags.icon-8::before { background-position: calc(-7 * var(--icon-size-ch)) 0; }
 
 .v-custom.icon-1::before { background-position: calc(-0 * var(--icon-size-c)) 0; }
 .v-custom.icon-2::before { background-position: calc(-1 * var(--icon-size-c)) 0; }

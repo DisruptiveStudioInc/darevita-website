@@ -227,6 +227,7 @@
 .get a.eng::before { background-image: url('./../../images/flags/eng.svg'); }
 .get a.esp::before { background-image: url('./../../images/flags/esp.svg'); }
 .get a.int::before { background-image: url('./../../images/flags/int.svg'); }
+.get a.can::before { background-image: url('./../../images/flags/can.svg'); }
 
 /* ============================================== */
 /* LANGUAGE & SUBMENU */

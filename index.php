@@ -12,7 +12,8 @@
 
 	/* checks if the user request comes from USA or Mexico
 	using the header sent by Cloudflare */
-	$comes_from_usa_mex = in_array($_SERVER['HTTP_CF_IPCOUNTRY'],['US','MX']);
+	$comes_from_usa_mex = isset($_SERVER['HTTP_CF_IPCOUNTRY']) &&
+                      in_array($_SERVER['HTTP_CF_IPCOUNTRY'], ['US','MX']);
 
 	include("./includes/header.php");
 	?>

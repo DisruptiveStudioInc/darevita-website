@@ -89,6 +89,10 @@
                target="_blank" 
                class="esp" 
                aria-label="Buy in Mexico">México</a>
+            <a href="https://ca.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
+               target="_blank" 
+               class="can" 
+               aria-label="Buy in Mexico">Canada</a>
             <?php if(!$comes_from_usa_mex) : ?>
             <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
             target="_blank" 
