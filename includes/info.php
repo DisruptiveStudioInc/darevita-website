@@ -141,8 +141,7 @@ $Condicion_lan = isset($idiomas[$idioma]) ? $idiomas[$idioma] : 'Desconocido';
 
 $Email = "support@darevita.com";
 $Phone = "+14808088204";
-$Address = "DareVita International Inc.,<br>30 N Gould St, Ste R,<br>Sheridan, Wyoming 82801";
-
+$Address = "DareVita International Inc.,<br>24304 S 207th Pl,<br>Queen Creek, AZ, 85142, USA";
 
 ?>
 
