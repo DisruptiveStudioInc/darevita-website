@@ -686,6 +686,129 @@ contatti commerciali. DareVita non può e non garantisce alcun livello specifico
 Anche gli IBA che dedicano una quantità significativa di tempo, sforzi e fondi personali
 potrebbero non raggiungere un livello significativo di successo. I risultati possono variare e non
 sono tipici.";
+
+    //-------------------------//
+    // Terms
+    //-------------------------//
+
+$Terms = 'DareVita International – Terms and Conditions';
+$Terms_sub ='Last Updated: September 10, 2025';
+$Terms_text ='These Terms and Conditions (“Terms”) govern your access to and use of DareVita International, Inc.’s (“DareVita,” “we,” “our,” or “us”) websites, products, and services. By purchasing products from DareVita or using our website, you agree to be bound by these Terms. Please read them carefully.';
+
+$Terms_01 = 'Eligibility';
+$Terms_01_text = 'You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase from DareVita. By ordering, you represent that you meet this requirement.';
+
+$Terms_02 = 'Products and Availability';
+$Terms_02_01 = 'DareVita specializes in health and wellness supplements.';
+$Terms_02_02 = 'We make reasonable efforts to ensure accurate descriptions, images, and availability of products. However, product formulations, packaging, or availability may change without notice.';
+$Terms_02_03 = 'We reserve the right to discontinue or limit the quantity of any product at any time.';
+$Terms_02_04 = 'We reserve the right to change our pricing at any time';
+
+$Terms_03 = 'Ordering and Payment';
+$Terms_03_01 = 'All orders are subject to acceptance and product availability.';
+$Terms_03_02 = 'Prices are listed in U.S. dollars unless otherwise stated.';
+$Terms_03_03 = 'You agree to provide accurate billing and shipping information.';
+$Terms_03_04 = 'DareVita accepts major credit/debit cards and other payment methods shown at checkout. Payment must be authorized at the time of order.';
+
+$Terms_04 = 'Shipping and Delivery';
+$Terms_04_01 = 'Orders are processed within 48 hours unless otherwise noted.';
+$Terms_04_02 = 'Shipping times vary by destination. Estimated delivery times are provided at checkout but are not guaranteed.';
+$Terms_04_03 = 'Customers are responsible for all import duties, customs fees, and local taxes.';
+$Terms_04_04 = 'Risk of loss passes to the customer upon delivery to the shipping carrier.';
+$Terms_04_05 = 'For more details, please review our Shipping Policy.';
+
+$Terms_05 = 'Returns and Refunds';
+$Terms_05_01 = 'Returns are accepted only for unopened, unused products in original packaging within 30 days of purchase.';
+$Terms_05_02 = 'Refunds are issued to the original payment method, less shipping and handling fees.';
+$Terms_05_03 = 'Opened, used, or damaged items are not eligible for return unless defective.';
+$Terms_05_04 = 'Customers must contact DareVita Support before returning any item.';
+$Terms_05_05 = 'For more details, please review our Returns & Refund Policy.';
+
+$Terms_06 = 'Subscriptions & Automatic Renewals';
+$Terms_06_01 = 'DareVita may offer subscription plans for certain products, where you receive recurring shipments on a schedule (e.g., monthly).';
+$Terms_06_02 = 'By enrolling in a subscription, you agree to be charged automatically at the interval and price disclosed at checkout until you cancel.';
+$Terms_06_03 = 'Clear Disclosures: Renewal terms, frequency, and pricing will be presented at checkout before you complete your purchase.';
+$Terms_06_04 = 'Consent: You must affirmatively agree to automatic renewal terms before enrollment.';
+$Terms_06_05 = 'Cancellations: You may cancel your subscription at any time by logging into your account, contacting us via email, or calling customer service. Cancellation is effective immediately and will prevent future charges.';
+$Terms_06_06 = 'Reminders: For subscriptions and renewals, DareVita will send a reminder notice 8 days before renewal with instructions to cancel if you do not wish to continue.';
+$Terms_06_07 = 'Refunds: Please refer to our refund policy.';
+
+$Terms_07 = 'International Orders';
+$Terms_07_01 = 'International customers are responsible for ensuring products comply with their local import laws.';
+$Terms_07_02 = 'DareVita is not responsible for orders delayed, seized, or rejected by customs.';
+
+$Terms_08 = 'Health and Safety Disclaimer';
+$Terms_08_01 = 'DareVita products are not intended to diagnose, treat, cure, or prevent any disease.';
+$Terms_08_02 = 'Statements about our products have not been evaluated by the U.S. Food and Drug Administration (FDA) or Health Canada.';
+$Terms_08_03 = 'Always consult with a qualified healthcare professional before starting any new supplement or product regimen.';
+$Terms_08_04 = 'Use products only as directed on the label.';
+
+$Terms_09 = 'Intellectual Property';
+$Terms_09_text = 'All content, trademarks, product names, packaging, logos, and materials on DareVita’s website or marketing channels are the exclusive property of DareVita International, Inc. They may not be copied, modified, or used without prior written consent.';
+
+$Terms_10 = 'Limitation of Liability';
+$Terms_10_01 = 'To the fullest extent permitted by law:';
+$Terms_10_02 = 'DareVita is not liable for indirect, incidental, or consequential damages (including loss of profits, health outcomes, or delays).';
+$Terms_10_03 = 'DareVita’s total liability for any claim shall not exceed the amount paid by you for the product in dispute.';
+$Terms_10_04 = 'By purchasing DareVita products, you assume all risks associated with their use, except where prohibited by law.';
+
+$Terms_11 = 'Indemnification';
+$Terms_11_text = 'You agree to indemnify and hold harmless DareVita International, its officers, employees, and affiliates from any claims, damages, losses, or expenses arising from your misuse of products, violation of these Terms, or breach of applicable laws.';
+
+$Terms_12 = 'Governing Law';
+$Terms_12_text = 'These Terms are governed by the laws of the State of Wyoming, United States, without regard to conflict of law principles. Any disputes shall be resolved in accordance with the arbitration clause below.';
+
+$Terms_13 = 'Dispute Resolution and Arbitration';
+$Terms_13_text = 'Any dispute arising under these Terms shall be resolved through binding arbitration in Wyoming, USA, under the rules of the American Arbitration Association. By purchasing DareVita products, you waive any right to bring claims in court or as part of a class action.';
+
+$Terms_14 = 'Changes to Terms';
+$Terms_14_text = 'DareVita reserves the right to update or modify these Terms at any time. Changes are effective when posted to our website. Continued use of our services constitutes acceptance of updated Terms.';
+
+$Terms_15 = 'Contact Us';
+
+    //-------------------------//
+    // Shipping
+    //-------------------------//
+
+$Shipping = 'DareVita International Shipping Policy';
+
+$Shipping_01 = 'Shipping Coverage';
+$Shipping_01_text = 'DareVita International, Inc. (“DareVita”) currently ships products to the United States and Canada. Availability may vary depending on local regulations, customs restrictions, and product eligibility in your country.';
+
+$Shipping_02 = 'Processing Times';
+$Shipping_02_01 = 'Orders are processed within 48 hours (excluding weekends and holidays).';
+$Shipping_02_02 = 'Customers will receive a confirmation email with tracking details once the order has shipped.';
+
+$Shipping_03 = 'Shipping Methods & Delivery Times';
+$Shipping_03_01 = 'Domestic (U.S.): Standard delivery is typically 3-7 business days.';
+$Shipping_03_02 = 'Canada: Standard delivery is typically 10-15 business days, subject to customs clearance.';
+$Shipping_03_note = 'Note: Shipping times are estimates and may be delayed due to customs inspections, carrier issues, or unforeseen circumstances outside DareVita’s control.';
+
+$Shipping_04 = 'Shipping Costs';
+$Shipping_04_01 = 'Shipping fees are calculated at checkout based on destination, weight, and carrier service.';
+$Shipping_04_02 = 'Customers are responsible for all applicable import duties, VAT/GST, customs clearance fees, and local taxes charged by their country.';
+
+$Shipping_05 = 'Customs & Import Regulations';
+$Shipping_05_01 = 'DareVita complies with all U.S. and international export regulations.';
+$Shipping_05_02 = 'Customers are responsible for ensuring products may be lawfully imported into their country.';
+$Shipping_05_03 = 'Orders seized, rejected, or delayed by customs are not eligible for refund unless returned to DareVita in unopened and resalable condition.';
+
+$Shipping_06 = 'Order Tracking';
+$Shipping_06_text = 'Customers will receive a shipping confirmation email with a tracking number. Tracking updates may be limited in some international destinations once packages leave the United States.';
+
+$Shipping_07 = 'Lost, Damaged, or Delayed Shipments';
+$Shipping_07_01 = 'If a package is lost in transit, DareVita will work with the carrier to investigate.';
+$Shipping_07_02 = 'If confirmed lost, we will reship or refund the order.';
+$Shipping_07_03 = 'If an order is delivered damaged, customers must contact DareVita Support within 7 days of delivery with photos of the damage for resolution.';
+$Shipping_07_04 = 'DareVita is not liable for delays caused by customs or carriers.';
+
+$Shipping_08 = 'Returns & Refused Deliveries';
+$Shipping_08_01 = 'Customers who refuse a shipment or provide incorrect shipping details are responsible for any return shipping fees incurred.';
+$Shipping_08_02 = 'Refunds (if applicable) will be processed once returned items are received in original condition, less shipping and handling.';
+
+$Shipping_09 = 'Customer Support';
+$Shipping_09_01 = 'For shipping inquiries, contact DareVita International at:';
+
 //-------------------------//
 // Footer
 //-------------------------//
@@ -700,5 +823,7 @@ $Footer_darevita_link_01 = "Guadagna Commissioni";
 $Footer_darevita_link_02 = "Piano di compensazione";
 $Footer_darevita_link_03 = "Privacy Policy";
 $Footer_darevita_link_04 = "Politica di Reso";
+$Footer_darevita_link_05 = "Terms and Conditions";
+$Footer_darevita_link_06 = "Shipping Policy";
 
 ?>

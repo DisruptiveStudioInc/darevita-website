@@ -36,8 +36,10 @@
                                 <h3>Darevita</h3>
                                 <li><a href="?p=earn"><?php echo $Footer_darevita_link_01; ?></a></li>
                                 <li><a href="?p=plan"><?php echo $Footer_darevita_link_02; ?></a></li>
-                                <li><a href="?p=privacy_policy#"><?php echo $Footer_darevita_link_03; ?></a></li>
-                                <li><a href="?p=returns_policy#"><?php echo $Footer_darevita_link_04; ?></a></li>
+                                <li><a href="?p=privacy_policy"><?php echo $Footer_darevita_link_03; ?></a></li>
+                                <li><a href="?p=returns_policy"><?php echo $Footer_darevita_link_04; ?></a></li>
+                                <li><a href="?p=terms_and_conditions"><?php echo $Footer_darevita_link_05; ?></a></li>
+                                <li><a href="?p=shipping_policy"><?php echo $Footer_darevita_link_06; ?></a></li>
                             </ul>
                             <ul class="menu-list link">
                                 <h3><?php echo $ContactUs; ?></h3>
