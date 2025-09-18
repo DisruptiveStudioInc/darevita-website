@@ -148,6 +148,32 @@
     $Spirit_text_03 = "Combinamos creatividad con excelencia en todo lo que hacemos.";
 
     //-------------------------//
+// KEY BENEFITS
+//-------------------------//
+$Key_Title = "Beneficios clave";
+$Key_01_01 = "Promueve y mejora los beneficios de RESTORE";
+$Key_01_02 = "Activa la claridad mental y agudiza el enfoque";
+$Key_01_03 = "Apoya la memoria a largo plazo y el aprendizaje";
+$Key_01_04 = "Favorece una comunicación neuronal saludable, lo que a su vez promueve la
+conciencia mental";
+$Key_01_05 = "Promueve energía sostenible";
+$Key_01_06 = "Mejora la adaptabilidad y la resolución creativa de problemas";
+$Key_02_01 = "Activa los beneficios de REVIVE";
+$Key_02_02 = "Promueve la vitalidad del sistema inmunológico";
+$Key_02_03 = "Aumenta la energía, el apoyo celular y promueve la producción de colágeno";
+$Key_02_04 = "Favorece el metabolismo y el mantenimiento de tejido magro";
+$Key_02_05 = "Mejora la recuperación después del ejercicio y apoya el proceso natural de
+envejecimiento del cuerpo";
+$Key_03_01 = "Mejora los ciclos de sueño REM, permitiendo sueños vívidos y apoyo
+cognitivo mientras duermes";
+$Key_03_02 = "Fomenta un sueño reparador y apoya la capacidad natural del cuerpo para
+manejar el estrés y el estado de ánimo";
+$Key_03_03 = "Impulsa el apoyo cognitivo, hormonal e inmunológico";
+$Key_03_04 = "Promueve el bienestar emocional y respalda los niveles naturales de estrés
+de tu cuerpo mientras duermes";
+$Key_03_05 = "Apoya el metabolismo y la utilización de grasas durante el descanso";
+
+    //-------------------------//
     // Traits
     //-------------------------//
 

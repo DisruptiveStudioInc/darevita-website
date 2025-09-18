@@ -88,21 +88,34 @@ $Benefits_sub_map = [
     "restore"     => $Benefits_sub_03
 ];
 
+$Key_list_map = [
+    "revive" => [
+        $Key_01_01, $Key_01_02, $Key_01_03, $Key_01_04, $Key_01_05, $Key_01_06
+    ],
+    "rejuvenate" => [
+        $Key_02_01, $Key_02_02, $Key_02_03, $Key_02_04, $Key_02_05
+    ],
+    "restore" => [
+        $Key_03_01, $Key_03_02, $Key_03_03, $Key_03_04, $Key_03_05
+    ]
+];
+
 // ====================
 // ASIGNACIÓN SEGURA
 // ====================
-$Links       = $Links_map[$id]           ?? "";
-$Links_usa   = $Links_usa_map[$id]       ?? "";
-$Links_mex   = $Links_mex_map[$id]       ?? "";
-$Links_can   = $Links_can_map[$id]       ?? "";
-$Bg          = $Bg_map[$id]              ?? "";
-$Titulo      = $Titulo_map[$id]          ?? "";
-$Subtitulo   = $Subtitulo_map[$id]       ?? "";
-$Text        = $Text_map[$id]            ?? "";
-$Ingredients = $Ingredients_map[$id]     ?? "";
-$Ingredients_list = $Ingredients_list_map[$id] ?? [];
-$Benefits_Sub = $Benefits_sub_map[$id]   ?? "";
-$Benefits_list = $Benefits_list_map[$id] ?? [];
+$Links            = $Links_map[$id]           ?? "";
+$Links_usa        = $Links_usa_map[$id]       ?? "";
+$Links_mex        = $Links_mex_map[$id]       ?? "";
+$Links_can        = $Links_can_map[$id]       ?? "";
+$Bg               = $Bg_map[$id]              ?? "";
+$Titulo           = $Titulo_map[$id]          ?? "";
+$Subtitulo        = $Subtitulo_map[$id]       ?? "";
+$Text             = $Text_map[$id]            ?? "";
+$Ingredients      = $Ingredients_map[$id]     ?? "";
+$Ingredients_list = $Ingredients_list_map[$id]?? [];
+$Benefits_Sub     = $Benefits_sub_map[$id]    ?? "";
+$Benefits_list    = $Benefits_list_map[$id]   ?? [];
+$Key_list         = $Key_list_map[$id]        ?? "";
 
 ?>
 
@@ -122,7 +135,7 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
                 </div>
             </div>
 
-            <img class="mw-300 med-w-30 small-w-60 small-mt-40" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
+            <img class="mw-400 med-w-30 small-w-60 small-mt-40" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
         </div>
         <img class="full-img-abs" src="./images/body/treo/bg_<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> background" />
     </div>
@@ -181,6 +194,32 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 
         <img class="full-img" src="./images/body/subpage/bg_<?php echo $id; ?>.webp" alt="<?php echo $id; ?>" loading="lazy">
 
+    </div>
+</section>
+
+<section class="c-sub <?php echo $id; ?>">
+    <div class="mw-1080 zoom-container">
+        <div class="jc-between g-50 small-g-30 small-fd-col ai-center">
+            <div id="big-image" class="<?php echo $id; ?>"></div>
+            <div class="img-zoom w-100">
+              <img id="small-image" class="full-img"
+                   src="./images/body/treo/<?php echo $id; ?>_atras.webp"
+                   alt="<?php echo $Titulo; ?> Product" loading="lazy" />
+              <div id="lens"></div>
+            </div>
+            <div class="w-100">
+                <h2 class="h3"><?php echo $Key_Title; ?></h2>
+                <ul class="menu-list icon-check">
+
+            <?php foreach ($Key_list as $index => $key): ?>
+                <?php if (!empty($key)): // Evita imprimir vacíos ?>
+                    <li><?php echo $key; ?></li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -266,6 +305,79 @@ $Benefits_list = $Benefits_list_map[$id] ?? [];
 </section>
 
 <script>
+
+/* ============================================== */
+/* ZOOM */
+/* ============================================== */
+
+const lens = document.getElementById('lens');
+const smallImg = document.getElementById('small-image');
+const bigImg = document.getElementById('big-image');
+
+// Asigna la imagen grande como fondo del contenedor
+const bigImageURL = "./images/body/treo/png/<?php echo $id; ?>_atras.png";
+bigImg.style.backgroundImage = `url('${bigImageURL}')`;
+
+let rafId;
+
+// Mostrar/Ocultar
+smallImg.addEventListener('mouseenter', () => {
+  lens.style.display = 'block';
+  bigImg.classList.add('show');
+});
+smallImg.addEventListener('mouseleave', () => {
+  lens.style.display = 'none';
+  bigImg.classList.remove('show');
+});
+
+// Movimiento del lente
+smallImg.addEventListener('mousemove', e => {
+  if (rafId) cancelAnimationFrame(rafId);
+  rafId = requestAnimationFrame(() => moveLens(e));
+});
+
+// Soporte táctil
+smallImg.addEventListener('touchstart', () => {
+  lens.style.display = 'block';
+  bigImg.classList.add('show');
+});
+smallImg.addEventListener('touchend', () => {
+  lens.style.display = 'none';
+  bigImg.classList.remove('show');
+});
+smallImg.addEventListener('touchmove', e => {
+  if (rafId) cancelAnimationFrame(rafId);
+  rafId = requestAnimationFrame(() => moveLens(e.touches[0]));
+});
+
+function moveLens(e) {
+  const rect = smallImg.getBoundingClientRect();
+  const lensW = lens.offsetWidth;
+  const lensH = lens.offsetHeight;
+
+  let x = e.clientX - rect.left - lensW / 2;
+  let y = e.clientY - rect.top - lensH / 2;
+
+  const maxX = rect.width - lensW;
+  const maxY = rect.height - lensH;
+
+  // Limitar el movimiento y redondear para evitar saltos
+  x = Math.round(Math.max(0, Math.min(x, maxX)));
+  y = Math.round(Math.max(0, Math.min(y, maxY)));
+
+  lens.style.left = x + 'px';
+  lens.style.top = y + 'px';
+
+  // Calcular escala entre imágenes
+  const scaleX = bigImg.offsetWidth / lensW;
+  const scaleY = bigImg.offsetHeight / lensH;
+
+  bigImg.style.backgroundSize = 
+    `${smallImg.width * scaleX}px ${smallImg.height * scaleY}px`;
+  bigImg.style.backgroundPosition = 
+    `-${x * scaleX}px -${y * scaleY}px`;
+}
+
 
 /* ============================================== */
 /* SCROLL-MAGIC */

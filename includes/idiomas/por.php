@@ -125,6 +125,33 @@ $Spirit_title_02 = "Alegre & Corajoso";
 $Spirit_text_02 = "Encaramos desafios com otimismo e pensamento audacioso.";
 $Spirit_title_03 = "Inovador & Profissional";
 $Spirit_text_03 = "Misturamos criatividade com excelência em tudo o que fazemos.";
+
+//-------------------------//
+// KEY BENEFITS
+//-------------------------//
+$Key_Title = "Principais benefícios";
+$Key_01_01 = "Promove e potencializa os benefícios do RESTORE";
+$Key_01_02 = "Ativa a clareza mental e aguça o foco";
+$Key_01_03 = "Apoia a memória de longo prazo e o aprendizado";
+$Key_01_04 = "Favorece a comunicação neural saudável, o que por sua vez promove a
+consciência mental";
+$Key_01_05 = "Promove energia sustentável";
+$Key_01_06 = "Melhora a adaptabilidade e a resolução criativa de problemas";
+$Key_02_01 = "Ativa os benefícios do REVIVE";
+$Key_02_02 = "Promove a vitalidade do sistema imunológico";
+$Key_02_03 = "Aumenta a energia, o suporte celular e promove a produção de colágeno";
+$Key_02_04 = "Favorece o metabolismo e a manutenção de tecido magro";
+$Key_02_05 = "Melhora a recuperação pós-exercício e apoia o processo natural de
+envelhecimento do corpo";
+$Key_03_01 = "Aprimora os ciclos de sono REM, permitindo sonhos vívidos e suporte
+cognitivo enquanto você dorme";
+$Key_03_02 = "Estimula um sono reparador e apoia a capacidade natural do corpo de lidar
+com o estresse e o humor";
+$Key_03_03 = "Ativa o suporte cognitivo, hormonal e imunológico";
+$Key_03_04 = "Promove o bem-estar emocional e apoia os níveis naturais de estresse do
+corpo enquanto você dorme";
+$Key_03_05 = "Apoia o metabolismo e a utilização de gordura durante o repouso";
+
 //-------------------------//
 // Traits
 //-------------------------//

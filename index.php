@@ -1,7 +1,7 @@
 <!-- header -->
 	<?php
 	session_start();
-	/* sets the referral sponsor */ 
+	/*$_SESSION['user_replica'] = 'daniel';*/
 	if(isset($_SESSION['user_replica']) && !isset($_GET['ref'])){
 		$user_replica = $_SESSION['user_replica'];
 	}

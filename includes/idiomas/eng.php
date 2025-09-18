@@ -145,6 +145,31 @@
     $Spirit_text_03 = "We blend creativity with excellence in everything we do.";
 
     //-------------------------//
+    // KEY BENEFITS
+    //-------------------------//
+
+    $Key_Title = "Key benefits";
+
+    $Key_01_01 = "Promotes and enhance RESTORE’s benefits";
+    $Key_01_02 = "Activates mental clarity and sharpens focus";
+    $Key_01_03 = "Supports long-term memory and learning";
+    $Key_01_04 = "Supports healthy neural communication, which in turn promotes mental awareness";
+    $Key_01_05 = "Promotes sustainable energy";
+    $Key_01_06 = "Enhances adaptability and creative problem-solving";
+
+    $Key_02_01 = "Activates the benefits of REVIVE";
+    $Key_02_02 = "Promotes immune system vitality";
+    $Key_02_03 = "Boosts energy, cellular support, and promotes collagen production";
+    $Key_02_04 = "Promotes metabolism and lean tissue maintenance";
+    $Key_02_05 = "Enhances post- exercise recovery and supports the body's natural aging process";
+
+    $Key_03_01 = "Enhances REM sleep cycles, allowing for vivid dreaming and cognitive support while you sleep";
+    $Key_03_02 = "Encourages restful sleep and supports the body’s natural ability to manage stress and mood";
+    $Key_03_03 = "Ignites cognitive, hormone and immune support";
+    $Key_03_04 = "Promotes emotional well-being and supports your body's natural stress levels  while you sleep";
+    $Key_03_05 = "Supports metabolism and fat utilization during rest";
+
+    //-------------------------//
     // Traits
     //-------------------------//
 
