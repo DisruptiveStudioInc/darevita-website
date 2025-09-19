@@ -185,7 +185,7 @@
 		    </div>
 		</div>
 
-		<div class="jc-between g-50 small-g-20 small-fd-col ai-start line">
+		<!--<div class="jc-between g-50 small-g-20 small-fd-col ai-start line">
 		    <div>
 		        <span class="v-custom icon icon-7 plan"></span>
 		    </div>
@@ -193,7 +193,7 @@
 		        <p class="h3 fw-600 ai-center"><span class="number">8</span><?php echo $Acknowledgment; ?></p>
 		        <p><?php echo $Acknowledgment_text; ?></p>
 		    </div>
-		</div>
+		</div>-->
 
 	</div>
 </section>
