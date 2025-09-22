@@ -1,5 +1,28 @@
 <!-- header -->
 	<?php
+
+	if(isset($_GET['file_comp'])){
+		$filePath = 'files/comp_plan_sum.pdf';
+		$fileName = 'DAREVITA Comp Plan Requirements';
+
+		if (file_exists($filePath)) {
+			header('Content-Description: File Transfer');
+			header('Content-Type: application/pdf');
+			header('Content-Disposition: attachment; filename="' . basename($fileName) . '"');
+			header('Content-Transfer-Encoding: binary');
+			header('Expires: 0');
+			header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+			header('Pragma: public');
+			header('Content-Length: ' . filesize($filePath));
+
+			ob_clean();
+			flush();
+
+			readfile($filePath);
+			exit();
+		}
+	}
+
 	session_start();
 	/*$_SESSION['user_replica'] = 'daniel';*/
 	if(isset($_SESSION['user_replica']) && !isset($_GET['ref'])){

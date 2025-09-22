@@ -182,6 +182,7 @@
 		    <div class="fd-col g-20 w-100">
 		        <p class="h3 fw-600 ai-center"><span class="number">7</span><?php echo $Additional; ?></p>
 		        <p><?php echo $Additional_text; ?></p>
+				<p><a href="index.php?file_comp" class="fw-600" target="_blank">Please click here to download document with more details</a></p>
 		    </div>
 		</div>
 
