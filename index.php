@@ -3,12 +3,12 @@
 
 	if(isset($_GET['file_comp'])){
 		$filePath = 'files/comp_plan_sum.pdf';
-		$fileName = 'DAREVITA Comp Plan Requirements';
+		$fileName = 'DAREVITA Comp Plan Requirements.pdf';
 
 		if (file_exists($filePath)) {
 			header('Content-Description: File Transfer');
 			header('Content-Type: application/pdf');
-			header('Content-Disposition: attachment; filename="' . basename($fileName) . '"');
+			header('Content-Disposition: attachment; filename="' . $fileName . '"');
 			header('Content-Transfer-Encoding: binary');
 			header('Expires: 0');
 			header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
