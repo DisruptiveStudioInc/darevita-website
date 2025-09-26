@@ -285,7 +285,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 			<div class="text_spirit <?php echo $id; ?>">
 				<div>
 					<p class="h3"><?php echo $Satarted_title_01; ?></p>
-					<p><?php echo $Satarted_text_01; ?></p>
+					<p><?= $id === $Titulo_reve ? $Reve_text_01 : $Satarted_text_01; ?></p>
 					<ul class="menu-list icon-check">
 						<li><?php echo $Satarted_list_01; ?></li>
 						<li><?php echo $Satarted_list_02; ?></li>
@@ -295,7 +295,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 
 				<div>
 					<p class="h3"><?php echo $Satarted_title_02; ?></p>
-					<p><?php echo $Satarted_text_02; ?></p>
+					<p><?= $id === $Titulo_reve ? $Reve_text_02 : $Satarted_text_02; ?></p>
 				</div>
 
 				<div>

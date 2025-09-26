@@ -236,13 +236,15 @@
     $Ingredients_04_06 = "Comunicación Asertiva";
 
     $Reve_Benefits = "Beneficios de Revenuez";
-    $Benefits_sub_04 = "Impulsa tu exito cada dia";
+    $Benefits_sub_04 = "Impulsa tu éxito cada día";
     $Benefits_04_01 = "Activa tu agudeza mental y mejora el enfoque en tus metas";
     $Benefits_04_02 = "Fortalece la comunicación en tu red, promoviendo un liderazgo consciente";
     $Benefits_04_03 = "Favorece la retención de conocimientos a largo plazo y la aplicación de lo aprendido";
     $Benefits_04_04 = "Promueve un crecimiento sostenible en tu negocio, sin atajos";
 
     $Reve_title = "Revenuez<br>la plataforma educativa que impulsa tu desarrollo.";
+    $Reve_text_01 = "Revenuez trabaja en sinergia contigo para potenciar tus habilidades y tus ingresos durante todo el día:";
+    $Reve_text_02 = "Diseñado para dar apoyo a tus ritmos de negocio, desde la planificación hasta la ejecución, las 24 horas del día.";
     $Reve_text_03 = "Siente la claridad, la vitalidad y la tranquilidad de tener una plataforma que te impulsa. Con el uso constante, tu negocio se volverá más adaptable, eficiente y resiliente.";
     $Reve_Footer_subpage = "Un propósito. Tres esenciales. El potencial está en ti, y nosotros te ayudamos a liberarlo.";
 
