@@ -256,6 +256,9 @@
 
     $Reve_title = "Revenuez<br>the educational platform that drives your growth.";
     $Reve_text_01 = "Revenuez works in synergy with you to enhance your skills and boost your income all day long:";
+    $Reve_list_01 = "<span class='fw-700'>Revive:</span> Sharpen your mind and improve your business focus.";
+    $Reve_list_02 = "<span class='fw-700'>Rejuvenate:</span> Restore your energy and knowledge for success.";
+    $Reve_list_03 = "<span class='fw-700'>Restore:</span> Optimize your strategy for lasting growth.";
     $Reve_text_02 = "Designed to support your business rhythms, from planning to execution, 24 hours a day.";
     $Reve_text_03 = "Feel the clarity, vitality, and peace of having a platform that empowers you. With consistent use, your business will become more adaptable, efficient, and resilient.";
     $Reve_Footer_subpage = "One purpose. Three essentials. The potential is within you, and we help you unlock it.";

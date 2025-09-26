@@ -287,9 +287,9 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 					<p class="h3"><?php echo $Satarted_title_01; ?></p>
 					<p><?= $id === $Titulo_reve ? $Reve_text_01 : $Satarted_text_01; ?></p>
 					<ul class="menu-list icon-check">
-						<li><?php echo $Satarted_list_01; ?></li>
-						<li><?php echo $Satarted_list_02; ?></li>
-						<li><?php echo $Satarted_list_03; ?></li>
+						<li><?= $id === $Titulo_reve ? $Reve_list_01 : $Satarted_list_01; ?></li>
+						<li><?= $id === $Titulo_reve ? $Reve_list_02 : $Satarted_list_02; ?></li>
+						<li><?= $id === $Titulo_reve ? $Reve_list_03 : $Satarted_list_03; ?></li>
 					</ul>
 				</div>
 

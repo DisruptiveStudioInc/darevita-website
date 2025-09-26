@@ -231,6 +231,9 @@ $Benefits_04_04 = "Promuove una crescita sostenibile nel tuo business, senza sco
 $Reve_title = "Revenuez<br>la piattaforma educativa che stimola il tuo sviluppo.";
 
 $Reve_text_01 = "Revenuez lavora in sinergia con te per potenziare le tue competenze e aumentare i tuoi guadagni durante tutta la giornata:";
+$Reve_list_01 = "<span class='fw-700'>Revive:</span> Affina la tua mente e migliora la concentrazione sul tuo business.";
+$Reve_list_02 = "<span class='fw-700'>Rejuvenate:</span> Ripristina la tua energia e conoscenza per avere successo.";
+$Reve_list_03 = "<span class='fw-700'>Restore:</span> Ottimizza la tua strategia per una crescita duratura.";
 $Reve_text_02 = "Progettato per supportare i ritmi della tua attività, dalla pianificazione all’esecuzione, 24 ore su 24.";
 $Reve_text_03 = "Prova la chiarezza, la vitalità e la serenità di avere una piattaforma che ti sostiene. Con un uso costante, il tuo business diventerà più adattabile, efficiente e resiliente.";
 $Reve_Footer_subpage = "Un obiettivo. Tre essenziali. Il potenziale è dentro di te, e noi ti aiutiamo a liberarlo.";
