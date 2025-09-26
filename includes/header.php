@@ -188,7 +188,7 @@
                                             echo "</ul>";
                                         }
                                         echo "</li>";
-                                        echo "<li><a href='?p=product&id=revenuez'>Revenuez</a></li>";
+                                        // echo "<li><a href='?p=product&id=revenuez'>Revenuez</a></li>";
                                     }
                                     echo "</ul>";
                                     echo "</li>";
