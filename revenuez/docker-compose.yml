@@ -1,0 +1,15 @@
+#version: "3.1"
+
+services:
+  darevita-website:
+    image: trafex/php-nginx
+    container_name: darevita-website
+    restart: unless-stopped
+    volumes:
+    - $PWD:/var/www/html
+    ports:
+    - "5101:8080"
+    networks:
+    - darevita-network
+networks:
+  darevita-network:
