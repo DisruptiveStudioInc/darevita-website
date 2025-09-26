@@ -161,7 +161,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 <section class="c-sub <?php echo $id; ?>">
     <div class="h-100 of-h rel small-h-0">
 
-        <img class="img-middle <?= $id === 'revenuez' ? $id : ''; ?> small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" loading="lazy"/>
+        <img class="img-middle <?= $id === $Titulo_reve ? $id : ''; ?> small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" loading="lazy"/>
 
         <div class="ingredients_wrap">
             <h2 class="abs-text h1 t-c"><?php echo $Ingredients; ?></h2>
@@ -262,19 +262,20 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 			        $counter = 1; // Inicia el contador en 1
 
 			        foreach ($Service as $item){
-			            echo "
-			            <li>
-				            <!--
-                            <div class='text c-{$item[2]}'>
-                                <span class='v-black c-{$item[2]} icon br-5 icon-quote'></span>
-                                <p>{$item[0]}</p>
-                                <p>{$item[1]}</p>
-                            </div>
-                            -->
-				            <img src='./images/body/banner/0{$counter}.webp' alt='{$item[0]}'/>
-			            </li>
-			            ";
-			            $counter++;
+                $imgBanner = $id === $Titulo_reve ? "{$Titulo_reve}-0{$counter}" : "0{$counter}";
+                echo "
+                <li>
+                  <!--
+                  <div class='text c-{$item[2]}'>
+                    <span class='v-black c-{$item[2]} icon br-5 icon-quote'></span>
+                    <p>{$item[0]}</p>
+                    <p>{$item[1]}</p>
+                  </div>
+                  -->
+                  <img src='./images/body/banner/{$imgBanner}.webp' alt='{$item[0]}'/>
+                </li>
+                ";
+                $counter++;
 			        }
 			        ?>
 				</ul>
