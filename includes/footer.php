@@ -24,35 +24,37 @@
                         <p style="font-size: 0.8rem"><?php echo $Payments; ?></p>
                         <img src="./images/body/plan/cards.png" class="mw-200" alt="Payments" style="opacity: 0.5;" />
                     </div>
-                    <div class="w-100 jc-end med-jc-center med-fd-col g-40 small-g-20">
-                        <ul class="menu-list link">
-                            <h3><?php echo $Footer_content; ?></h3>
-                            <!--<li><a href="?p=pay_to_pay"><?php echo $Footer_content_link_01; ?></a></li>-->
-                            <li><a href="?p=retail_disclosure"><?php echo $Footer_content_link_02; ?></a></li>
-                            <li><a href="?p=retail_pricing"><?php echo $Footer_content_link_03; ?></a></li>
-                        </ul>
-                        <ul class="menu-list link">
-                            <h3>Darevita</h3>
-                            <li><a href="?p=earn"><?php echo $Footer_darevita_link_01; ?></a></li>
-                            <li><a href="?p=plan"><?php echo $Footer_darevita_link_02; ?></a></li>
-                            <li><a href="?p=privacy_policy"><?php echo $Footer_darevita_link_03; ?></a></li>
-                            <li><a href="?p=returns_policy"><?php echo $Footer_darevita_link_04; ?></a></li>
-                            <li><a href="?p=terms_and_conditions"><?php echo $Footer_darevita_link_05; ?></a></li>
-                            <li><a href="?p=shipping_policy"><?php echo $Footer_darevita_link_06; ?></a></li>
-                        </ul>
-                        <ul class="menu-list link">
-                            <h3><?php echo $ContactUs; ?></h3>
-                            <li><?php echo $Email; ?></li>
-                            <li><?php echo $Phone; ?></li>
-                            <li><?php echo $Address; ?></li>
-                        </ul>
-                    </div>
+                    <?php if(isset($user_replica)): ?>
+                        <div class="w-100 jc-end med-jc-center med-fd-col g-40 small-g-20">
+                            <ul class="menu-list link">
+                                <h3><?php echo $Footer_content; ?></h3>
+                                <!--<li><a href="?p=pay_to_pay"><?php echo $Footer_content_link_01; ?></a></li>-->
+                                <li><a href="?p=retail_disclosure"><?php echo $Footer_content_link_02; ?></a></li>
+                                <li><a href="?p=retail_pricing"><?php echo $Footer_content_link_03; ?></a></li>
+                            </ul>
+                            <ul class="menu-list link">
+                                <h3>Darevita</h3>
+                                <li><a href="?p=earn"><?php echo $Footer_darevita_link_01; ?></a></li>
+                                <li><a href="?p=plan"><?php echo $Footer_darevita_link_02; ?></a></li>
+                                <li><a href="?p=privacy_policy"><?php echo $Footer_darevita_link_03; ?></a></li>
+                                <li><a href="?p=returns_policy"><?php echo $Footer_darevita_link_04; ?></a></li>
+                                <li><a href="?p=terms_and_conditions"><?php echo $Footer_darevita_link_05; ?></a></li>
+                                <li><a href="?p=shipping_policy"><?php echo $Footer_darevita_link_06; ?></a></li>
+                            </ul>
+                            <ul class="menu-list link">
+                                <h3><?php echo $ContactUs; ?></h3>
+                                <li><?php echo $Email; ?></li>
+                                <li><?php echo $Phone; ?></li>
+                                <li><?php echo $Address; ?></li>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="t-c p-10 mt-20" style="border-top:1px solid #464f77;">
                 <p><?php echo $Footer_Rights; ?></p>
                 </div>
             </div>
-        </footer>		
+        </footer>
 
 		<!-- ============================================== -->
 	    <!-- SCRIPTS -->

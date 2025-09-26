@@ -86,25 +86,12 @@
 
     $Products_title_01 = "Despierta, piensa sin límites";
     $Products_text_01 = "A nivel celular, Revive apoya la consolidación de la memoria, la comunicación neural saludable y la síntesis de proteínas, factores clave para el aprendizaje, la memoria y la resiliencia mental durante el día.";
-    $Products_rev_key_01 = "Activa la claridad mental y mejora el enfoque";
-    $Products_rev_key_02 = "Apoya la memoria a largo plazo y el aprendizaje mediante soporte neuronal";
-    $Products_rev_key_03 = "Favorece la comunicación neuronal saludable, promoviendo la conciencia mental";
-    $Products_rev_key_04 = "Promueve energía sostenible";
-
 
     $Products_title_02 = "Energía y soporte inmune";
     $Products_text_02 = "Rejuvenate apoya la función inmune y promueve la regeneración de tejidos, esenciales para mantener la elasticidad de la piel, la salud muscular y el bienestar general.";
-    $Products_rej_key_01 = "Promueve la vitalidad del sistema inmune";
-    $Products_rej_key_02 = "Aumenta la energía, el soporte celular y la producción de colágeno";
-    $Products_rej_key_03 = "Apoya los procesos naturales de sanación y regeneración del cuerpo";
-    $Products_rej_key_04 = "Favorece el metabolismo y el mantenimiento de masa muscular magra";
 
     $Products_title_03 = "Duerme profundo";
     $Products_text_03 = "Restore está diseñado para promover la fase más importante del sueño—REM—donde la mente y el cuerpo se recargan a nivel celular.";
-    $Products_res_key_01 = "Mejora los ciclos de sueño REM, favoreciendo sueños vívidos y soporte cognitivo mientras duermes";
-    $Products_res_key_02 = "Fomenta un descanso reparador y apoya la capacidad natural del cuerpo para manejar el estrés y el estado de ánimo";
-    $Products_res_key_03 = "Activa el soporte cognitivo, hormonal e inmune";
-    $Products_res_key_04 = "Apoya el equilibrio emocional y la relajación durante el sueño";
 
     //-------------------------//
     // Slogan
@@ -112,7 +99,6 @@
 
     $Slogan_title = "Esto es más que un eslogan. Es nuestro compromiso con todos los que se unen a nosotros.";
     $Slogan_text = "Compra con propósito";
-
 
     //-------------------------//
     // Truth
@@ -148,30 +134,28 @@
     $Spirit_text_03 = "Combinamos creatividad con excelencia en todo lo que hacemos.";
 
     //-------------------------//
-// KEY BENEFITS
-//-------------------------//
-$Key_Title = "Beneficios clave";
-$Key_01_01 = "Promueve y mejora los beneficios de RESTORE";
-$Key_01_02 = "Activa la claridad mental y agudiza el enfoque";
-$Key_01_03 = "Apoya la memoria a largo plazo y el aprendizaje";
-$Key_01_04 = "Favorece una comunicación neuronal saludable, lo que a su vez promueve la
-conciencia mental";
-$Key_01_05 = "Promueve energía sostenible";
-$Key_01_06 = "Mejora la adaptabilidad y la resolución creativa de problemas";
-$Key_02_01 = "Activa los beneficios de REVIVE";
-$Key_02_02 = "Promueve la vitalidad del sistema inmunológico";
-$Key_02_03 = "Aumenta la energía, el apoyo celular y promueve la producción de colágeno";
-$Key_02_04 = "Favorece el metabolismo y el mantenimiento de tejido magro";
-$Key_02_05 = "Mejora la recuperación después del ejercicio y apoya el proceso natural de
-envejecimiento del cuerpo";
-$Key_03_01 = "Mejora los ciclos de sueño REM, permitiendo sueños vívidos y apoyo
-cognitivo mientras duermes";
-$Key_03_02 = "Fomenta un sueño reparador y apoya la capacidad natural del cuerpo para
-manejar el estrés y el estado de ánimo";
-$Key_03_03 = "Impulsa el apoyo cognitivo, hormonal e inmunológico";
-$Key_03_04 = "Promueve el bienestar emocional y respalda los niveles naturales de estrés
-de tu cuerpo mientras duermes";
-$Key_03_05 = "Apoya el metabolismo y la utilización de grasas durante el descanso";
+    // KEY BENEFITS
+    //-------------------------//
+    $Key_Title = "Beneficios clave";
+
+    $Key_01_01 = "Promueve y mejora los beneficios de RESTORE";
+    $Key_01_02 = "Activa la claridad mental y agudiza el enfoque";
+    $Key_01_03 = "Apoya la memoria a largo plazo y el aprendizaje";
+    $Key_01_04 = "Favorece una comunicación neuronal saludable, lo que a su vez promueve la conciencia mental";
+    $Key_01_05 = "Promueve energía sostenible";
+    $Key_01_06 = "Mejora la adaptabilidad y la resolución creativa de problemas";
+
+    $Key_02_01 = "Activa los beneficios de REVIVE";
+    $Key_02_02 = "Promueve la vitalidad del sistema inmunológico";
+    $Key_02_03 = "Aumenta la energía, el apoyo celular y promueve la producción de colágeno";
+    $Key_02_04 = "Favorece el metabolismo y el mantenimiento de tejido magro";
+    $Key_02_05 = "Mejora la recuperación después del ejercicio y apoya el proceso natural de envejecimiento del cuerpo";
+
+    $Key_03_01 = "Mejora los ciclos de sueño REM, permitiendo sueños vívidos y apoyo cognitivo mientras duermes";
+    $Key_03_02 = "Fomenta un sueño reparador y apoya la capacidad natural del cuerpo para manejar el estrés y el estado de ánimo";
+    $Key_03_03 = "Impulsa el apoyo cognitivo, hormonal e inmunológico";
+    $Key_03_04 = "Promueve el bienestar emocional y respalda los niveles naturales de estrés de tu cuerpo mientras duermes";
+    $Key_03_05 = "Apoya el metabolismo y la utilización de grasas durante el descanso";
 
     //-------------------------//
     // Traits
@@ -233,6 +217,36 @@ $Key_03_05 = "Apoya el metabolismo y la utilización de grasas durante el descan
     $Ingredients_03_06 = "Vitamina B6";
 
     //-------------------------//
+    // Revenuez
+    //-------------------------//
+
+    $Products_title_04 = "Despierta tu potencial, piensa sin límites.";
+    $Products_text_04 = "A nivel formativo, Revenuez consolida tu conocimiento, fortalece la comunicación en tu red y promueve el desarrollo de habilidades clave para el éxito, la memoria y la resiliencia mental en tu negocio.";
+
+    $Btn_buy_esp = "Entrar Ahora";
+    $Btn_buy_eng = "Access Now";
+
+    $Ingredients_04 = "Despierta tu mente, domina el negocio";
+
+    $Ingredients_04_01 = "Liderazgo Estratégico";
+    $Ingredients_04_02 = "Gestión de Equipos";
+    $Ingredients_04_03 = "Marketing Digital";
+    $Ingredients_04_04 = "Ventas Efectivas";
+    $Ingredients_04_05 = "Análisis Financiero";
+    $Ingredients_04_06 = "Comunicación Asertiva";
+
+    $Reve_Benefits = "Beneficios de Revenuez";
+    $Benefits_sub_04 = "Impulsa tu exito cada dia";
+    $Benefits_04_01 = "Activa tu agudeza mental y mejora el enfoque en tus metas";
+    $Benefits_04_02 = "Fortalece la comunicación en tu red, promoviendo un liderazgo consciente";
+    $Benefits_04_03 = "Favorece la retención de conocimientos a largo plazo y la aplicación de lo aprendido";
+    $Benefits_04_04 = "Promueve un crecimiento sostenible en tu negocio, sin atajos";
+
+    $Reve_title = "Revenuez<br>la plataforma educativa que impulsa tu desarrollo.";
+    $Reve_text_03 = "Siente la claridad, la vitalidad y la tranquilidad de tener una plataforma que te impulsa. Con el uso constante, tu negocio se volverá más adaptable, eficiente y resiliente.";
+    $Reve_Footer_subpage = "Un propósito. Tres esenciales. El potencial está en ti, y nosotros te ayudamos a liberarlo.";
+
+    //-------------------------//
     // Started
     //-------------------------//
 
@@ -260,7 +274,7 @@ $Key_03_05 = "Apoya el metabolismo y la utilización de grasas durante el descan
 
     $Earn_Intro = "En DareVita, todos son primero clientes—y compartir los productos que amas debería ser simple y gratificante.";
     $Earn_Sub_intro = "¿Qué es el Bono Impacto?";
-    $Earn_Sub_intro_text = "El Bono Impacto es la recompensa directa por referidos de DareVita. Permite que los Embajadores de Marca Independientes (IBAs) ganen un 40% de comisión sobre el volumen de cualquier compra realizada por un nuevo cliente referido personalmente. 
+    $Earn_Sub_intro_text = "El Bono Impacto es la recompensa directa por referidos de DareVita. Permite que los Embajadores de Marca Independientes (IBAs) ganen un 40% de comisión sobre el volumen de cualquier compra realizada por un nuevo cliente referido personalmente.
     40% del CV (Volumen Comisionable) del producto es elegible para pago inmediato.
     Se paga semanalmente a IBAs calificados y activos (con $50.00 USD de compra mensual).
     Aplica a cada pedido de primera vez hecho a través de tu enlace personal.";
@@ -282,7 +296,7 @@ $Key_03_05 = "Apoya el metabolismo y la utilización de grasas durante el descan
     $Works_title_03_sub_02 = "
     <a class='tooltip desktop-only'><span class='small-d-none'>Ver detalles</span>
         <span class='tooltip-text'>
-            Si un cliente referido compra un producto con 100 CV durante sus primeros 30 días, ganas $40 de comisión. 
+            Si un cliente referido compra un producto con 100 CV durante sus primeros 30 días, ganas $40 de comisión.
             Después del período inicial de 30 días, se aplican las tasas de comisión estándar a cualquier compra futura que realicen.
         </span>
     </a>
@@ -709,7 +723,7 @@ $Key_03_05 = "Apoya el metabolismo y la utilización de grasas durante el descan
     // Income
     //-------------------------//
 
-    $Income_title = "Descargos de responsabilidad de ingresos/Testimonios";  
+    $Income_title = "Descargos de responsabilidad de ingresos/Testimonios";
     $Income_text = "Los niveles de ingresos o declaraciones de ingresos (incluyendo afirmaciones como la capacidad de renunciar a un empleo o quedarse en casa, o representaciones de estilos de vida lujosos) discutidos aquí superan los resultados promedio alcanzados por todos los IBA en el mismo período de tiempo, no son necesariamente representativos del éxito o compensación que recibirá cualquier IBA en particular, y no deben interpretarse como típicos o promedio. La capacidad de generar ingresos bajo el Plan de Compensación de DareVita depende de muchos factores, incluyendo las habilidades empresariales, sociales y de ventas de cada IBA; la ambición y actividad personal; la disponibilidad de tiempo y recursos financieros; y el acceso a una amplia red de familiares, amigos y contactos de negocios. DareVita no puede ni garantiza ningún nivel específico de ingresos. Incluso los IBA que dediquen una cantidad significativa de tiempo, esfuerzo y fondos personales pueden no alcanzar un nivel significativo de éxito. Los resultados pueden variar y no son típicos.";
 
     //-------------------------//
@@ -833,7 +847,7 @@ $Shipping_08_02 = 'Refunds (if applicable) will be processed once returned items
 
 $Shipping_09 = 'Customer Support';
 $Shipping_09_01 = 'For shipping inquiries, contact DareVita International at:';
-    
+
     //-------------------------//
     // Footer
     //-------------------------//

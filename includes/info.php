@@ -78,14 +78,17 @@ $Shop_can = "https://ca.darevita.com/?ref=$user_replica";
 $Shop_usa_restore = "https://us.darevita.com/product/restore/?ref=$user_replica";
 $Shop_usa_revive = "https://us.darevita.com/product/revive/?ref=$user_replica";
 $Shop_usa_rejuvenate = "https://us.darevita.com/product/rejuvenate/?ref=$user_replica";
+$Shop_usa_revenuez = "https://us.darevita.com/product/rejuvenate/?ref=$user_replica";
 
 $Shop_mex_restore = "https://mx.darevita.com/product/restore/?ref=$user_replica";
 $Shop_mex_revive = "https://mx.darevita.com/product/revive/?ref=$user_replica";
 $Shop_mex_rejuvenate = "https://mx.darevita.com/product/rejuvenate/?ref=$user_replica";
+$Shop_mex_revenuez = "https://us.darevita.com/product/rejuvenate/?ref=$user_replica";
 
 $Shop_can_restore = "https://ca.darevita.com/product/restore/?ref=$user_replica";
 $Shop_can_revive = "https://ca.darevita.com/product/revive/?ref=$user_replica";
 $Shop_can_rejuvenate = "https://ca.darevita.com/product/rejuvenate/?ref=$user_replica";
+$Shop_can_revenuez = "https://us.darevita.com/product/rejuvenate/?ref=$user_replica";
 
     //-------------------------//
     // MENU
@@ -142,32 +145,3 @@ $Condicion_lan = isset($idiomas[$idioma]) ? $idiomas[$idioma] : 'Desconocido';
 $Email = "support@darevita.com";
 $Phone = "+14808088204";
 $Address = "DareVita International Inc.,<br>24304 S 207th Pl,<br>Queen Creek, AZ, 85142, USA";
-
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -211,6 +211,36 @@ $Ingredients_03_04 = "Vitamine B1";
 $Ingredients_03_05 = "Lavande";
 $Ingredients_03_06 = "Vitamine B6";
 //-------------------------//
+// Revenuez
+//-------------------------//
+
+$Products_title_04 = "Réveille ton potentiel, pense sans limites.";
+$Products_text_04 = "Au niveau formatif, Revenuez consolide tes connaissances, renforce la communication dans ton réseau et favorise le développement de compétences clés pour la réussite, la mémoire et la résilience mentale dans ton activité.";
+
+$Btn_buy_esp = "Entrer Maintenant";
+$Btn_buy_eng = "Entrer Maintenant";
+
+$Ingredients_04 = "Réveille ton esprit, maîtrise le business";
+
+$Ingredients_04_01 = "Leadership Stratégique";
+$Ingredients_04_02 = "Gestion d’Équipes";
+$Ingredients_04_03 = "Marketing Digital";
+$Ingredients_04_04 = "Ventes Efficaces";
+$Ingredients_04_05 = "Analyse Financière";
+$Ingredients_04_06 = "Communication Assertive";
+
+$Reve_Benefits = "Avantages de Revenuez";
+$Benefits_sub_04 = "Stimule ton succès chaque jour";
+$Benefits_04_01 = "Active ta vivacité d’esprit et améliore ta concentration sur tes objectifs";
+$Benefits_04_02 = "Renforce la communication dans ton réseau et favorise un leadership conscient";
+$Benefits_04_03 = "Facilite la rétention des connaissances à long terme et l’application de ce que tu as appris";
+$Benefits_04_04 = "Encourage une croissance durable de ton activité, sans raccourcis";
+
+$Reve_title = "Revenuez<br>la plateforme éducative qui stimule ton développement.";
+$Reve_text_03 = "Ressens la clarté, la vitalité et la sérénité d’avoir une plateforme qui t’accompagne. Avec une utilisation régulière, ton activité deviendra plus adaptable, plus efficace et plus résiliente.";
+$Reve_Footer_subpage = "Un objectif. Trois essentiels. Le potentiel est en toi, et nous t’aidons à le libérer.";
+
+//-------------------------//
 // Satarted
 //-------------------------//
 $Satarted_title = "Commencez avec DareVita TREO";
@@ -259,7 +289,7 @@ du volume commissionnable (CV)";
 $Works_title_03_sub_02 = "
     <a class='tooltip desktop-only'><span class='small-d-none'>Voir les détails</span>
         <span class='tooltip-text'>
-            Si un client parrainé achète un produit de 100 CV au cours de ses 30 premiers jours, vous gagnez 40 $ de commission. 
+            Si un client parrainé achète un produit de 100 CV au cours de ses 30 premiers jours, vous gagnez 40 $ de commission.
             Après la période initiale de 30 jours, les taux de commission standard s'appliquent à tous les futurs achats qu'il effectuera.
         </span>
     </a>

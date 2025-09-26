@@ -1,0 +1,17 @@
+# environment variables
+.env
+.env.production
+.env.local
+*/.env
+*/.env.production
+*/.env.local
+
+# macOS-specific files
+.DS_Store
+__MACOSX/
+
+# tailwind files
+node_modules/
+
+# local composer file
+composer.phar

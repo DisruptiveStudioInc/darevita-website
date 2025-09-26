@@ -201,6 +201,37 @@ $Ingredients_03_03 = "Magnesio";
 $Ingredients_03_04 = "Vitamina B1";
 $Ingredients_03_05 = "Lavanda";
 $Ingredients_03_06 = "Vitamina B6";
+
+//-------------------------//
+// Revenuez
+//-------------------------//
+
+$Products_title_04 = "Risveglia il tuo potenziale, pensa senza limiti.";
+$Products_text_04 = "A livello formativo, Revenuez consolida le tue conoscenze, rafforza la comunicazione nella tua rete e promuove lo sviluppo di competenze chiave per il successo, la memoria e la resilienza mentale nel tuo business.";
+
+$Btn_buy_esp = "Entra Ora";
+$Btn_buy_eng = "Entra Ora";
+
+$Ingredients_04 = "Risveglia la tua mente, domina il business";
+
+$Ingredients_04_01 = "Leadership Strategica";
+$Ingredients_04_02 = "Gestione dei Team";
+$Ingredients_04_03 = "Marketing Digitale";
+$Ingredients_04_04 = "Vendite Efficaci";
+$Ingredients_04_05 = "Analisi Finanziaria";
+$Ingredients_04_06 = "Comunicazione Assertiva";
+
+$Reve_Benefits = "Vantaggi di Revenuez";
+$Benefits_sub_04 = "Dai slancio al tuo successo ogni giorno";
+$Benefits_04_01 = "Attiva la tua prontezza mentale e migliora la concentrazione sui tuoi obiettivi";
+$Benefits_04_02 = "Rafforza la comunicazione nella tua rete, promuovendo una leadership consapevole";
+$Benefits_04_03 = "Favorisce la conservazione delle conoscenze a lungo termine e l’applicazione di ciò che hai appreso";
+$Benefits_04_04 = "Promuove una crescita sostenibile nel tuo business, senza scorciatoie";
+
+$Reve_title = "Revenuez<br>la piattaforma educativa che stimola il tuo sviluppo.";
+$Reve_text_03 = "Prova la chiarezza, la vitalità e la serenità di avere una piattaforma che ti sostiene. Con un uso costante, il tuo business diventerà più adattabile, efficiente e resiliente.";
+$Reve_Footer_subpage = "Un obiettivo. Tre essenziali. Il potenziale è dentro di te, e noi ti aiutiamo a liberarlo.";
+
 //-------------------------//
 // Started
 //-------------------------//
@@ -250,7 +281,7 @@ commissionabile (CV)";
 $Works_title_03_sub_02 = "
     <a class='tooltip desktop-only'><span class='small-d-none'>Vedi dettagli</span>
         <span class='tooltip-text'>
-            Se un cliente segnalato acquista un prodotto con 100 CV nei primi 30 giorni, guadagni $40 di commissione. 
+            Se un cliente segnalato acquista un prodotto con 100 CV nei primi 30 giorni, guadagni $40 di commissione.
             Dopo i primi 30 giorni, si applicano le tariffe di commissione standard a qualsiasi acquisto futuro.
         </span>
     </a>

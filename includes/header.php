@@ -81,22 +81,22 @@
         <div class="wrap-get">
           <div class="btn-get"><?php echo $Btn_started; ?></div>
           <div class="get">
-            <a href="https://us.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
-               target="_blank" 
-               class="eng" 
+            <a href="https://us.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
+               target="_blank"
+               class="eng"
                aria-label="Buy in USA">United States</a>
-            <a href="https://mx.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
-               target="_blank" 
-               class="esp" 
+            <a href="https://mx.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
+               target="_blank"
+               class="esp"
                aria-label="Buy in Mexico">México</a>
-            <a href="https://ca.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
-               target="_blank" 
-               class="can" 
+            <a href="https://ca.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
+               target="_blank"
+               class="can"
                aria-label="Buy in Mexico">Canada</a>
             <?php if(!$comes_from_usa_mex) : ?>
-            <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>" 
-            target="_blank" 
-            class="int" 
+            <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
+            target="_blank"
+            class="int"
             aria-label="Buy International">International</a>
             <?php endif; ?>
             </div>
@@ -169,7 +169,7 @@
                                 if ($counter == 4) {
                                     echo "<li class='rel'>";
                                     echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
-                                    
+
                                     echo "<ul class='sub'>";
                                     foreach ($Sub as $item_sub) {
                                         $hasSubSub = isset($item_sub[1]) && is_array($item_sub[1]);
@@ -188,6 +188,7 @@
                                             echo "</ul>";
                                         }
                                         echo "</li>";
+                                        //echo "<li><a href='?p=product&id=revenuez'>Revenuez</a></li>";
                                     }
                                     echo "</ul>";
                                     echo "</li>";
@@ -196,7 +197,7 @@
                                 } elseif ($counter == 5) {
                                     echo "<li class='rel'>";
                                     echo "<a href='#' class='btn-sub'>{$item[2]}</a>";
-                                    
+
                                     echo "<ul class='sub'>";
                                     foreach ($Sub_reg as $item_sub) {
                                         if($item_sub[1] == 'INT' && $comes_from_usa_mex)

@@ -184,6 +184,36 @@ $Benefits_03_04 = "Promove bem-estar emocional e apoia os níveis naturais de es
 corpo enquanto você dorme";
 
 //-------------------------//
+// Revenuez
+//-------------------------//
+
+$Products_title_04 = "Desperta o teu potencial, pensa sem limites.";
+$Products_text_04 = "A nível formativo, a Revenuez consolida o teu conhecimento, fortalece a comunicação na tua rede e promove o desenvolvimento de competências-chave para o sucesso, a memória e a resiliência mental no teu negócio.";
+
+$Btn_buy_esp = "Entrar Agora";
+$Btn_buy_eng = "Entrar Agora";
+
+$Ingredients_04 = "Desperta a tua mente, domina o negócio";
+
+$Ingredients_04_01 = "Liderança Estratégica";
+$Ingredients_04_02 = "Gestão de Equipas";
+$Ingredients_04_03 = "Marketing Digital";
+$Ingredients_04_04 = "Vendas Eficazes";
+$Ingredients_04_05 = "Análise Financeira";
+$Ingredients_04_06 = "Comunicação Assertiva";
+
+$Reve_Benefits = "Benefícios da Revenuez";
+$Benefits_sub_04 = "Impulsiona o teu sucesso todos os dias";
+$Benefits_04_01 = "Ativa a tua agudeza mental e melhora o foco nos teus objetivos";
+$Benefits_04_02 = "Fortalece a comunicação na tua rede, promovendo uma liderança consciente";
+$Benefits_04_03 = "Favorece a retenção de conhecimentos a longo prazo e a aplicação do que aprendeste";
+$Benefits_04_04 = "Promove um crescimento sustentável no teu negócio, sem atalhos";
+
+$Reve_title = "Revenuez<br>a plataforma educativa que impulsiona o teu desenvolvimento.";
+$Reve_text_03 = "Sente a clareza, a vitalidade e a tranquilidade de teres uma plataforma que te impulsiona. Com o uso constante, o teu negócio tornar-se-á mais adaptável, eficiente e resiliente.";
+$Reve_Footer_subpage = "Um propósito. Três essenciais. O potencial está em ti, e nós ajudamos-te a libertá-lo.";
+
+//-------------------------//
 // Ingredients
 //-------------------------//
 $Ingredients_01 = "Desperte sua mente, domine o dia";
@@ -259,7 +289,7 @@ $Works_title_03_sub_01 = "Quando seu indicado fizer um pedido de produto, você 
 $Works_title_03_sub_02 = "
     <a class='tooltip desktop-only'><span class='small-d-none'>Ver detalhes</span>
         <span class='tooltip-text'>
-            Se um cliente indicado comprar um produto com 100 CV durante os primeiros 30 dias, você ganha $40 de comissão. 
+            Se um cliente indicado comprar um produto com 100 CV durante os primeiros 30 dias, você ganha $40 de comissão.
             Após o período inicial de 30 dias, aplicam-se as taxas de comissão padrão a qualquer compra futura que ele fizer.
         </span>
     </a>

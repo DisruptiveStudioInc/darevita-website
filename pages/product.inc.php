@@ -1,101 +1,113 @@
 <!-- ============================================== -->
 <!-- ONE -->
 <!-- ============================================== -->
-<?php 
-// ====================
-// MAPS PARA PRODUCTOS
-// ====================
-$Links_map = [
-    "revive"      => "usdev.darevita.com",
-    "rejuvenate"  => "usdev.darevita.com",
-    "restore"     => "usdev.darevita.com"
-];
+<?php
 
-$Links_usa_map = [
-    "revive"      => $Shop_usa_revive,
-    "rejuvenate"  => $Shop_usa_rejuvenate,
-    "restore"     => $Shop_usa_restore
-];
-
-$Links_mex_map = [
-    "revive"      => $Shop_mex_revive,
-    "rejuvenate"  => $Shop_mex_rejuvenate,
-    "restore"     => $Shop_mex_restore
-];
-
-$Links_can_map = [
-    "revive"      => $Shop_can_revive,
-    "rejuvenate"  => $Shop_can_rejuvenate,
-    "restore"     => $Shop_can_restore
-];
+$Titulo_revi = "revive";
+$Titulo_reju = "rejuvenate";
+$Titulo_rest = "restore";
+$Titulo_reve = "revenuez";
 
 $Bg_map = [
-    "revive"      => "Revive",
-    "rejuvenate"  => "Rejuvenate",
-    "restore"     => "Restore"
+    $Titulo_revi  => "Revive",
+    $Titulo_reju  => "Rejuvenate",
+    $Titulo_rest  => "Restore",
+    $Titulo_reve  => "Revenuez"
 ];
 
 $Titulo_map = $Bg_map;
 
+$Links_usa_map = [
+    $Titulo_revi  => $Shop_usa_revive,
+    $Titulo_reju  => $Shop_usa_rejuvenate,
+    $Titulo_rest  => $Shop_usa_restore,
+    $Titulo_reve  => $Shop_usa_revenuez
+];
+
+$Links_mex_map = [
+    $Titulo_revi  => $Shop_mex_revive,
+    $Titulo_reju  => $Shop_mex_rejuvenate,
+    $Titulo_rest  => $Shop_mex_restore,
+    $Titulo_reve  => $Shop_mex_revenuez
+];
+
+$Links_can_map = [
+    $Titulo_revi  => $Shop_can_revive,
+    $Titulo_reju  => $Shop_can_rejuvenate,
+    $Titulo_rest  => $Shop_can_restore,
+    $Titulo_reve  => $Shop_can_revenuez
+];
+
 $Subtitulo_map = [
-    "revive"      => $Products_title_01,
-    "rejuvenate"  => $Products_title_02,
-    "restore"     => $Products_title_03
+    $Titulo_revi  => $Products_title_01,
+    $Titulo_reju  => $Products_title_02,
+    $Titulo_rest  => $Products_title_03,
+    $Titulo_reve  => $Products_title_04
 ];
 
 $Text_map = [
-    "revive"      => $Products_text_01,
-    "rejuvenate"  => $Products_text_02,
-    "restore"     => $Products_text_03
+    $Titulo_revi  => $Products_text_01,
+    $Titulo_reju  => $Products_text_02,
+    $Titulo_rest  => $Products_text_03,
+    $Titulo_reve  => $Products_text_04
 ];
 
 $Ingredients_map = [
-    "revive"      => $Ingredients_01,
-    "rejuvenate"  => $Ingredients_02,
-    "restore"     => $Ingredients_03
+    $Titulo_revi  => $Ingredients_01,
+    $Titulo_reju  => $Ingredients_02,
+    $Titulo_rest  => $Ingredients_03,
+    $Titulo_reve  => $Ingredients_04
 ];
 
 $Ingredients_list_map = [
-    "revive" => [
+    $Titulo_revi => [
         $Ingredients_01_01, $Ingredients_01_02, $Ingredients_01_03,
         $Ingredients_01_04, $Ingredients_01_05, $Ingredients_01_06
     ],
-    "rejuvenate" => [
+    $Titulo_reju => [
         $Ingredients_02_01, $Ingredients_02_02, $Ingredients_02_03,
         $Ingredients_02_04, $Ingredients_02_05, $Ingredients_02_06
     ],
-    "restore" => [
+    $Titulo_rest => [
         $Ingredients_03_01, $Ingredients_03_02, $Ingredients_03_03,
         $Ingredients_03_04, $Ingredients_03_05, $Ingredients_03_06
+    ],
+    $Titulo_reve => [
+        $Ingredients_04_01, $Ingredients_04_02, $Ingredients_04_03,
+        $Ingredients_04_04, $Ingredients_04_05, $Ingredients_04_06
     ]
 ];
 
 $Benefits_list_map = [
-    "revive" => [
+    $Titulo_revi => [
         $Benefits_01_01, $Benefits_01_02, $Benefits_01_03, $Benefits_01_04
     ],
-    "rejuvenate" => [
+    $Titulo_reju => [
         $Benefits_02_01, $Benefits_02_02, $Benefits_02_03, $Benefits_02_04
     ],
-    "restore" => [
+    $Titulo_rest => [
         $Benefits_03_01, $Benefits_03_02, $Benefits_03_03, $Benefits_03_04
+    ],
+    $Titulo_reve => [
+        $Benefits_04_01, $Benefits_04_02, $Benefits_04_03, $Benefits_04_04
     ]
 ];
 
 $Benefits_sub_map = [
-    "revive"      => $Benefits_sub_01,
-    "rejuvenate"  => $Benefits_sub_02,
-    "restore"     => $Benefits_sub_03
+    $Titulo_revi  => $Benefits_sub_01,
+    $Titulo_reju  => $Benefits_sub_02,
+    $Titulo_rest  => $Benefits_sub_03,
+    $Titulo_reve  => $Benefits_sub_04
 ];
 
 $Key_list_map = [
-    "revive" => [
+    $Titulo_revi => [
         $Key_01_01, $Key_01_02, $Key_01_03, $Key_01_04, $Key_01_05, $Key_01_06
     ],
-    "rejuvenate" => [
+    $Titulo_reju => [
         $Key_02_01, $Key_02_02, $Key_02_03, $Key_02_04, $Key_02_05
     ],
-    "restore" => [
+    $Titulo_rest => [
         $Key_03_01, $Key_03_02, $Key_03_03, $Key_03_04, $Key_03_05
     ]
 ];
@@ -103,7 +115,7 @@ $Key_list_map = [
 // ====================
 // ASIGNACIÓN SEGURA
 // ====================
-$Links            = $Links_map[$id]           ?? "";
+
 $Links_usa        = $Links_usa_map[$id]       ?? "";
 $Links_mex        = $Links_mex_map[$id]       ?? "";
 $Links_can        = $Links_can_map[$id]       ?? "";
@@ -119,6 +131,11 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 
 ?>
 
+<?php
+    $Condicion_link_esp =($id === $Titulo_reve)? $Btn_buy_esp:$Btn_buy;
+    $Condicion_link_eng =($id === $Titulo_reve)? $Btn_buy_eng:$Btn_buy;
+?>
+
 <section>
     <div class="block-box-bg overlay o-40">
         <div class="mw-1440 jc-center ai-center dh-100 small-fd-col-rev g-30 p-30">
@@ -129,9 +146,9 @@ $Key_list         = $Key_list_map[$id]        ?? "";
                 <p class="small-d-none"><?php echo $Text; ?></p>
 
                 <div class="btns g-10 small-jc-center">
-                    <a href="<?php echo $Links_usa; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Btn_buy; ?></a>
-                    <a href="<?php echo $Links_mex; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2" aria-label="Buy in Mexico"><?php echo $Btn_buy; ?></a>
-                    <a href="<?php echo $Links_can; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-8" aria-label="Buy in Canada"><?php echo $Btn_buy; ?></a>
+                    <a href="<?php echo $Links_usa; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Condicion_link_eng; ?></a>
+                    <a href="<?php echo $Links_mex; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2" aria-label="Buy in Mexico"><?php echo $Condicion_link_esp; ?></a>
+                    <a href="<?php echo $Links_can; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-8" aria-label="Buy in Canada"><?php echo $Condicion_link_eng; ?></a>
                 </div>
             </div>
 
@@ -144,14 +161,14 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 <section class="c-sub <?php echo $id; ?>">
     <div class="h-100 of-h rel small-h-0">
 
-        <img class="img-middle small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" loading="lazy"/>
+        <img class="img-middle <?= $id === 'revenuez' ? $id : ''; ?> small-d-none" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" loading="lazy"/>
 
         <div class="ingredients_wrap">
             <h2 class="abs-text h1 t-c"><?php echo $Ingredients; ?></h2>
             <ul class="ingredients">
                 <?php foreach ($Ingredients_list as $index => $ingredient): ?>
                     <li>
-                        <span class="v-custom icon icon-<?php echo $index+1; ?> c-pri br-50 <?php echo $id; ?>"></span>
+                        <span class="v-custom icon icon-<?php echo $index+1; ?> c-<?php echo $id; ?> br-50 <?php echo $id; ?>"></span>
                         <?php echo $ingredient; ?>
                     </li>
                 <?php endforeach; ?>
@@ -165,8 +182,8 @@ $Key_list         = $Key_list_map[$id]        ?? "";
     <div class='modal-content rel' style="padding: 10px;">
     <button type="button" class="v-white c-pri icon icon-close" onclick="closeModal('Modal_<?php echo $id; ?>')"></button>
 
-    <video class="full-img" 
-        src="./video/video.webm" 
+    <video class="full-img"
+        src="./video/video.webm"
         autoplay loop muted playsinline
         poster="./images/body/letters/1.webp">
     </video>
@@ -176,7 +193,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 <section>
     <div class="h-100 rel all-tc-0 overlay o-50 custom">
         <div class="center">
-            <h2 class="h1"><?php echo $Benefits; ?></h2>
+            <h2 class="h1"><?php echo $Condicion_text_03 =($id === $Titulo_reve)? $Reve_Benefits:$Benefits; ?></h2>
             <p><?php echo $Benefits_Sub; ?></p>
             <!--<button type="button" class="btn big c-pri br-50 mt-40 small-mt-20" onclick="openModal('Modal_<?php echo $id; ?>')"><?php echo $Btn_view; ?></button>-->
         </div>
@@ -197,7 +214,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
     </div>
 </section>
 
-<section class="c-sub <?php echo $id; ?>">
+<section class="c-sub <?php echo $id; ?>" style="display:<?php echo $Condicion =($id === $Titulo_reve)? 'none':'block'; ?>;">
     <div class="mw-1080 zoom-container">
         <div class="jc-between g-50 small-g-30 small-fd-col ai-center">
             <div id="big-image" class="<?php echo $id; ?>"></div>
@@ -216,7 +233,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
                     <li><?php echo $key; ?></li>
                 <?php endif; ?>
             <?php endforeach; ?>
-        
+
                 </ul>
             </div>
         </div>
@@ -227,7 +244,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 	<div class="mw-1280">
 
 		<div class="t-c">
-			<h2 class="h2"><?php echo $Satarted_title; ?></h2>
+			<h2 class="h2"><?php echo $Condicion_title =($id === $Titulo_reve)? $Reve_title:$Satarted_title; ?></h2>
 			<p class="h4"><?php echo $Satarted_sub; ?></p>
 		</div>
 
@@ -282,7 +299,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 
 				<div>
 					<p class="h3"><?php echo $Satarted_title_03; ?></p>
-					<p><?php echo $Satarted_text_03; ?></p>
+					<p><?php echo $Condicion_text_03 =($id === $Titulo_reve)? $Reve_text_03:$Satarted_text_03; ?></p>
 				</div>
 			</div>
 
@@ -292,8 +309,8 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 
 <section class="c-<?php echo $id; ?>">
 	<div class="mw-1280 t-c big">
-		<h2 class="h1 med-mt-50"><?php echo $Footer_subpage; ?></h2>
-		<a href="<?php echo $Register; ?>" target="_blank" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_start; ?></a>
+		<h2 class="h1 med-mt-50 <?php echo $Condicion_text_03 =($id === $Titulo_reve)? "tc-0":""; ?>"><?php echo $Condicion_text_03 =($id === $Titulo_reve)? $Reve_Footer_subpage:$Footer_subpage; ?></h2>
+		<a href="<?php echo $Register; ?>" target="_blank" class="btn big br-50 mt-40 small-mt-20 <?php echo $Condicion_text_03 =($id === $Titulo_reve)? "c-sec":"c-pri"; ?>"><?php echo $Btn_start; ?></a>
 	</div>
 </section>
 
@@ -372,9 +389,9 @@ function moveLens(e) {
   const scaleX = bigImg.offsetWidth / lensW;
   const scaleY = bigImg.offsetHeight / lensH;
 
-  bigImg.style.backgroundSize = 
+  bigImg.style.backgroundSize =
     `${smallImg.width * scaleX}px ${smallImg.height * scaleY}px`;
-  bigImg.style.backgroundPosition = 
+  bigImg.style.backgroundPosition =
     `-${x * scaleX}px -${y * scaleY}px`;
 }
 

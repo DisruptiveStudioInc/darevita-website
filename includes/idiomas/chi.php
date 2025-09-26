@@ -209,6 +209,36 @@ $Ingredients_03_05 = "薰衣草";
 $Ingredients_03_06 = "维生素B6";
 
 //-------------------------//
+// Revenuez
+//-------------------------//
+
+$Products_title_04 = "唤醒你的潜能，无限思考。";
+$Products_text_04 = "在培训层面，Revenuez 巩固你的知识，加强你网络中的沟通，并促进关键技能的发展，以助于成功、记忆力和商业中的心理韧性。";
+
+$Btn_buy_esp = "立即加入";
+$Btn_buy_eng = "立即加入";
+
+$Ingredients_04 = "唤醒你的思维，掌控事业";
+
+$Ingredients_04_01 = "战略领导力";
+$Ingredients_04_02 = "团队管理";
+$Ingredients_04_03 = "数字营销";
+$Ingredients_04_04 = "高效销售";
+$Ingredients_04_05 = "财务分析";
+$Ingredients_04_06 = "自信沟通";
+
+$Reve_Benefits = "Revenuez 的优势";
+$Benefits_sub_04 = "每天推动你的成功";
+$Benefits_04_01 = "激发你的思维敏锐度，提高目标专注力";
+$Benefits_04_02 = "加强你网络中的沟通，促进有意识的领导力";
+$Benefits_04_03 = "有助于长期知识的保持和学以致用";
+$Benefits_04_04 = "推动你事业的可持续增长，没有捷径";
+
+$Reve_title = "Revenuez<br>推动你成长的教育平台。";
+$Reve_text_03 = "感受清晰、活力与安心，拥有一个推动你的平台。持续使用后，你的事业将变得更加适应、高效和有韧性。";
+$Reve_Footer_subpage = "一个目标。三个核心。潜力在你之中，我们帮助你释放。";
+
+//-------------------------//
 // 开始
 //-------------------------//
 
@@ -250,7 +280,7 @@ $Works_title_03_sub_01 = "当您的推荐人下单购买产品时,您将获得�
 $Works_title_03_sub_02 = "
     <a class='tooltip desktop-only'><span class='small-d-none'>查看详情</span>
         <span class='tooltip-text'>
-            如果被推荐的客户在前30天内购买了一款100 CV的产品，你将获得40美元的佣金。 
+            如果被推荐的客户在前30天内购买了一款100 CV的产品，你将获得40美元的佣金。
             在最初的30天之后，他们未来的任何购买将适用标准佣金率。
         </span>
     </a>

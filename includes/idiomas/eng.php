@@ -25,7 +25,7 @@
     $Btn_live = "Live DareVita";
     $Btn_part = "Be part of the change";
     $Btn_started = "Get Started";
-   
+
     //-------------------------//
     // Hero
     //-------------------------//
@@ -229,6 +229,36 @@
     $Ingredients_03_06 = "Vitamin B6";
 
     //-------------------------//
+    // Revenuez
+    //-------------------------//
+
+    $Products_title_04 = "Awaken your potential, think without limits.";
+    $Products_text_04 = "At a training level, Revenuez consolidates your knowledge, strengthens communication within your network, and promotes the development of key skills for success, memory, and mental resilience in your business.";
+
+    $Btn_buy_esp = "Join Now";
+    $Btn_buy_eng = "Join Now";
+
+    $Ingredients_04 = "Awaken your mind, master the business";
+
+    $Ingredients_04_01 = "Strategic Leadership";
+    $Ingredients_04_02 = "Team Management";
+    $Ingredients_04_03 = "Digital Marketing";
+    $Ingredients_04_04 = "Effective Sales";
+    $Ingredients_04_05 = "Financial Analysis";
+    $Ingredients_04_06 = "Assertive Communication";
+
+    $Reve_Benefits = "Benefits of Revenuez";
+    $Benefits_sub_04 = "Boost your success every day";
+    $Benefits_04_01 = "Activate your mental sharpness and improve focus on your goals";
+    $Benefits_04_02 = "Strengthen communication in your network while promoting conscious leadership";
+    $Benefits_04_03 = "Favors long-term knowledge retention and the application of what you’ve learned";
+    $Benefits_04_04 = "Promotes sustainable growth in your business, without shortcuts";
+
+    $Reve_title = "Revenuez<br>the educational platform that drives your growth.";
+    $Reve_text_03 = "Feel the clarity, vitality, and peace of having a platform that empowers you. With consistent use, your business will become more adaptable, efficient, and resilient.";
+    $Reve_Footer_subpage = "One purpose. Three essentials. The potential is within you, and we help you unlock it.";
+
+    //-------------------------//
     // Satarted
     //-------------------------//
 
@@ -272,7 +302,7 @@
     $Works_title_03_sub_02 = "
     <a class='tooltip desktop-only'><span class='small-d-none'>View Details</span>
         <span class='tooltip-text'>
-            If a referred customer purchases a product with 100 CV during their first 30 days, you earn $40 in commission. 
+            If a referred customer purchases a product with 100 CV during their first 30 days, you earn $40 in commission.
             After the initial 30-day period, standard commission rates apply to any future purchases they make.
         </span>
     </a>
