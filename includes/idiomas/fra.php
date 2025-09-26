@@ -237,6 +237,8 @@ $Benefits_04_03 = "Facilite la rétention des connaissances à long terme et l�
 $Benefits_04_04 = "Encourage une croissance durable de ton activité, sans raccourcis";
 
 $Reve_title = "Revenuez<br>la plateforme éducative qui stimule ton développement.";
+$Reve_text_01 = "Revenuez travaille en synergie avec vous pour développer vos compétences et augmenter vos revenus tout au long de la journée :";
+$Reve_text_02 = "Conçu pour accompagner le rythme de votre activité, de la planification à l’exécution, 24 heures sur 24.";
 $Reve_text_03 = "Ressens la clarté, la vitalité et la sérénité d’avoir une plateforme qui t’accompagne. Avec une utilisation régulière, ton activité deviendra plus adaptable, plus efficace et plus résiliente.";
 $Reve_Footer_subpage = "Un objectif. Trois essentiels. Le potentiel est en toi, et nous t’aidons à le libérer.";
 
