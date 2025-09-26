@@ -81,23 +81,23 @@
         <div class="wrap-get">
           <div class="btn-get"><?php echo $Btn_started; ?></div>
           <div class="get">
-            <a href="https://us.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
-               target="_blank"
-               class="eng"
-               aria-label="Buy in USA">United States</a>
-            <a href="https://mx.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
-               target="_blank"
-               class="esp"
-               aria-label="Buy in Mexico">México</a>
-            <a href="https://ca.darevita.com/product-category/starter-plans/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
-               target="_blank"
-               class="can"
-               aria-label="Buy in Mexico">Canada</a>
+            <a href="<?= $Innerpage_Id === 'revenuez' ? 'https://int.darevita.com/' : "https://us.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+              target="_blank"
+              class="eng"
+              aria-label="Buy in USA">United States</a>
+            <a href="<?= $Innerpage_Id === 'revenuez' ? 'https://int.darevita.com/' : "https://mx.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+              target="_blank"
+              class="esp"
+              aria-label="Buy in Mexico">México</a>
+            <a href="<?= $Innerpage_Id === 'revenuez' ? 'https://int.darevita.com/' : "https://ca.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+              target="_blank"
+              class="can"
+              aria-label="Buy in Mexico">Canada</a>
             <?php if(!$comes_from_usa_mex) : ?>
-            <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
-            target="_blank"
-            class="int"
-            aria-label="Buy International">International</a>
+              <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
+              target="_blank"
+              class="int"
+              aria-label="Buy International">International</a>
             <?php endif; ?>
             </div>
         </div>

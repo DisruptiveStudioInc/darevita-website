@@ -39,6 +39,7 @@ switch ($pais) {
 $Actual_Page = !empty($_GET['p']) ? $_GET['p'] : '';
 $Actual_Page_Lan = $Actual_Page ? '&p=' . $Actual_Page : '';
 $Client_Page_Id = (empty($_GET['id'])) ? '' : '&id=' . $_GET['id'];
+$Innerpage_Id = (empty($_GET['id'])) ? '' : $_GET['id'];
 $Hide = ($Actual_Page === 'home' || $Actual_Page === '') ? '' : 'none';
 
 
@@ -69,6 +70,8 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
 
 $Register = "https://us.darevita.com/register/?ref=$user_replica";
 $Login = "https://us.darevita.com/my-account/";
+
+$GetReplica = isset($user_replica) ? "?ref=$user_replica" : '';
 
 $Shop_usa = "https://us.darevita.com/?ref=$user_replica";
 $Shop_mex = "https://mx.darevita.com/?ref=$user_replica";
