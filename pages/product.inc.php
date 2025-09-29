@@ -145,11 +145,13 @@ $Key_list         = $Key_list_map[$id]        ?? "";
                 <p class="h3"><?php echo $Subtitulo; ?></p>
                 <p class="small-d-none"><?php echo $Text; ?></p>
 
-                <div class="btns g-10 small-jc-center">
+                <?php if ($id !== $Titulo_reve) : ?>
+                  <div class="btns g-10 small-jc-center">
                     <a href="<?php echo $Links_usa; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Condicion_link_eng; ?></a>
                     <a href="<?php echo $Links_mex; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2" aria-label="Buy in Mexico"><?php echo $Condicion_link_esp; ?></a>
                     <a href="<?php echo $Links_can; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-8" aria-label="Buy in Canada"><?php echo $Condicion_link_eng; ?></a>
-                </div>
+                  </div>
+                <?php endif; ?>
             </div>
 
             <img class="mw-400 med-w-30 small-w-60 small-mt-40" src="./images/body/treo/<?php echo $id; ?>.webp" alt="<?php echo $Titulo; ?> Product" />
@@ -311,7 +313,7 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 <section class="c-<?php echo $id; ?>">
 	<div class="mw-1280 t-c big">
 		<h2 class="h1 med-mt-50 <?php echo $Condicion_text_03 =($id === $Titulo_reve)? "tc-0":""; ?>"><?php echo $Condicion_text_03 =($id === $Titulo_reve)? $Reve_Footer_subpage:$Footer_subpage; ?></h2>
-		<a href="<?php echo $Register; ?>" target="_blank" class="btn big br-50 mt-40 small-mt-20 <?php echo $Condicion_text_03 =($id === $Titulo_reve)? "c-sec":"c-pri"; ?>"><?php echo $Btn_start; ?></a>
+		<a href="<?= $id === $Titulo_reve ? $Revenuez_Register : $Register; ?>" target="_blank" class="btn big br-50 mt-40 small-mt-20 <?php echo $Condicion_text_03 =($id === $Titulo_reve)? "c-sec":"c-pri"; ?>"><?php echo $Btn_start; ?></a>
 	</div>
 </section>
 

@@ -69,6 +69,7 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
     //-------------------------//
 
 $Register = "https://us.darevita.com/register/?ref=$user_replica";
+$Revenuez_Register = "https://int.darevita.com/register/";
 $Login = "https://us.darevita.com/my-account/";
 
 $GetReplica = isset($user_replica) ? "?ref=$user_replica" : '';
