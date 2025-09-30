@@ -317,12 +317,14 @@ $Key_list         = $Key_list_map[$id]        ?? "";
 	</div>
 </section>
 
+<?php if($id !== $Titulo_reve): ?>
 <section>
     <div class="mw-1080 t-c p-20 p-tiny">
         <h4><?php echo $Disclaimer_title; ?></h4>
         <p><?php echo $Disclaimer_text; ?></p>
     </div>
 </section>
+<?php endif; ?>
 
 <script>
 
