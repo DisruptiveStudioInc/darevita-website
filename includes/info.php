@@ -128,7 +128,7 @@ $Sub = array(
 $Sub_reg = array(
     array($Shop_usa,'USA'),
     array($Shop_mex,'MEX'),
-    array($Shop_int,'INT'),
+    $isWebDemo ? NULL : array($Shop_int,'INT'),
     $isWebDemo ? NULL : array($Shop_can,'CAN')
 );
 
