@@ -98,7 +98,7 @@
                   class="can"
                   aria-label="Buy in Mexico">Canada</a>
               <?php endif; ?>
-              <?php if(!$comes_from_usa_mex) : ?>
+              <?php if(!$comes_from_usa_mex && !$isWebDemo) : ?>
                 <a href="https://<?= $int_url ?>.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
                 target="_blank"
                 class="int"
