@@ -5,18 +5,34 @@
 
 trigger:
 - main
+- staging
 
 pool:
   name: Disruptive
 
 steps:
 - task: SSH@0
+  displayName: 'SSH Prod'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   inputs:
     sshEndpoint: 'creative-ovh'
     runOptions: 'inline'
     inline: |
       cd /var/www/$(Build.Repository.Name)
-      sudo git reset --hard
-      sudo git pull
+      git reset --hard
+      git pull origin
+    readyTimeout: '20000'
+  continueOnError: true
+
+- task: SSH@0
+  displayName: 'SSH staging'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/staging'))
+  inputs:
+    sshEndpoint: 'creative-staging'
+    runOptions: 'inline'
+    inline: |
+      cd /var/www/$(Build.Repository.Name)
+      git reset --hard
+      git pull origin
     readyTimeout: '20000'
   continueOnError: true
