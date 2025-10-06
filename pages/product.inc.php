@@ -149,7 +149,9 @@ $Key_list         = $Key_list_map[$id]        ?? "";
                   <div class="btns g-10 small-jc-center">
                     <a href="<?php echo $Links_usa; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-1" aria-label="Buy in USA"><?php echo $Condicion_link_eng; ?></a>
                     <a href="<?php echo $Links_mex; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-2" aria-label="Buy in Mexico"><?php echo $Condicion_link_esp; ?></a>
-                    <!-- <a href="<?php echo $Links_can; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-8" aria-label="Buy in Canada"><?php echo $Condicion_link_eng; ?></a> -->
+                    <?php if (!$isWebDemo): ?>
+                      <a href="<?php echo $Links_can; ?>" class="btn c-ter br-50 v-custom my_flags icon-text icon-8" aria-label="Buy in Canada"><?php echo $Condicion_link_eng; ?></a>
+                    <?php endif; ?>
                   </div>
                 <?php endif; ?>
             </div>
