@@ -80,24 +80,26 @@
 
         <div class="wrap-get">
           <?php if ($Innerpage_Id === 'revenuez'): ?>
-            <a href="https://int.darevita.com/product/revenuez/" class="btn-get"><?php echo $Btn_started; ?></a>
+            <a href="https://<?= $int_url ?>.darevita.com/product/revenuez/" class="btn-get"><?php echo $Btn_started; ?></a>
           <?php else: ?>
             <div class="btn-get"><?php echo $Btn_started; ?></div>
             <div class="get">
-              <a href="<?= "https://us.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+              <a href="<?= "https://$us_url.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
                 target="_blank"
                 class="eng"
                 aria-label="Buy in USA">United States</a>
-              <a href="<?= "https://mx.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+              <a href="<?= "https://$mx_url.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
                 target="_blank"
                 class="esp"
                 aria-label="Buy in Mexico">México</a>
-              <a href="<?= "https://ca.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
-                target="_blank"
-                class="can"
-                aria-label="Buy in Mexico">Canada</a>
+              <?php if(!$isWebDemo): ?>
+                <a href="<?= "https://ca.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+                  target="_blank"
+                  class="can"
+                  aria-label="Buy in Mexico">Canada</a>
+              <?php endif; ?>
               <?php if(!$comes_from_usa_mex) : ?>
-                <a href="https://int.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
+                <a href="https://<?= $int_url ?>.darevita.com/<?php echo isset($user_replica) ? "?ref=$user_replica" : '' ?>"
                 target="_blank"
                 class="int"
                 aria-label="Buy International">International</a>
@@ -206,6 +208,7 @@
                                     foreach ($Sub_reg as $item_sub) {
                                         if($item_sub[1] == 'INT' && $comes_from_usa_mex)
                                             continue;
+                                        if($item_sub === null) continue;
                                         echo "<li><a href='{$item_sub[0]}' target='_blank'>{$item_sub[1]}</a></li>";
                                     }
                                     echo "</ul>";

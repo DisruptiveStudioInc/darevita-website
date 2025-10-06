@@ -68,32 +68,38 @@ $Footer_Rights  = $Company_Name."© ".date("Y").". All rights reserved";
     // LINKS
     //-------------------------//
 
-$Register = "https://us.darevita.com/register/?ref=$user_replica";
-$Revenuez_Register = "https://int.darevita.com/register/";
-$Login = "https://us.darevita.com/my-account/";
-$Revenuez_Login = "https://int.darevita.com/my-account/";
+$isWebDemo = explode('.', $_SERVER['HTTP_HOST'])[0] === 'webdemo';
+
+$us_url = $isWebDemo ? 'usdev' : 'us';
+$mx_url = $isWebDemo ? 'mxdev' : 'mx';
+$int_url = $isWebDemo ? 'intdev' : 'int';
+
+$Register = "https://$us_url.darevita.com/register/?ref=$user_replica";
+$Revenuez_Register = "https://$int_url.darevita.com/register/";
+$Login = "https://$us_url.darevita.com/my-account/";
+$Revenuez_Login = "https://$int_url.darevita.com/my-account/";
 
 $GetReplica = isset($user_replica) ? "?ref=$user_replica" : '';
 
-$Shop_usa = "https://us.darevita.com/?ref=$user_replica";
-$Shop_mex = "https://mx.darevita.com/?ref=$user_replica";
-$Shop_int = "https://int.darevita.com/?ref=$user_replica";
+$Shop_usa = "https://$us_url.darevita.com/?ref=$user_replica";
+$Shop_mex = "https://$mx_url.darevita.com/?ref=$user_replica";
+$Shop_int = "https://$int_url.darevita.com/?ref=$user_replica";
 $Shop_can = "https://ca.darevita.com/?ref=$user_replica";
 
-$Shop_usa_restore = "https://us.darevita.com/product/restore/?ref=$user_replica";
-$Shop_usa_revive = "https://us.darevita.com/product/revive/?ref=$user_replica";
-$Shop_usa_rejuvenate = "https://us.darevita.com/product/rejuvenate/?ref=$user_replica";
-$Shop_usa_revenuez = "https://int.darevita.com/";
+$Shop_usa_restore = "https://$us_url.darevita.com/product/restore/?ref=$user_replica";
+$Shop_usa_revive = "https://$us_url.darevita.com/product/revive/?ref=$user_replica";
+$Shop_usa_rejuvenate = "https://$us_url.darevita.com/product/rejuvenate/?ref=$user_replica";
+$Shop_usa_revenuez = "https://$int_url.darevita.com/";
 
-$Shop_mex_restore = "https://mx.darevita.com/product/restore/?ref=$user_replica";
-$Shop_mex_revive = "https://mx.darevita.com/product/revive/?ref=$user_replica";
-$Shop_mex_rejuvenate = "https://mx.darevita.com/product/rejuvenate/?ref=$user_replica";
-$Shop_mex_revenuez = "https://int.darevita.com/";
+$Shop_mex_restore = "https://$mx_url.darevita.com/product/restore/?ref=$user_replica";
+$Shop_mex_revive = "https://$mx_url.darevita.com/product/revive/?ref=$user_replica";
+$Shop_mex_rejuvenate = "https://$mx_url.darevita.com/product/rejuvenate/?ref=$user_replica";
+$Shop_mex_revenuez = "https://$int_url.darevita.com/";
 
 $Shop_can_restore = "https://ca.darevita.com/product/restore/?ref=$user_replica";
 $Shop_can_revive = "https://ca.darevita.com/product/revive/?ref=$user_replica";
 $Shop_can_rejuvenate = "https://ca.darevita.com/product/rejuvenate/?ref=$user_replica";
-$Shop_can_revenuez = "https://int.darevita.com/";
+$Shop_can_revenuez = "https://$int_url.darevita.com/";
 
     //-------------------------//
     // MENU
@@ -123,7 +129,7 @@ $Sub_reg = array(
     array($Shop_usa,'USA'),
     array($Shop_mex,'MEX'),
     array($Shop_int,'INT'),
-    array($Shop_can,'CAN')
+    $isWebDemo ? NULL : array($Shop_can,'CAN')
 );
 
     //-------------------------//
