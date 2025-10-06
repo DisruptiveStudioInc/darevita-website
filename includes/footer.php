@@ -62,6 +62,6 @@
 
 	    <script src="./js/lozad.min.js"></script>
 	    <script src="./js/script.js"></script>
-
+    <!-- Staging comment -->
 	</body>
 </html>
