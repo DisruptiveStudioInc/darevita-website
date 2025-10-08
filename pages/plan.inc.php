@@ -129,10 +129,6 @@
 			?>
 			</ul>
 
-			<div class="t-c ai-center fd-col">
-				<a href="./download/DareVita Compensation Plan and Compliance_v2.pdf" target="_blank" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_download; ?></a>
-			</div>
-
 		</div>
 
 		<div class="jc-between g-50 small-g-20 small-fd-col ai-start line">
@@ -216,7 +212,7 @@
 <section class="c-sec">
 	<div class="mw-1440">
 		<div class="t-c ai-center fd-col">
-			<a href="?p=earn" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Earn_Title; ?></a>
+			<a href="./download/DareVita Compensation Plan and Compliance_v2.pdf" target="_blank" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_download; ?></a>
 		</div>
 	</div>
 </section>
