@@ -56,14 +56,17 @@
 			$Plan = array(
 			    array(
 			        'title' => $Earnings_01,
+			        'text' => $Earnings_01_text,
 			        'list' => array(
 			        	$Earnings_01_01,
 			        	$Earnings_01_02,
-			        	$Earnings_01_03
+			        	$Earnings_01_03,
+			        	$Earnings_01_04
 			        )
 			    ),
 			    array(
 			        'title' => $Earnings_02,
+			        'text' => $Earnings_02_text,
 			        'list' => array(
 			        	$Earnings_02_01,
 			        	$Earnings_02_02,
@@ -72,6 +75,7 @@
 			    ),
 			    array(
 			        'title' => $Earnings_03,
+			        'text' => $Earnings_03_text,
 			        'list' => array(
 			        	$Earnings_03_01,
 			        	$Earnings_03_02,
@@ -80,6 +84,7 @@
 			    ),
 			    array(
 			        'title' => $Earnings_04,
+			        'text' => $Earnings_04_text,
 			        'list' => array(
 			        	$Earnings_04_01,
 			        	$Earnings_04_02,
@@ -88,9 +93,12 @@
 			    ),
 			    array(
 			        'title' => $Earnings_05,
+			        'text' => $Earnings_05_text,
 			        'list' => array(
 			        	$Earnings_05_01,
-			        	$Earnings_05_02
+			        	$Earnings_05_02,
+			        	$Earnings_05_03,
+			        	$Earnings_05_04
 			        )
 			    )
 			);
@@ -103,12 +111,13 @@
 			    echo "<li class='jc-center ai-start small-fd-col'>
 			        <span class='v-custom icon icon-{$counter} plan'></span>
 			        <div class='w-100'>
-			        <p class='h5 fw-600'>{$item['title']}</p>
+			        <p class='h5 fw-600 pb-10'>{$item['title']}</p>
+			        <p>{$item['text']}</p>
 			        <ul class='menu-list icon-dot mt-10'>";
 
 			    // Si es la primera, mostramos todos los elementos
 			    // Si no, solo mostramos 2
-			    $list = ($counter === 1) ? $item['list'] : array_slice($item['list'], 0, 2);
+			    $list = ($counter === 1) ? $item['list'] : array_slice($item['list'], 0, 4);
 
 			    foreach ($list as $li) {
 			        echo "<li>{$li}</li>";
@@ -119,6 +128,10 @@
 			}
 			?>
 			</ul>
+
+			<div class="t-c ai-center fd-col">
+				<a href="./download/DareVita Compensation Plan and Compliance_v2.pdf" target="_blank" class="btn big c-pri br-50 mt-40 small-mt-20"><?php echo $Btn_download; ?></a>
+			</div>
 
 		</div>
 
@@ -137,6 +150,7 @@
 						<li><?php echo $Guaranteed_04; ?></li>
 					</ul>
 			    </div>
+			    <p><?php echo $Guaranteed_text_final; ?></p>
 		    </div>
 		</div>
 

@@ -21,6 +21,7 @@ $Btn_store = "Visita il nostro negozio";
 $Btn_live = "Live DareVita";
 $Btn_part = "Fai parte del cambiamento";
 $Btn_started = "Inizia";
+$Btn_download = "Scarica il documento completo";
 //-------------------------//
 // Hero
 //-------------------------//
@@ -338,48 +339,51 @@ DareVita è per uso personale. La possibilità di guadagnare è sempre secondari
 soddisfazione del prodotto.";
 
 //-------------------------//
-$Earnings = "Struttura dei guadagni";
-$Earnings_sub = "Il Piano di Ricompense DareVita include cinque principali modalità di
-guadagno, con reddito direttamente legato al volume di prodotto:";
-$Earnings_01 = "A. Bonus Impatto";
-$Earnings_01_01 = "Guadagna il 40% di commissione sul CV (Commissionable Volume) di
-ogni primo ordine effettuato da un nuovo cliente o IBA che hai referenziato personalmente.";
-$Earnings_01_02 = "Non è necessario costruire un team.";
-$Earnings_01_03 = "Solo gli IBA Attivi (con ordine personale qualificante di $50,00 USD
-mensili) sono idonei.";
-$Earnings_02 = "B. Bonus Abbonamento";
-$Earnings_02_01 = "Guadagna commissioni ricorrenti quando clienti o IBA da te referenziati
-si iscrivono a abbonamenti mensili dei prodotti.";
-$Earnings_02_02 = "Le percentuali del bonus variano in base al volume e al livello di
-partecipazione.";
-$Earnings_02_03 = " ";
+$Earnings = "Struttura dei Guadagni";
+$Earnings_sub = "Il Piano di Ricompense DareVita include cinque modi principali per guadagnare reddito, tutti direttamente collegati al volume di prodotto verificato (Volume d’Affari – BV) e progettati per garantire trasparenza, equità e crescita sostenibile del business.";
 
-$Earnings_03 = "C. Bonus Volume Team";
-$Earnings_03_01 = "Gli IBA che costruiscono organizzazioni di vendita possono guadagnare
-bonus basati sul volume totale del gruppo.";
-$Earnings_03_02 = "I bonus sono limitati dal livello di rank e legati a uno sviluppo equilibrato
-del team.";
-$Earnings_03_03 = " ";
+$Earnings_01 = "A. Bonus di Impatto";
+    $Earnings_01_text = "Guadagna una commissione del 40% sul BV di qualsiasi ordine effettuato da un nuovo Cliente o IBA che hai personalmente presentato entro i primi 30 giorni dalla registrazione.";
+    $Earnings_01_01 = "Non è richiesta la costruzione del team.";
+    $Earnings_01_02 = "Disponibile immediatamente dopo la firma dell’Accordo di Distributore.";
+    $Earnings_01_03 = "Non è necessario avere lo stato attivo (50 BV mensili) per ricevere questo bonus.";
+    $Earnings_01_04 = "Pagato immediatamente dopo il completamento della revisione di 10 giorni lavorativi. Questo bonus premia l’acquisizione reale di clienti e le vendite verificate dei prodotti.";
 
-$Earnings_04 = "D. Bonus Controllo Abbinato";
-$Earnings_04_01 = "Guadagna una percentuale delle commissioni guadagnate dagli IBA
-personalmente iscritti.";
-$Earnings_04_02 = "Richiede sviluppo della leadership e mentorship attiva.";
-$Earnings_04_03 = " ";
+$Earnings_02 = "B. Bonus di Abbonamento";
+    $Earnings_02_text = "Guadagna commissioni mensili residue quando i Clienti o gli IBA nella tua rete mantengono abbonamenti attivi ai prodotti.";
+    $Earnings_02_01 = "Calcolato sul BV e distribuito fino a 12 livelli in base al rango.";
+    $Earnings_02_02 = "Le percentuali dei bonus e i limiti di pagamento sono definiti dal rango per incoraggiare una crescita equilibrata.";
+    $Earnings_02_03 = "Pagato il giorno 15 di ogni mese per il periodo di commissione precedente. Questo bonus supporta un reddito ricorrente tramite il consumo mensile verificato e la fidelizzazione dei clienti.";
 
-$Earnings_05 = "E. Bonus di Unità & Leadership";
-$Earnings_05_01 = "Solo per rank più alti.";
-$Earnings_05_02 = "Riconosce l'impatto a livello aziendale e il contributo al volume globale.";
-//-------------------------//
-$Guaranteed = "Nessun reddito garantito";
-$Guaranteed_text = "DareVita non garantisce reddito o successo. La tua capacità di
-guadagno si basa su:";
-$Guaranteed_01 = "Il tuo impegno e la tua costanza";
-$Guaranteed_02 = "La tua capacità di referenziare e mantenere clienti";
-$Guaranteed_03 = "La tua leadership e formazione degli altri";
-$Guaranteed_04 = "Il volume di prodotto generato attraverso vendite legittime";
-$Guaranteed_text = "Gli IBA possono guadagnare un reddito supplementare modesto o
-partecipare solo per lo sconto sui prodotti.";
+$Earnings_03 = "C. Ricompense per Rango e Volume del Team";
+    $Earnings_03_text = "Avanza di rango e ottieni riconoscimenti basati sul BV totale generato dalla tua organizzazione.";
+    $Earnings_03_01 = "Tutte le qualifiche di rango si basano esclusivamente sul BV proveniente dalle vendite verificate dei prodotti.";
+    $Earnings_03_02 = "Include volume minimo per gamba e limiti per gamba forte per garantire uno sviluppo equilibrato del team.";
+    $Earnings_03_03 = "Il raggiungimento del rango riflette leadership, stabilità e performance organizzativa. Questo sistema di ricompense riconosce i leader che costruiscono reti sostenibili e conformi.";
+
+$Earnings_04 = "D. Bonus di Corrispondenza";
+    $Earnings_04_text = "Guadagna una percentuale dei Bonus di Abbonamento generati dagli IBA che hai personalmente iscritto.";
+    $Earnings_04_01 = "Richiede lo stato attivo (minimo 50 BV).";
+    $Earnings_04_02 = "Devi sponsorizzare personalmente almeno un nuovo Cliente con un ordine da 50 BV durante lo stesso mese.";
+    $Earnings_04_03 = "Pagato il giorno 15 di ogni mese per il periodo di commissione precedente. Questo bonus premia mentoring, sviluppo della leadership e duplicazione del team.";
+
+$Earnings_05 = "E. Bonus di Unità e Leadership";
+    $Earnings_05_text = "Disponibile per ranghi superiori (M6 e oltre).";
+    $Earnings_05_01 = "Include il Bonus DareVita – premi una tantum pagati in 10 rate mensili uguali dopo aver mantenuto il rango per tre mesi consecutivi.";
+    $Earnings_05_02 = "Include il Pool di Leadership di Unità – 4% del BV totale aziendale condiviso tra i ranghi superiori (M6, U8, I10, Y12).";
+    $Earnings_05_03 = "I pagamenti del Bonus DareVita vengono emessi il giorno 15; le distribuzioni del Pool di Leadership il giorno 1 di ogni mese.";
+    $Earnings_05_04 = "Tutti i bonus di leadership sono basati sulle performance e non garantiti. Rappresentano il livello più alto di riconoscimento all’interno dell’ecosistema DareVita, onorando l’impatto globale e la leadership eccezionale.";
+
+ //-------------------------//
+
+$Guaranteed = "Nessun Reddito Garantito";
+$Guaranteed_text = "I livelli di guadagno o le dichiarazioni di reddito secondo il Piano di Compensazione DareVita non sono garantiti e non devono essere considerati tipici o medi. Alcuni Ambasciatori Indipendenti del Marchio (IBA) possono ottenere un reddito aggiuntivo modesto, mentre altri possono partecipare solo per lo sconto sui prodotti o per uso personale. I risultati reali variano significativamente e dipendono da molti fattori, tra cui ma non limitati a:";
+
+$Guaranteed_01 = "Sforzo individuale e costanza";
+$Guaranteed_02 = "Capacità di riferire e mantenere clienti";
+$Guaranteed_03 = "Leadership, mentoring e sviluppo del team";
+$Guaranteed_04 = "Volume di prodotto verificato generato tramite vendite al dettaglio legittime";
+$Guaranteed_text_final = "DareVita non garantisce guadagni o successo. Anche gli IBA che dedicano tempo e sforzi considerevoli potrebbero non raggiungere un livello significativo di reddito. I risultati dipendono interamente dalle prestazioni personali, dalle condizioni di mercato e dal rispetto delle politiche aziendali.";
 //-------------------------//
 $Participation = "Costi di partecipazione";
 $Participation_text = "Per partecipare come IBA:";

@@ -25,6 +25,7 @@
     $Btn_live = "Vive DareVita";
     $Btn_part = "Sé parte del cambio";
     $Btn_started = "Empieza aquí";
+    $Btn_download = "Descarga el documento completo";
 
     //-------------------------//
     // Hero
@@ -354,42 +355,50 @@
     //-------------------------//
 
     $Earnings = "Estructura de Ganancias";
-    $Earnings_sub = "El Plan de Recompensas DareVita incluye cinco formas principales de ganar, con ingresos directamente ligados al volumen de producto:";
+$Earnings_sub = "El Plan de Recompensas DareVita incluye cinco formas principales de generar ingresos, todas directamente relacionadas con el volumen verificado de producto (Volumen de Negocio – BV) y diseñadas para garantizar transparencia, equidad y un crecimiento empresarial sostenible.";
 
-    $Earnings_01 = "A. Bono Impacto";
-    $Earnings_01_01 = "Gana un 40% de comisión sobre el CV (Volumen Comisionable) de cualquier primer pedido realizado por un nuevo cliente o IBA referido personalmente.";
-    $Earnings_01_02 = "No se requiere construcción de equipo.";
-    $Earnings_01_03 = "Solo los IBAs Activos (con un pedido personal calificado de $50.00 USD mensual) son elegibles.";
+$Earnings_01 = "A. Bono de Impacto";
+    $Earnings_01_text = "Gana una comisión del 40% sobre el BV de cualquier pedido de producto realizado por un nuevo Cliente o IBA que refieras personalmente dentro de los primeros 30 días después de su registro.";
+    $Earnings_01_01 = "No se requiere construcción de equipo.";
+    $Earnings_01_02 = "Disponible de inmediato al firmar el Acuerdo de Distribuidor.";
+    $Earnings_01_03 = "No se requiere estatus activo (50 BV mensuales) para ganar este bono.";
+    $Earnings_01_04 = "Se paga de forma inmediata después de completar la auditoría de 10 días hábiles. Este bono recompensa la adquisición genuina de clientes y las ventas verificadas de producto.";
 
-    $Earnings_02 = "B. Bono de Suscripción";
-    $Earnings_02_01 = "Gana comisiones recurrentes cuando clientes o IBAs referidos se inscriben en suscripciones mensuales de producto.";
-    $Earnings_02_02 = "Los porcentajes de bono varían según el volumen y nivel de participación.";
-    $Earnings_02_03 = " ";
+$Earnings_02 = "B. Bono de Suscripción";
+    $Earnings_02_text = "Gana comisiones mensuales residuales cuando los Clientes o IBAs en tu red mantienen suscripciones activas de productos.";
+    $Earnings_02_01 = "Se calcula con base en el BV y se distribuye hasta en 12 niveles de acuerdo al rango.";
+    $Earnings_02_02 = "Los porcentajes y límites de pago se definen según el rango para fomentar un crecimiento equilibrado.";
+    $Earnings_02_03 = "Se paga el día 15 de cada mes por el periodo de comisión anterior. Este bono promueve ingresos recurrentes a través del consumo mensual verificado y la retención de clientes.";
 
-    $Earnings_03 = "C. Bono por Volumen de Equipo";
-    $Earnings_03_01 = "IBAs que construyen organizaciones de ventas pueden ganar bonos basados en el volumen total de grupo.";
-    $Earnings_03_02 = "Los bonos están limitados por rango y ligados al desarrollo balanceado del equipo.";
-    $Earnings_03_03 = " ";
+$Earnings_03 = "C. Recompensas por Rango y Volumen de Equipo";
+    $Earnings_03_text = "Avanza de rango y obtén reconocimiento basado en el BV total generado por tu organización.";
+    $Earnings_03_01 = "Todas las calificaciones de rango se basan únicamente en BV proveniente de ventas verificadas de productos.";
+    $Earnings_03_02 = "Incluye volumen mínimo por pierna y límites de pierna fuerte para asegurar un desarrollo de equipo equilibrado.";
+    $Earnings_03_03 = "El logro de rango refleja liderazgo, estabilidad y desempeño organizacional. Este sistema reconoce a los líderes que construyen redes sostenibles y en cumplimiento.";
 
-    $Earnings_04 = "D. Bono de Cheque Igualado";
-    $Earnings_04_01 = "Gana un porcentaje de las comisiones obtenidas por los IBAs inscritos personalmente.";
-    $Earnings_04_02 = "Requiere desarrollo de liderazgo y mentoría activa.";
-    $Earnings_04_03 = " ";
+$Earnings_04 = "D. Bono de Igualación";
+    $Earnings_04_text = "Gana un porcentaje de los Bonos de Suscripción generados por los IBAs que inscribas personalmente.";
+    $Earnings_04_01 = "Requiere estatus activo (mínimo 50 BV).";
+    $Earnings_04_02 = "Debes patrocinar personalmente al menos un nuevo Cliente con un pedido de $50 BV durante el mismo mes.";
+    $Earnings_04_03 = "Se paga el día 15 de cada mes por el periodo de comisión anterior. Este bono recompensa la mentoría, el desarrollo de liderazgo y la duplicación de equipo.";
 
-    $Earnings_05 = "E. Bonos de Unidad y Liderazgo";
-    $Earnings_05_01 = "Solo para rangos superiores.";
-    $Earnings_05_02 = "Reconoce el impacto a nivel compañía y la contribución de volumen global.";
+$Earnings_05 = "E. Bonos de Unidad y Liderazgo";
+    $Earnings_05_text = "Disponibles para rangos superiores (M6 y mayores).";
+    $Earnings_05_01 = "Incluye el Bono DareVita: premios únicos por logro, pagados en 10 mensualidades iguales después de mantener el rango durante tres meses consecutivos.";
+    $Earnings_05_02 = "Incluye el Fondo de Liderazgo de Unidad: 4% del BV total de la compañía compartido entre los rangos más altos (M6, U8, I10, Y12).";
+    $Earnings_05_03 = "Los pagos del Bono DareVita se emiten el día 15; las distribuciones del Fondo de Liderazgo, el día 1 de cada mes.";
+    $Earnings_05_04 = "Todos los bonos de liderazgo se basan en desempeño y no están garantizados. Representan el más alto nivel de reconocimiento dentro del ecosistema DareVita, honrando el impacto global y el liderazgo excepcional.";
 
-    //-------------------------//
+ //-------------------------//
 
-    $Guaranteed = "Sin Ingresos Garantizados";
-    $Guaranteed_text = "DareVita no garantiza ingresos ni éxito. Tu capacidad de ganar depende de:";
+$Guaranteed = "Sin Ingreso Garantizado";
+$Guaranteed_text = "Los niveles de ganancia o declaraciones de ingresos dentro del Plan de Compensación DareVita no están garantizados y no deben considerarse típicos o promedio. Algunos Asesores de Marca Independientes (IBAs) pueden generar ingresos adicionales modestos, mientras que otros pueden participar únicamente por el descuento o uso personal del producto. Los resultados reales varían significativamente y dependen de múltiples factores, incluyendo pero no limitados a:";
 
-    $Guaranteed_01 = "Tu esfuerzo y constancia";
-    $Guaranteed_02 = "Tu habilidad para referir y retener clientes";
-    $Guaranteed_03 = "Tu liderazgo y capacitación de otros";
-    $Guaranteed_04 = "El volumen de productos generado a través de ventas legítimas";
-    $Guaranteed_text = "Los IBAs pueden generar ingresos suplementarios modestos o participar solo por el descuento en productos.";
+$Guaranteed_01 = "Esfuerzo individual y constancia";
+$Guaranteed_02 = "Capacidad para referir y retener clientes";
+$Guaranteed_03 = "Liderazgo, mentoría y desarrollo de equipo";
+$Guaranteed_04 = "Volumen de producto verificado generado a través de ventas minoristas legítimas";
+$Guaranteed_text_final = "DareVita no garantiza ingresos ni éxito. Incluso los IBAs que dedican tiempo y esfuerzo considerables pueden no alcanzar un nivel significativo de ingresos. Los resultados dependen completamente del desempeño personal, las condiciones del mercado y el cumplimiento de las políticas de la empresa.";
 
     //-------------------------//
 
