@@ -8,8 +8,8 @@
             <div class="mw-1440">
 
 
-                <?php $Condicion_1 =(isset($user_replica))? 'g-30 jc-between':'jc-center'; ?>
-                <?php $Condicion =(isset($user_replica))? '':'ai-center t-c fd-col small-w-100'; ?>
+                <?php $Condicion_1 =(true)? 'g-30 jc-between':'jc-center'; ?>
+                <?php $Condicion =(true)? '':'ai-center t-c fd-col small-w-100'; ?>
                 <div class="med-fd-col <?php echo $Condicion_1; ?>">
                     <div class="w-50 <?php echo $Condicion; ?>">
 
@@ -24,7 +24,7 @@
                         <p style="font-size: 0.8rem"><?php echo $Payments; ?></p>
                         <img src="./images/body/plan/cards.png" class="mw-200" alt="Payments" style="opacity: 0.5;" />
                     </div>
-                    <?php if(isset($user_replica)): ?>
+                    <?php if(true): ?>
                         <div class="w-100 jc-end med-jc-center med-fd-col g-40 small-g-20">
                             <ul class="menu-list link">
                                 <h3><?php echo $Footer_content; ?></h3>
