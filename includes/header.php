@@ -39,20 +39,42 @@
 
     <!-- STYLES-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />-->
-    <!-- <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />-->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />-->    
+    <!-- <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />-->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />-->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />-->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />-->
+
     <style>
         <?php 
-        // Usamos readfile para pegar el contenido CSS directamente en el HTML
-        if (file_exists("./css/min/reset.min.css")) readfile("./css/min/reset.min.css");
-        if (file_exists("./css/min/root.min.css")) readfile("./css/min/root.min.css");
+        // Array con todos los archivos que bloquean el renderizado
+        $cssFiles = [
+            './css/min/reset.min.css',
+            './css/min/main.min.css',
+            './css/min/root.min.css',
+            './css/body/style.min.css',
+            './css/body/navigation.min.css'
+        ];
+
+        // Leemos e imprimimos cada archivo directamente en el HTML
+        foreach ($cssFiles as $file) {
+            if (file_exists($file)) {
+                echo "/* File: $file */\n"; // Comentario para debug
+                readfile($file);
+                echo "\n";
+            }
+        }
         ?>
     </style>
-    
-    <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />
+    <link rel="stylesheet" 
+          href="./css/body/slick.min.css" 
+          media="print" 
+          onload="this.media='all'; this.onload=null;">
+    
+    <noscript>
+        <link rel="stylesheet" href="./css/body/slick.min.css">
+    </noscript>
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
