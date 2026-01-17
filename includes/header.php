@@ -38,9 +38,17 @@
     <title><?php echo $Company_Name; ?></title>
 
     <!-- STYLES-->
-    <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />-->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />-->
+    <style>
+        <?php 
+        // Usamos readfile para pegar el contenido CSS directamente en el HTML
+        if (file_exists("./css/min/reset.min.css")) readfile("./css/min/reset.min.css");
+        if (file_exists("./css/min/root.min.css")) readfile("./css/min/root.min.css");
+        ?>
+    </style>
+    
     <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />
 
     <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />
