@@ -39,14 +39,14 @@
 
     <!-- STYLES-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />-->
-    <!-- <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />-->    
+    <!-- <link rel="stylesheet" type="text/css" href="./css/min/root.min.css" />-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/min/main.min.css" />-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/body/style.min.css" />-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/body/navigation.min.css" />-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/body/slick.min.css" />-->
 
     <style>
-        <?php 
+        <?php
         // Array con todos los archivos que bloquean el renderizado
         $cssFiles = [
             './css/min/reset.min.css',
@@ -67,11 +67,11 @@
         ?>
     </style>
 
-    <link rel="stylesheet" 
-          href="./css/body/slick.min.css" 
-          media="print" 
+    <link rel="stylesheet"
+          href="./css/body/slick.min.css"
+          media="print"
           onload="this.media='all'; this.onload=null;">
-    
+
     <noscript>
         <link rel="stylesheet" href="./css/body/slick.min.css">
     </noscript>
@@ -101,17 +101,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&family=Sacramento&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&family=Sacramento&family=Special+Gothic+Expanded+One&display=swap" 
-          rel="stylesheet" 
-          media="print" 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&family=Sacramento&family=Special+Gothic+Expanded+One&display=swap"
+          rel="stylesheet"
+          media="print"
           onload="this.media='all'">
 
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&family=Sacramento&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     </noscript>
-
-    <!-- jQuery y Slick -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
 
 </head>
     <body id="page-content">
@@ -152,7 +149,7 @@
 
         <div id="preloader">
           <div id="progress">
-            
+
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="150" height="150">
                  </svg>
             <span id="data" class="d-none">0%</span>
