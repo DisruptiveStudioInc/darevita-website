@@ -119,16 +119,16 @@
           <?php else: ?>
             <div class="btn-get"><?php echo $Btn_started; ?></div>
             <div class="get">
-              <a href="<?= "https://$us_url.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+              <a href="<?= "https://$us_url.darevita.com/product-category/starter-packs/{$GetReplica}"; ?>"
                 target="_blank"
                 class="eng"
                 aria-label="Buy in USA">United States</a>
-              <a href="<?= "https://$mx_url.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+              <a href="<?= "https://$mx_url.darevita.com/product-category/starter-packs/{$GetReplica}"; ?>"
                 target="_blank"
                 class="esp"
                 aria-label="Buy in Mexico">México</a>
               <?php if(!$isWebDemo): ?>
-                <a href="<?= "https://ca.darevita.com/product-category/starter-plans/{$GetReplica}"; ?>"
+                <a href="<?= "https://ca.darevita.com/product-category/starter-packs/{$GetReplica}"; ?>"
                   target="_blank"
                   class="can"
                   aria-label="Buy in Mexico">Canada</a>
