@@ -74,7 +74,7 @@ $us_url = $isWebDemo ? 'usdev' : 'us';
 $mx_url = $isWebDemo ? 'mxdev' : 'mx';
 $int_url = $isWebDemo ? 'intdev' : 'int';
 
-$Register = "https://my.darevita.com/register/?ref=$user_replica";
+$Register = "https://my.darevita.com/register/$user_replica";
 $Revenuez_Register = "https://$int_url.darevita.com/register/";
 $Login = "https://$us_url.darevita.com/my-account/";
 $Revenuez_Login = "https://$int_url.darevita.com/my-account/";
